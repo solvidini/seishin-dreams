@@ -4,7 +4,8 @@ import React, { FC, ReactNode, createContext, useContext, useState } from 'react
 
 interface UIContextProps {
   isDrawerOpen: boolean;
-  toggleDrawer: () => void;
+  openDrawer: () => void;
+  closeDrawer: () => void;
 }
 
 export const UIContext = createContext<UIContextProps | undefined>(undefined);
@@ -22,13 +23,18 @@ export const useUI = (): UIContextProps => {
 export const UIProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
 
-  const toggleDrawer = () => {
-    setIsDrawerOpen((prev) => !prev);
+  const openDrawer = () => {
+    setIsDrawerOpen(true);
+  };
+
+  const closeDrawer = () => {
+    setIsDrawerOpen(false);
   };
 
   const contextValue: UIContextProps = {
     isDrawerOpen,
-    toggleDrawer,
+    openDrawer,
+    closeDrawer,
   };
 
   return <UIContext.Provider value={contextValue}>{children}</UIContext.Provider>;
