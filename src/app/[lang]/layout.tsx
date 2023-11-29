@@ -15,13 +15,6 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Seishin Dreams',
   description: 'TO DO',
-  icons: [
-    {
-      rel: 'icon',
-      url: '/favicon.ico',
-      type: 'image/x-icon',
-    },
-  ],
 };
 
 export function generateStaticParams() {
