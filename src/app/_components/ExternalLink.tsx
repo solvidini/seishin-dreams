@@ -9,7 +9,7 @@ interface IExternalLinkProps {
 
 export const ExternalLink: FC<IExternalLinkProps> = ({ children, to, className }) => (
   <a
-    className={classNames('transition-all duration-300 ease-in-out hover:scale-125', className)}
+    className={classNames('transition-all duration-300 ease-in-out', className)}
     href={to}
     target='_blank'
     rel='noopener noreferrer'

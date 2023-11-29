@@ -12,4 +12,19 @@ export interface Dictionary {
     title: string;
     description: string[];
   };
+  books?: {
+    title: string;
+  };
+  prints?: {
+    title: string;
+  };
+  wallpapers?: {
+    title: string;
+  };
+  music?: {
+    title: string;
+  };
+  contact?: {
+    title: string;
+  };
 }

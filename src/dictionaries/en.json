@@ -11,9 +11,24 @@
   "about": {
     "title": "About Us",
     "description": [
-      "Welcome to Seishin Dreams - where creativity knows no bounds! 🎨 ✨ We&apos;re a passionate team dedicated to bringing imagination to life. From enchanting tales and vibrant coloring books to mesmerizing music and stunning print designs, our creations are born from a place of endless inspiration.",
+      "Welcome to Seishin Dreams – where creativity knows no bounds! 🎨 ✨ We're a passionate team dedicated to bringing imagination to life. From enchanting tales and vibrant coloring books to mesmerizing music and stunning print designs, our creations are born from a place of endless inspiration.",
       "At Seishin Dreams, we believe in the power of creativity to spark joy and ignite imaginations. Every project we undertake is fueled by our commitment to crafting immersive experiences that captivate and inspire.",
       "Join us on this magical journey where stories come alive, colors dance, and dreams find their wings. Explore our world of boundless creativity and let your imagination soar with Seishin Dreams. 🌟 🌌"
     ]
+  },
+  "books": {
+    "title": "Coloring Books & more!"
+  },
+  "prints": {
+    "title": "Clothes & Accesories"
+  },
+  "wallpapers": {
+    "title": "Desktop & Mobile Wallpapers"
+  },
+  "music": {
+    "title": "Relaxation Music"
+  },
+  "contact": {
+    "title": "Write to Us!"
   }
 }

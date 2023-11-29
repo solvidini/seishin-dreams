@@ -31,7 +31,8 @@
   },
   "emerald": {
     "DEFAULT": "#009999",
-    "dark": "#041F1F"
+    "dark": "#041F1F",
+    "light": "#00CCCC"
   },
   "crimson": {
     "DEFAULT": "#DC143C",
