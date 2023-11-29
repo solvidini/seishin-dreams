@@ -3,13 +3,22 @@
 import Image from 'next/image';
 import { FaChevronUp } from 'react-icons/fa';
 
-import { getCurrentYear, scrollToTop } from '@/utils';
-import { ExternalLink } from '@/components/ExternalLink';
-import { Links } from './Links';
+import { getCurrentYear, scrollToTop } from '@/_utils';
+import { ExternalLink } from '@/app/_components/ExternalLink';
+import { Links } from '../../_components/Links';
+import LocaleSwitcher from '@/app/_components/LocaleSwitcher';
 
 const Footer = () => {
   return (
-    <footer className='bg-crimson-dark to-black text-white relative flex flex-col'>
+    <footer className='bg-black text-white relative flex flex-col border-t-4 border-crimson-dark'>
+      <Image
+        src='/footer-background.jpeg'
+        alt='Footer Background'
+        width={300}
+        height={300}
+        className='absolute top-0 left-0 w-full h-full opacity-20 object-cover'
+      />
+
       <button
         onClick={scrollToTop}
         className='z-10 w-[36px] h-[36px] bg-crimson-dark rounded-full p-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center'
@@ -17,7 +26,7 @@ const Footer = () => {
         <FaChevronUp size={20} />
       </button>
 
-      <div className='w-full p-4 mx-auto flex flex-col md:flex-row items-center relative gap-4 my-2'>
+      <div className='z-0 w-full p-4 mx-auto flex flex-col md:flex-row items-center relative gap-4 my-2'>
         {/* Social Media Links */}
         <div className='flex-1 flex items-center justify-center space-x-4 text-blue-300'>
           <ExternalLink to='https://www.facebook.com/seishin.dreams/'>
@@ -45,10 +54,12 @@ const Footer = () => {
         </nav>
 
         {/* Language Selection Dropdown */}
-        <button className='flex-1 flex items-center justify-center'>Language Dropdown</button>
+        <div className='flex-1 flex items-center justify-center'>
+          <LocaleSwitcher />
+        </div>
       </div>
       {/* Copyright */}
-      <div className='bg-gradient-to-b from-crimson-dark to-black text-center w-full p-4 text-xs'>
+      <div className='z-0 bg-crimson-dark/50 text-center w-full p-4 text-xs border-t-4 border-crimson-dark'>
         <p>
           <span className='text-gray-300'>&#169; {getCurrentYear()} Seishin Dreams</span>
           {'. '}

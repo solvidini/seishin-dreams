@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-import { breakpoints, colors } from './src/config/';
+import { breakpoints, colors } from './src/_config';
 
 const config: Config = {
   content: [

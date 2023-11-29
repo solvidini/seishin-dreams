@@ -1,4 +1,4 @@
-import { BackgroundVideo } from './components/BackgroundVideo';
+import { BackgroundVideo } from './_components/BackgroundVideo';
 
 export default function Home() {
   return (

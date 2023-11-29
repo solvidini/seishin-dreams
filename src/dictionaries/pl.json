@@ -1,0 +1,19 @@
+{
+  "common": {
+    "home": "Główna",
+    "about": "O Nas",
+    "books": "Książki",
+    "contact": "Kontakt",
+    "music": "Muzyka",
+    "prints": "Wydruki",
+    "wallpapers": "Tapety"
+  },
+  "about": {
+    "title": "O Nas",
+    "description": [
+      "Witaj w Seishin Dreams - gdzie kreatywność nie zna granic! 🎨 ✨ Jesteśmy zespołem pełnym pasji, oddanym ożywianiu wyobraźni. Od czarodziejskich opowieści i barwnych książek do kolorowania po urzekającą muzykę i zachwycające wzory do druku, nasze kreacje rodzą się z nieskończonego źródła inspiracji.",
+      "W Seishin Dreams wierzymy w moc kreatywności, która wywołuje radość i rozpala wyobraźnię. Każdy projekt, który podejmujemy, zasilany jest naszym zaangażowaniem w tworzenie immersyjnych doświadczeń, które wciągają i inspirują.",
+      "Dołącz do nas w tej magicznej podróży, gdzie opowieści ożywają, kolory tańczą, a marzenia odnajdują swoje skrzydła. Odkryj nasz świat nieskończonej kreatywności i pozwól swojej wyobraźni wzlecieć razem z Seishin Dreams. 🌟 🌌"
+    ]
+  }
+}

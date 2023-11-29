@@ -1,6 +1,6 @@
 'use client';
 
-import React, { FC, ReactNode, createContext, useContext, useState } from 'react';
+import { FC, ReactNode, createContext, useContext, useState } from 'react';
 
 interface UIContextProps {
   isDrawerOpen: boolean;
