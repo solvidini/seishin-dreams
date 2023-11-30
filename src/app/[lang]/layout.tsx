@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Caveat, Playpen_Sans } from 'next/font/google';
 import { ReactNode } from 'react';
 import classNames from 'classnames';
+import { FaChevronUp } from 'react-icons/fa';
 
 import './globals.css';
 import { Header } from './_components/Header';
@@ -28,7 +29,9 @@ export default function RootLayout({ children, params: { lang } }: { children: R
   return (
     <html lang={lang} className={classNames(inter.variable, caveat.variable, playpen_sans.variable)}>
       <body className={playpen_sans.className}>
-        <div className='w-full h-[70px]' />
+        <div className='w-full h-[70px] flex items-center justify-center'>
+          <FaChevronUp size={50} className='text-crimson-dark' />
+        </div>
         <LocaleProvider locale={lang}>
           <UIProvider>
             <Header />

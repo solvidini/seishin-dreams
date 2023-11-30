@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+
 import { YouTubeVideo } from './_components/YouTubeVideo';
 import { PageTitle } from '@/app/_components/PageTitle';
 import { useLocale } from '@/_contexts/locale-context';
@@ -40,7 +41,9 @@ export default function Music() {
         </p>
       </article>
       <section className='w-full px-4 md:px-6 mb-8 max-w-[900px] flex flex-col'>
-        <h3 className='font-semibold mb-2 text-center'>Explore our captivating animated video selection! 🎵🎥✨</h3>
+        <h3 className='font-semibold mb-4 text-center text-emerald-light'>
+          Explore our captivating animated video selection! 🎵🎥✨
+        </h3>
         <div className='w-full flex flex-col items-center justify-center gap-3'>
           <div className='w-full sm:w-auto'>
             <h6 className='text-gold mb-1'>Our Main Theme</h6>

@@ -10,7 +10,7 @@ import { LocaleSwitcher } from '@/app/_components/LocaleSwitcher';
 
 export const Footer = () => {
   return (
-    <footer className='relative bg-black text-white flex flex-col border-t-4 border-crimson-dark'>
+    <footer className='relative bg-dark text-white flex flex-col border-t-4 border-crimson-dark'>
       <Image
         src='/footer-background.jpeg'
         alt='Footer Background'

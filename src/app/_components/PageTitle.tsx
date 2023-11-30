@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import Image from 'next/image';
+import { BrushStrokeSVG } from '../_svg/brush-stroke';
 
 interface IPageTitleProps {
   children: ReactNode;
@@ -7,7 +7,7 @@ interface IPageTitleProps {
 
 export const PageTitle: FC<IPageTitleProps> = ({ children }) => (
   <div className='relative w-full h-[90px] p-2 flex items-center justify-center'>
-    <Image src='/brush-stroke.svg' alt='Title Background' width={500} height={70} />
+    <BrushStrokeSVG className='fill-crimson-dark w-[500px] h-[70px]' />
     <h2 className='text-lg sm:text-xl font-bold text-white z-1 absolute inset-0 flex items-center justify-center'>
       {children}
     </h2>

@@ -15,13 +15,13 @@ export default function Contact() {
       <PageTitle>{`💌 ${d.contact?.title} 💌`}</PageTitle>
       <div className='max-w-[900px] flex flex-col items-center gap-6 md:gap-8 px-4 pb-4 md:p-6 mx-auto'>
         <article className='flex flex-col gap-4'>
-          <div className='flex wrap justify-center'>
+          <div className='flex flex-wrap justify-center'>
             <p className='text-justify mr-2'>Hey there! Questions, ideas, or just wanna chat? Ping us at:</p>
             <ExternalLink className='text-gold inline-flex items-center' to='mailto:seishin.dreams@gmail.com'>
               <FaEnvelope className='mr-1' /> seishin.dreams@gmail.com
             </ExternalLink>
           </div>
-          <p className='text-center'>For a faster ride or more fun, join our social squad! 🚀✨</p>
+          <p className='text-justify xs:text-center'>For a faster ride or more fun, join our social squad! 🚀✨</p>
         </article>
         <div className='flex items-center justify-center space-x-4 text-blue-300'>
           <ExternalLink className='hover:scale-125' to='https://www.facebook.com/seishin.dreams/'>

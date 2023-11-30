@@ -8,7 +8,7 @@ export default function About() {
   const { dictionary: d } = useLocale();
 
   return (
-    <main className='overflow-auto min-h-screen flex flex-col items-center mb-2'>
+    <main className='overflow-auto min-h-screen flex flex-col items-center mb-6'>
       <PageTitle>{`🌟 ${d.about?.title} 🌟`}</PageTitle>
       <div className='max-w-[900px] flex flex-col items-center gap-6 md:gap-8 px-4 md:p-6 text-justify mx-auto'>
         <Image src='/betta-fish.png' alt='Betta Fish' width={300} height={225} priority />
