@@ -32,25 +32,28 @@ body {
 
 @keyframes rainbowGlow {
   0% {
+    filter: drop-shadow(0 0 20px #ffc800);
+  }
+  16.67% {
     filter: drop-shadow(0 0 10px #ffc800);
   }
-  20% {
-    filter: drop-shadow(0 0 15px #03ad96);
+  33.33% {
+    filter: drop-shadow(0 0 20px #ff0033);
   }
-  40% {
-    filter: drop-shadow(0 0 20px #03ad96);
+  50% {
+    filter: drop-shadow(0 0 10px #ff0033);
   }
-  60% {
-    filter: drop-shadow(0 0 20px #dc143c);
+  66.67% {
+    filter: drop-shadow(0 0 20px #07c7c7);
   }
-  80% {
-    filter: drop-shadow(0 0 15px #dc143c);
+  83.33% {
+    filter: drop-shadow(0 0 10px #07c7c7);
   }
   100% {
-    filter: drop-shadow(0 0 10px #ffc800);
+    filter: drop-shadow(0 0 20px #ffc800);
   }
 }
 
 .animate-svg-rainbow-glow {
-  animation: rainbowGlow 5s linear infinite;
+  animation: rainbowGlow 4s ease-in-out infinite;
 }

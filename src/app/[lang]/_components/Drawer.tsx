@@ -19,7 +19,7 @@ export const Drawer = () => {
         )}
       >
         <Image
-          className={isDrawerOpen ? '' : 'hidden'}
+          className={classNames('opacity-80', isDrawerOpen ? '' : 'hidden')}
           src='/betta-fish.png'
           alt='Betta Fish'
           width={120}
