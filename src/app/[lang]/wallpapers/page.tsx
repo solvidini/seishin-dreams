@@ -8,7 +8,7 @@ export default function Wallpapers() {
 
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center'>
-      <PageTitle>{`🖼️ ${d.wallpapers?.title} 🎨`}</PageTitle>
+      <PageTitle>{`🎨 ${d.wallpapers?.title} 🎨`}</PageTitle>
       <div>Wallpapers - link to Pinterest</div>
     </main>
   );

@@ -2,11 +2,17 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { useLocale } from '@/_contexts/locale-context';
-import { Dropdown } from './Dropdown';
+import { FC } from 'react';
 import classNames from 'classnames';
 
-export default function LocaleSwitcher() {
+import { useLocale } from '@/_contexts/locale-context';
+import { Dropdown } from './Dropdown';
+
+interface ILocaleSwitcherProps {
+  dropdownPosition?: 'top' | 'bottom';
+}
+
+export const LocaleSwitcher: FC<ILocaleSwitcherProps> = ({ dropdownPosition = 'top' }) => {
   const pathName = usePathname();
   const { getLocaleLanguage, locale, locales } = useLocale();
   const redirectedPathName = (locale: string) => {
@@ -17,7 +23,7 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <Dropdown position='top' value={getLocaleLanguage(locale)}>
+    <Dropdown position={dropdownPosition} value={getLocaleLanguage(locale)}>
       {locales.map((l) => {
         return (
           <li key={l}>
@@ -35,4 +41,4 @@ export default function LocaleSwitcher() {
       })}
     </Dropdown>
   );
-}
+};

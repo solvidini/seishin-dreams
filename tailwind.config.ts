@@ -21,6 +21,11 @@ const config: Config = {
       screens: {
         ...breakpoints,
       },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        caveat: ['var(--font-caveat)'],
+        playpen: ['var(--font-playpen)'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

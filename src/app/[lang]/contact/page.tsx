@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { FaChevronUp } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 
 import { useLocale } from '@/_contexts/locale-context';
 import { PageTitle } from '@/app/_components/PageTitle';
@@ -13,16 +13,15 @@ export default function Contact() {
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center'>
       <PageTitle>{`💌 ${d.contact?.title} 💌`}</PageTitle>
-      <div className='max-w-[900px] flex flex-col items-center gap-6 md:gap-8 px-4 pb-4 md:p-6 text-justify mx-auto'>
+      <div className='max-w-[900px] flex flex-col items-center gap-6 md:gap-8 px-4 pb-4 md:p-6 mx-auto'>
         <article className='flex flex-col gap-4'>
-          <p>
-            Hey there! Questions, ideas, or just wanna chat? 💌 Ping us at{' '}
-            <ExternalLink className='text-gold' to='mailto:seishin.dreams@gmail.com'>
-              seishin.dreams@gmail.com
+          <div className='flex wrap justify-center'>
+            <p className='text-justify mr-2'>Hey there! Questions, ideas, or just wanna chat? Ping us at:</p>
+            <ExternalLink className='text-gold inline-flex items-center' to='mailto:seishin.dreams@gmail.com'>
+              <FaEnvelope className='mr-1' /> seishin.dreams@gmail.com
             </ExternalLink>
-            !
-          </p>
-          <p>For a faster ride or more fun, join our social squad! 🚀✨</p>
+          </div>
+          <p className='text-center'>For a faster ride or more fun, join our social squad! 🚀✨</p>
         </article>
         <div className='flex items-center justify-center space-x-4 text-blue-300'>
           <ExternalLink className='hover:scale-125' to='https://www.facebook.com/seishin.dreams/'>
@@ -81,7 +80,7 @@ export default function Contact() {
           alt='SD'
           width={300}
           height={300}
-          className='m-6 w-[300px] md:w-[300px] h-[300px] md:h-[300px]'
+          className='opacity-10 m-6 w-[240px] md:w-[300px] h-[240px] md:h-[300px]'
           priority
         />
       </div>

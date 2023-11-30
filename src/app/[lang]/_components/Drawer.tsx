@@ -18,7 +18,14 @@ export const Drawer = () => {
           isDrawerOpen ? 'translate-y-0' : 'translate-y-full'
         )}
       >
-        <Image src='/betta-fish.png' alt='Betta Fish' width={120} height={90} priority />
+        <Image
+          className={isDrawerOpen ? '' : 'hidden'}
+          src='/betta-fish.png'
+          alt='Betta Fish'
+          width={120}
+          height={90}
+          priority
+        />
         <Links isDrawer />
       </div>
     </div>

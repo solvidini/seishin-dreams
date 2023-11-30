@@ -5,8 +5,8 @@ import { FaChevronUp } from 'react-icons/fa';
 
 import { getCurrentYear, scrollToTop } from '@/_utils';
 import { ExternalLink } from '@/app/_components/ExternalLink';
-import { Links } from '../../_components/Links';
-import LocaleSwitcher from '@/app/_components/LocaleSwitcher';
+import { Links } from '@/app/_components/Links';
+import { LocaleSwitcher } from '@/app/_components/LocaleSwitcher';
 
 export const Footer = () => {
   return (

@@ -13,3 +13,44 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 2px #fff, 0 0 8px #e6e6e6;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #e6e6e6;
+  }
+  100% {
+    text-shadow: 0 0 2px #fff, 0 0 8px #e6e6e6;
+  }
+}
+
+.animate-text-glow {
+  animation: textGlow 1.5s ease-in-out infinite;
+}
+
+@keyframes rainbowGlow {
+  0% {
+    filter: drop-shadow(0 0 10px #ffc800);
+  }
+  20% {
+    filter: drop-shadow(0 0 15px #03ad96);
+  }
+  40% {
+    filter: drop-shadow(0 0 20px #03ad96);
+  }
+  60% {
+    filter: drop-shadow(0 0 20px #dc143c);
+  }
+  80% {
+    filter: drop-shadow(0 0 15px #dc143c);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px #ffc800);
+  }
+}
+
+.animate-svg-rainbow-glow {
+  animation: rainbowGlow 5s linear infinite;
+}

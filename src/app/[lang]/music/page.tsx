@@ -12,7 +12,7 @@ export default function Music() {
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center'>
       <PageTitle>{`🎶 ${d.music?.title} 🎶`}</PageTitle>
-      <article className='max-w-[900px] flex flex-col gap-6 p-4 pb-6 md:p-6 text-justify mx-auto'>
+      <article className='max-w-[900px] flex flex-col gap-4 p-4 pb-6 md:p-6 text-justify mx-auto'>
         <p>
           Step into a realm of serene rhythms and melodies – our curated collection is designed to transport you to a
           state of tranquility. 🥁

@@ -18,7 +18,10 @@ export const LocaleLink: FC<ILocaleLinkProps> = ({ children, to, onClick, classN
   return (
     <Link
       onClick={onClick}
-      className={classNames(className, pathname === getLocaleUrl(to) ? 'text-white' : 'text-gray-400')}
+      className={classNames(
+        className,
+        pathname === getLocaleUrl(to) ? 'text-white animate-text-glow' : 'text-gray-400'
+      )}
       href={getLocaleUrl(to)}
     >
       {children}

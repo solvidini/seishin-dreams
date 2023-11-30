@@ -31,7 +31,10 @@ export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, childr
   };
 
   return (
-    <div ref={dropdownRef} className={`relative inline-block ${position === 'top' ? 'origin-bottom' : 'origin-top'}`}>
+    <div
+      ref={dropdownRef}
+      className={classNames('relative inline-block select-none', position === 'top' ? 'origin-bottom' : 'origin-top')}
+    >
       <button
         type='button'
         onClick={toggleDropdown}
@@ -51,7 +54,7 @@ export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, childr
         <div
           className={classNames(
             'absolute left-1/2 transform -translate-x-1/2 min-w-[120px] backdrop-blur-xl rounded-md shadow-lg bg-gradient-to-br from-crimson-dark/70 via-black/70 to-emerald-dark/70 bg-zinc-800/70 border border-gray-300/70',
-            position === 'top' ? 'bottom-full mb-2' : 'top-full mt-2'
+            position === 'top' ? 'bottom-full mb-1' : 'top-full mt-1'
           )}
         >
           <ul className='py-1' role='menu' aria-orientation='vertical' aria-labelledby='options-menu'>
