@@ -12,16 +12,16 @@ export default function Contact() {
 
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>
-      <PageTitle>{`💌 ${d.contact?.title} 💌`}</PageTitle>
+      <PageTitle>{`💌 ${d.contact.title} 💌`}</PageTitle>
       <div className='max-w-[900px] flex flex-col items-center gap-6 md:gap-8 px-4 pb-4 md:p-6 mx-auto'>
         <article className='flex flex-col gap-4'>
           <div className='flex flex-wrap justify-center'>
-            <p className='text-left mr-2'>{d.contact?.description[0]}</p>
+            <p className='text-left mr-2'>{d.contact.description[0]}</p>
             <ExternalLink className='text-gold inline-flex items-center' to='mailto:seishin.dreams@gmail.com'>
               <FaEnvelope className='mr-1' /> seishin.dreams@gmail.com
             </ExternalLink>
           </div>
-          <p className='text-left xs:text-center'>{d.contact?.description[1]} 🚀✨</p>
+          <p className='text-left xs:text-center'>{d.contact.description[1]} 🚀✨</p>
         </article>
         <div className='flex items-center justify-center space-x-4 text-blue-300'>
           <ExternalLink className='hover:scale-125' to='https://www.facebook.com/seishin.dreams/'>

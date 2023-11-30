@@ -23,37 +23,37 @@ export const Links: FC<ILinksProps> = ({ isDrawer = false }) => {
       >
         <li>
           <LocaleLink onClick={closeDrawer} className={linkClasses} to='/'>
-            {d.common?.home}
+            {d.common.home}
           </LocaleLink>
         </li>
         <li>
           <LocaleLink onClick={closeDrawer} className={linkClasses} to='/about'>
-            {d.common?.about}
+            {d.common.about}
           </LocaleLink>
         </li>
         <li>
           <LocaleLink onClick={closeDrawer} className={linkClasses} to='/books'>
-            {d.common?.books}
+            {d.common.books}
           </LocaleLink>
         </li>
         <li>
           <LocaleLink onClick={closeDrawer} className={linkClasses} to='/prints'>
-            {d.common?.prints}
+            {d.common.prints}
           </LocaleLink>
         </li>
         <li>
           <LocaleLink onClick={closeDrawer} className={linkClasses} to='/wallpapers'>
-            {d.common?.wallpapers}
+            {d.common.wallpapers}
           </LocaleLink>
         </li>
         <li>
           <LocaleLink onClick={closeDrawer} className={linkClasses} to='/music'>
-            {d.common?.music}
+            {d.common.music}
           </LocaleLink>
         </li>
         <li>
           <LocaleLink onClick={closeDrawer} className={linkClasses} to='/contact'>
-            {d.common?.contact}
+            {d.common.contact}
           </LocaleLink>
         </li>
       </ul>

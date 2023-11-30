@@ -8,7 +8,7 @@ export default function Books() {
 
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>
-      <PageTitle>{`📚 ${d.books?.title} 📚`}</PageTitle>
+      <PageTitle>{`📚 ${d.books.title} 📚`}</PageTitle>
       <div>KDP books</div>
     </main>
   );

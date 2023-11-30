@@ -3,7 +3,9 @@
 import { FC, ReactNode, createContext, useContext, useEffect, useState } from 'react';
 import { getDictionary } from '@/get-dictionary';
 import { Locale, i18n } from '@/i18n-config';
-import { Dictionary } from '@/dictionaries/type';
+import defaultDictionary from '../dictionaries/en.json';
+
+type Dictionary = typeof defaultDictionary;
 
 interface LocaleContextProps {
   isLoading: boolean;
@@ -28,7 +30,7 @@ export const useLocale = (): LocaleContextProps => {
 
 export const LocaleProvider: FC<{ children: ReactNode; locale: Locale }> = ({ children, locale }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [dictionary, setDictionary] = useState<Dictionary>({});
+  const [dictionary, setDictionary] = useState<Dictionary>(defaultDictionary);
 
   useEffect(() => {
     const loadDictionary = async () => {
