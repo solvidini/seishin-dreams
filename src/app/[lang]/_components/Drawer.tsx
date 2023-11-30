@@ -19,11 +19,14 @@ export const Drawer = () => {
         )}
       >
         <Image
-          className={classNames('opacity-80', isDrawerOpen ? '' : 'hidden')}
+          className={classNames(
+            'absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20',
+            isDrawerOpen ? '' : 'hidden'
+          )}
           src='/betta-fish.png'
           alt='Betta Fish'
-          width={120}
-          height={90}
+          width={200}
+          height={150}
           priority
         />
         <Links isDrawer />

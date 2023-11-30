@@ -60,7 +60,7 @@ export const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className='z-0 bg-crimson-dark/50 text-center w-full p-4 text-xs border-t-4 border-crimson-dark'>
+      <div className='z-0 bg-crimson-dark/50 text-center w-full p-4 text-xs border-t-2 border-crimson-dark'>
         <p>
           <span className='text-gray-300'>&#169; {getCurrentYear()} Seishin Dreams</span>
           {'. '}

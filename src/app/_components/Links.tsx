@@ -17,7 +17,7 @@ export const Links: FC<ILinksProps> = ({ isDrawer = false }) => {
   const linkClasses = isDrawer ? 'text-lg' : 'text-sm';
 
   return (
-    <nav>
+    <nav className='z-10'>
       <ul
         className={classNames('flex items-center justify-center gap-md flex-wrap', isDrawer ? 'w-[300px]' : 'w-auto')}
       >

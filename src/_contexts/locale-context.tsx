@@ -44,10 +44,10 @@ export const LocaleProvider: FC<{ children: ReactNode; locale: Locale }> = ({ ch
   const getLocaleLanguage = (locale: Locale) => {
     switch (locale) {
       case 'pl':
-        return 'Polski';
+        return '🇵🇱 Polski';
       case 'en':
       default:
-        return 'English';
+        return '🇺🇸 English';
     }
   };
 

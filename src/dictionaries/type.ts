@@ -8,6 +8,10 @@ export interface Dictionary {
     prints: string;
     wallpapers: string;
   };
+  home?: {
+    welcome: string;
+    quote: string;
+  };
   about?: {
     title: string;
     description: string[];
@@ -20,11 +24,14 @@ export interface Dictionary {
   };
   wallpapers?: {
     title: string;
+    description: string[];
   };
   music?: {
     title: string;
+    description: string[];
   };
   contact?: {
     title: string;
+    description: string[];
   };
 }

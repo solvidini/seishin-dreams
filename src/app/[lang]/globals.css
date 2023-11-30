@@ -58,6 +58,41 @@ body {
   animation: rainbowGlow 5s ease-in-out infinite;
 }
 
+@keyframes brandGlow {
+  0% {
+    filter: drop-shadow(0 0 20px #009999);
+  }
+  25% {
+    filter: drop-shadow(0 0 15px #009999);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px #dc143c);
+  }
+  75% {
+    filter: drop-shadow(0 0 15px #dc143c);
+  }
+  100% {
+    filter: drop-shadow(0 0 20px #009999);
+  }
+}
+
+.animate-svg-brand-glow {
+  animation: brandGlow 5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
 /* Masonry Grid */
 .masonry-grid {
   column-count: 1;

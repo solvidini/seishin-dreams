@@ -1,34 +1,53 @@
 {
   "common": {
-    "home": "Główna",
-    "about": "O Nas",
+    "home": "Strona główna",
+    "about": "O nas",
     "books": "Książki",
     "contact": "Kontakt",
     "music": "Muzyka",
-    "prints": "Wydruki",
+    "prints": "Drukowane",
     "wallpapers": "Tapety"
   },
+  "home": {
+    "welcome": "Witaj w",
+    "quote": "\"Marzenia są nasionami przyszłości. Pielęgnuj je, wierz w nie i oglądaj, jak rozkwitają w rzeczywistość.\""
+  },
   "about": {
-    "title": "O Nas",
+    "title": "O nas",
     "description": [
-      "Witaj w Seishin Dreams – gdzie kreatywność nie zna granic! 🎨 ✨ Jesteśmy zespołem pełnym pasji, oddanym ożywianiu wyobraźni. Od czarodziejskich opowieści i barwnych książek do kolorowania po urzekającą muzykę i zachwycające wzory do druku, nasze kreacje rodzą się z nieskończonego źródła inspiracji.",
-      "W Seishin Dreams wierzymy w moc kreatywności, która wywołuje radość i rozpala wyobraźnię. Każdy projekt, który podejmujemy, zasilany jest naszym zaangażowaniem w tworzenie immersyjnych doświadczeń, które wciągają i inspirują.",
-      "Dołącz do nas w tej magicznej podróży, gdzie opowieści ożywają, kolory tańczą, a marzenia odnajdują swoje skrzydła. Odkryj nasz świat nieskończonej kreatywności i pozwól swojej wyobraźni wzlecieć razem z Seishin Dreams. 🌟 🌌"
+      "Witaj w Seishin Dreams - gdzie kreatywność nie zna granic! 🎨 ✨ Jesteśmy zespołem pasjonatów, którzy poświęcają się ożywianiu wyobraźni. Od ujmujących opowieści i kolorowych książek do urzekającej muzyki i oszałamiających projektów graficznych, nasze twórczości powstają z nieskończonego źródła inspiracji.",
+      "W Seishin Dreams wierzymy w moc kreatywności, która wywołuje radość i rozpala wyobraźnię. Każdy projekt, który podejmujemy, jest napędzany naszym zobowiązaniem do tworzenia immersyjnych doświadczeń, które zachwycają i inspirują.",
+      "Dołącz do nas w tej magicznej podróży, gdzie opowieści ożywają, kolory tańczą, a marzenia znajdują swoje skrzydła. Odkryj nasz świat bezgranicznej kreatywności i pozwól swojej wyobraźni wznieść się razem z Seishin Dreams. 🌟 🌌"
     ]
   },
   "books": {
-    "title": "Kolorowe Książki i Inne!"
+    "title": "Książki do kolorowania i nie tylko!"
   },
   "prints": {
-    "title": "Ubrania i Dodatki"
+    "title": "Odzież i akcesoria"
   },
   "wallpapers": {
-    "title": "Tapety na Pulpit i Telefon"
+    "title": "Tapety na komputer i telefon",
+    "description": [
+      "✨ Wejdź do naszego królestwa czarów dzięki naszym magicznym tapetom. 🏞️ Zanurz się w fascynujących krajobrazach, 🐉 mistycznych stworzeniach i fantastycznych krainach. Znajdź idealne tło, aby dodać odrobinę magii do swoich ekranów. 🌌",
+      "Pobierz nasze tapety na:",
+      "Odkryj niektóre z naszych zachwycających magicznych tapet!"
+    ]
   },
   "music": {
-    "title": "Muzyka Relaksacyjna"
+    "title": "Muzyka relaksacyjna",
+    "description": [
+      "Wejdź do krainy spokojnych rytmów i melodii - nasza starannie wyselekcjonowana kolekcja ma za zadanie przenieść cię w stan spokoju.",
+      "Eksploruj nasze kojące dźwięki na:",
+      "Oddaj się naszej starannie przygotowanej playlisty, idealnej do odprężenia po długim dniu lub znalezienia skupienia wśród chaosu. Pozwól muzyce być twoim przewodnikiem relaksu i odnowy.",
+      "Odkryj nasz zbiór animowanych filmów muzycznych!"
+    ]
   },
   "contact": {
-    "title": "Królestwo Spotkań"
+    "title": "Królestwo spotkań",
+    "description": [
+      "Hej! Masz pytania, pomysły, czy po prostu chcesz porozmawiać? Skontaktuj się z nami pod adresem:",
+      "Dla szybszej odpowiedzi lub więcej zabawy, dołącz do naszej społeczności na mediach społecznościowych!"
+    ]
   }
 }

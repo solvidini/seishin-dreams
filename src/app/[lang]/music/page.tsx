@@ -11,15 +11,12 @@ export default function Music() {
   const { dictionary: d } = useLocale();
 
   return (
-    <main className='overflow-auto min-h-screen flex flex-col items-center'>
+    <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>
       <PageTitle>{`🎶 ${d.music?.title} 🎶`}</PageTitle>
-      <article className='max-w-[900px] flex flex-col gap-4 p-4 pb-6 md:p-6 text-justify mx-auto'>
-        <p>
-          Step into a realm of serene rhythms and melodies – our curated collection is designed to transport you to a
-          state of tranquility. 🥁
-        </p>
+      <article className='max-w-[900px] flex flex-col gap-4 p-4 pb-6 md:p-6 text-left mx-auto'>
+        <p>{d.music?.description[0]} 🥁</p>
         <div className='flex flex-col'>
-          <h3 className='font-semibold text-emerald-light mb-1'>Explore our soothing sounds on:</h3>
+          <h3 className='font-semibold text-emerald-light mb-1'>{d.music?.description[1]}</h3>
           <ExternalLink
             to='https://www.youtube.com/@seishin.dreams'
             className='inline-flex items-center gap-2 w-min hover:scale-110'
@@ -35,15 +32,10 @@ export default function Music() {
             <Image src='/soundcloud.svg' alt='SoundCloud' width={30} height={30} priority />
           </ExternalLink>
         </div>
-        <p>
-          Indulge in our meticulously crafted playlist, ideal for unwinding after a long day or finding focus amidst the
-          chaos. Let the music be your guide to relaxation and rejuvenation.
-        </p>
+        <p>{d.music?.description[2]}</p>
       </article>
       <section className='w-full px-4 md:px-6 mb-8 max-w-[900px] flex flex-col'>
-        <h3 className='font-semibold mb-4 text-center text-emerald-light'>
-          Explore our captivating animated video selection! 🎵🎥✨
-        </h3>
+        <h3 className='font-semibold mb-4 text-center text-emerald-light'>{d.music?.description[3]} 🎵🎥✨</h3>
         <div className='w-full flex flex-col items-center justify-center gap-3'>
           <div className='w-full sm:w-auto'>
             <h6 className='text-gold mb-1'>Our Main Theme</h6>
