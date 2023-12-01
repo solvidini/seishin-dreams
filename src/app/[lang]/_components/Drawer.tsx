@@ -14,7 +14,7 @@ export const Drawer = () => {
       {isDrawerOpen && <div className='fixed inset-0' onClick={closeDrawer}></div>}
       <div
         className={classNames(
-          'fixed bottom-0 inset-x-0 w-full h-[30vh] p-4 flex flex-col items-center justify-center gap-md px-xl backdrop-blur-xl bg-gradient-to-br from-crimson-dark/70 via-black/70 to-emerald-dark/70 bg-zinc-800/70 transition-transform duration-300 transform ease-in-out border border-t-4 border-crimson-dark',
+          'fixed bottom-0 inset-x-0 w-full h-[30vh] p-4 flex flex-col items-center justify-center gap-md px-xl backdrop-blur-xl bg-gradient-to-br from-crimson-dark/70 via-black/70 to-emerald-dark/70 bg-zinc-800/70 transition-transform duration-300 transform ease-in-out border-t-4 border-crimson-dark',
           isDrawerOpen ? 'translate-y-0' : 'translate-y-full'
         )}
       >

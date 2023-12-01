@@ -6,7 +6,7 @@ export const BackgroundVideo = () => {
         muted
         loop
         playsInline
-        className='w-full h-full object-cover absolute inset-0 object-[-666px] md:object-center'
+        className='fade-in w-full h-full object-cover absolute inset-0 object-[-666px] md:object-center'
       >
         <source src='/christmas.mp4' type='video/mp4' />
       </video>

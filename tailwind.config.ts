@@ -32,7 +32,7 @@ const config: Config = {
       },
       boxShadow: {
         outer: '0 0 6px rgba(0,0,0,.6)',
-        inner: 'inset 0 0 4px rgba(0,0,0,.6)',
+        inner: 'inset 0 0 8px rgba(0,0,0,.6)',
       },
       spacing: {
         em: '1em',

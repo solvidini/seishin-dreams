@@ -34,7 +34,7 @@ export default function Music() {
         </div>
         <p>{d.music.description[2]}</p>
       </article>
-      <section className='w-full px-4 md:px-6 mb-8 max-w-[900px] flex flex-col'>
+      <section className='w-full px-4 md:px-6 max-w-[900px] flex flex-col'>
         <h3 className='font-semibold mb-4 text-center text-emerald-light'>{d.music.description[3]} 🎵🎥✨</h3>
         <div className='w-full flex flex-col items-center justify-center gap-3'>
           <div className='w-full sm:w-auto'>

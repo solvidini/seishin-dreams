@@ -2,15 +2,24 @@
 
 import Image from 'next/image';
 import { FaChevronUp } from 'react-icons/fa';
+import { usePathname } from 'next/navigation';
+import classNames from 'classnames';
 
-import { getCurrentYear, scrollToTop } from '@/_utils';
+import { getCurrentYear, isHomePage, scrollToTop } from '@/_utils';
 import { ExternalLink } from '@/app/_components/ExternalLink';
 import { Links } from '@/app/_components/Links';
 import { LocaleSwitcher } from '@/app/_components/LocaleSwitcher';
 
 export const Footer = () => {
+  const pathname = usePathname();
+
   return (
-    <footer className='relative bg-dark text-white flex flex-col border-t-4 border-crimson-dark'>
+    <footer
+      className={classNames(
+        'relative bg-dark text-white flex flex-col border-t-4 border-crimson-dark',
+        !isHomePage(pathname) && 'mt-8'
+      )}
+    >
       <Image
         src='/footer-background.jpeg'
         alt='Footer Background'

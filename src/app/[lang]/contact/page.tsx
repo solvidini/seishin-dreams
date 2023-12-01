@@ -13,8 +13,8 @@ export default function Contact() {
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>
       <PageTitle>{`💌 ${d.contact.title} 💌`}</PageTitle>
-      <div className='max-w-[900px] flex flex-col items-center gap-6 md:gap-8 px-4 pb-4 md:p-6 mx-auto'>
-        <article className='flex flex-col gap-4'>
+      <article className='max-w-[900px] flex flex-col items-center gap-6 md:gap-8 px-4 pb-4 md:p-6 mx-auto'>
+        <section className='flex flex-col gap-4'>
           <div className='flex flex-wrap justify-center'>
             <p className='text-left mr-2'>{d.contact.description[0]}</p>
             <ExternalLink className='text-gold inline-flex items-center' to='mailto:seishin.dreams@gmail.com'>
@@ -22,8 +22,8 @@ export default function Contact() {
             </ExternalLink>
           </div>
           <p className='text-left xs:text-center'>{d.contact.description[1]} 🚀✨</p>
-        </article>
-        <div className='flex items-center justify-center space-x-4 text-blue-300'>
+        </section>
+        <section className='flex items-center justify-center space-x-4 text-blue-300'>
           <ExternalLink className='hover:scale-125' to='https://www.facebook.com/seishin.dreams/'>
             <Image
               src='/facebook.svg'
@@ -74,7 +74,7 @@ export default function Contact() {
               priority
             />
           </ExternalLink>
-        </div>
+        </section>
         <Image
           src='/sd.svg'
           alt='SD'
@@ -83,7 +83,7 @@ export default function Contact() {
           className='opacity-10 m-2 w-[240px] md:w-[300px] h-[240px] md:h-[300px]'
           priority
         />
-      </div>
+      </article>
     </main>
   );
 }
