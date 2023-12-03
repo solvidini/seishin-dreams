@@ -26,7 +26,7 @@ export const LocaleSwitcher: FC<ILocaleSwitcherProps> = ({ dropdownPosition = 't
     <Dropdown position={dropdownPosition} value={getLocaleLanguage(locale)} className='z-[100]'>
       {locales.map((l) => {
         return (
-          <li key={l}>
+          <li key={l} className='whitespace-nowrap'>
             <Link
               className={classNames(
                 'px-4 py-2 h-full w-full flex items-center transition duration-300 ease-in-out hover:bg-gray-900/70',
