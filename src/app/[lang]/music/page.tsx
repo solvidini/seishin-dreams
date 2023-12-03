@@ -13,7 +13,7 @@ export default function Music() {
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>
       <PageTitle>{`🎶 ${d.music.title} 🎶`}</PageTitle>
-      <article className='max-w-[900px] flex flex-col gap-4 p-4 pb-6 md:p-6 text-left mx-auto'>
+      <article className='max-w-[900px] flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto'>
         <p>{d.music.description[0]} 🥁</p>
         <div className='flex flex-col'>
           <h3 className='font-semibold text-emerald-light mb-1'>{d.music.description[1]}</h3>

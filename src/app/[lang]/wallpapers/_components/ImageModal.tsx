@@ -15,7 +15,7 @@ export const ImageModal: FC<IImageModalProps> = ({ imageUrl, onClose }) => (
           alt='Fullscreen Image'
           width={800}
           height={450}
-          className='absolute inset-0 w-full h-full object-contain rounded-md'
+          className='fade-in absolute inset-0 w-full h-full object-contain rounded-md'
         />
       )}
     </div>

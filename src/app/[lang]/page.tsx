@@ -9,7 +9,7 @@ export default function Home() {
   const { dictionary: d } = useLocale();
 
   return (
-    <main className='relative overflow-auto min-h-screen w-full fade-in'>
+    <main className='relative min-h-screen w-full fade-in'>
       <BackgroundVideo />
       <div className='z-1 absolute top-2 left-2 bg-black/70 rounded-md'>
         <LocaleSwitcher dropdownPosition='bottom' />

@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>
       <PageTitle>{`💌 ${d.contact.title} 💌`}</PageTitle>
-      <article className='max-w-[900px] flex flex-col items-center gap-6 md:gap-8 px-4 pb-4 md:p-6 mx-auto'>
+      <article className='max-w-[900px] flex flex-col items-center gap-6 md:gap-8 p-4 pt-2 pb-6 md:p-6 xs:pt-4 mx-auto'>
         <section className='flex flex-col gap-4'>
           <div className='flex flex-wrap justify-center'>
             <p className='text-left mr-2'>{d.contact.description[0]}</p>
