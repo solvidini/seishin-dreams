@@ -6,9 +6,10 @@ interface DropdownProps {
   position?: 'top' | 'bottom';
   value: string;
   children: ReactElement[];
+  className?: string;
 }
 
-export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, children }) => {
+export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, children, className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -33,12 +34,16 @@ export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, childr
   return (
     <div
       ref={dropdownRef}
-      className={classNames('relative inline-block select-none', position === 'top' ? 'origin-bottom' : 'origin-top')}
+      className={classNames(
+        'relative inline-block select-none',
+        position === 'top' ? 'origin-bottom' : 'origin-top',
+        className
+      )}
     >
       <button
         type='button'
         onClick={toggleDropdown}
-        className='inline-flex items-center justify-center gap-2 min-w-[120px] w-full rounded-md border border-gray-300/70 bg-transparent px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-900/70'
+        className='inline-flex items-center justify-center gap-2 min-w-[140px] w-full rounded-md border border-gray-300/70 bg-transparent px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-900/70'
       >
         {value}
         <FaChevronRight
@@ -53,7 +58,7 @@ export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, childr
       {isOpen && (
         <div
           className={classNames(
-            'absolute left-1/2 transform -translate-x-1/2 min-w-[120px] backdrop-blur-xl rounded-md shadow-lg bg-gradient-to-br from-crimson-dark/70 via-black/70 to-emerald-dark/70 bg-zinc-800/70 border border-gray-300/70',
+            'absolute left-1/2 transform -translate-x-1/2 min-w-[140px] backdrop-blur-xl rounded-md shadow-lg bg-gradient-to-br from-crimson-dark/70 via-black/70 to-emerald-dark/70 bg-zinc-800/70 border border-gray-300/70',
             position === 'top' ? 'bottom-full mb-1' : 'top-full mt-1'
           )}
         >

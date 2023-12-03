@@ -1,9 +1,10 @@
 'use client';
 
 import { FC, ReactNode, createContext, useContext, useEffect, useState } from 'react';
-import { getDictionary } from '@/get-dictionary';
+import { fetchDictionary } from '@/get-dictionary';
 import { Locale, i18n } from '@/i18n-config';
-import defaultDictionary from '../dictionaries/en.json';
+import defaultDictionary from '../dictionaries/empty.json';
+import { getLocaleExtension } from '@/_utils';
 
 type Dictionary = typeof defaultDictionary;
 
@@ -36,7 +37,7 @@ export const LocaleProvider: FC<{ children: ReactNode; locale: Locale }> = ({ ch
   useEffect(() => {
     const loadDictionary = async () => {
       setIsLoading(true);
-      const d = await getDictionary(locale);
+      const d = await fetchDictionary(locale);
       setDictionary(d);
     };
     loadDictionary();
@@ -46,21 +47,25 @@ export const LocaleProvider: FC<{ children: ReactNode; locale: Locale }> = ({ ch
 
   const getLocaleLanguage = (locale: Locale) => {
     switch (locale) {
-      case 'pl':
+      case 'fr_FR':
+        return '🇫🇷 Français';
+      case 'it_IT':
+        return '🇮🇹 Italiano';
+      case 'pl_PL':
         return '🇵🇱 Polski';
-      case 'en':
+      case 'en_GB':
+        return '🇬🇧 English';
+      case 'es_ES':
+        return '🇪🇸 Español';
+      case 'de_DE':
+        return '🇩🇪 Deutsch';
+      case 'cs_CZ':
+        return '🇨🇿 Čeština';
+      case 'uk_UA':
+        return '🇺🇦 Українська';
+      case 'en_US':
       default:
         return '🇺🇸 English';
-    }
-  };
-
-  const getLocaleExtension = () => {
-    switch (locale) {
-      case 'pl':
-        return 'pl';
-      case 'en':
-      default:
-        return 'com';
     }
   };
 
@@ -71,7 +76,7 @@ export const LocaleProvider: FC<{ children: ReactNode; locale: Locale }> = ({ ch
     dictionary,
     getLocaleUrl,
     getLocaleLanguage,
-    localeExtension: getLocaleExtension(),
+    localeExtension: getLocaleExtension(locale),
   };
 
   return <LocaleContext.Provider value={contextValue}>{children}</LocaleContext.Provider>;

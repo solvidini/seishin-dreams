@@ -1,11 +1,11 @@
-'use client';
-
 import Image from 'next/image';
-import { useLocale } from '@/_contexts/locale-context';
-import { PageTitle } from '@/app/_components/PageTitle';
 
-export default function About() {
-  const { dictionary: d } = useLocale();
+import { PageTitle } from '@/app/_components/PageTitle';
+import { Locale } from '@/i18n-config';
+import { fetchDictionary } from '@/get-dictionary';
+
+export default async function About({ params: { lang } }: { params: { lang: Locale } }) {
+  const d = await fetchDictionary(lang);
 
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>

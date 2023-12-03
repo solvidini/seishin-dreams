@@ -1,0 +1,69 @@
+{
+  "common": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "books": "Bücher",
+    "contact": "Kontakt",
+    "music": "Musik",
+    "prints": "Drucke",
+    "wallpapers": "Hintergründe"
+  },
+  "home": {
+    "welcome": "Willkommen bei",
+    "quote": "\"Träume sind die Samen der Zukunft. Pflege sie, glaube an sie und sieh zu, wie sie in die Realität erblühen.\""
+  },
+  "about": {
+    "title": "Über uns",
+    "description": [
+      "Willkommen bei Seishin Dreams – wo Kreativität keine Grenzen kennt! 🎨 ✨ Wir sind ein leidenschaftliches Team, das sich der Verwirklichung von Vorstellungen verschrieben hat. Von bezaubernden Geschichten und lebhaften Malbüchern bis hin zu faszinierender Musik und atemberaubenden Druckdesigns entstehen unsere Kreationen aus einem Ort endloser Inspiration.",
+      "Bei Seishin Dreams glauben wir an die Kraft der Kreativität, um Freude zu bringen und die Fantasie zu entfachen. Jedes Projekt, das wir in Angriff nehmen, wird von unserem Engagement für die Schaffung fesselnder Erlebnisse angetrieben.",
+      "Begleiten Sie uns auf dieser magischen Reise, auf der Geschichten lebendig werden, Farben tanzen und Träume ihre Flügel finden. Entdecken Sie unsere Welt grenzenloser Kreativität und lassen Sie mit Seishin Dreams Ihre Vorstellungskraft aufsteigen. 🌟 🌌"
+    ]
+  },
+  "books": {
+    "title": "Malbücher & mehr!",
+    "description": [
+      "Treten Sie ein in unsere Welt der Malbücher, der erste Schritt in unserer künstlerischen Geschichte. Während wir Seiten mit Farben füllen, erwarten Sie aufregende Geschichten und vielfältige Lektüren im Entstehen! Bleiben Sie dran für weitere literarische Magie, die bald entfaltet wird!",
+      "Entdecken Sie unsere Bücher auf:",
+      "Entdecken Sie Auszüge aus unseren Büchern und Malproben!"
+    ],
+    "author": "Autorenseite",
+    "coloring_book_1": "Tauchen Sie ein in das Tierreich mit unserem faszinierenden Tiere-Malbuch für Kinder! Mit 40 verschiedenen Kreaturen aus dem Meer, von Bauernhöfen, der Wildnis und mehr. Bildungsfördernde, stressabbauende Designs, die die kreative Vorstellungskraft und das Lernen anregen. Perfekt für neugierige Köpfe, angehende Künstler und alle Altersgruppen. Entdecken, lernen und kreieren Sie heute!",
+    "coming_soon": {
+      "title": "Demnächst: Ein Erlebnis für Erwachsene mit faszinierendem Malen!",
+      "description": "Machen Sie sich bereit für unser fesselndes neues Malbuch, das für Erwachsene entwickelt wurde! Komplexe Designs und inspirierende Themen warten auf Sie. Bleiben Sie auf dem Laufenden mit dieser erstaunlichen Malreise!"
+    }
+  },
+  "prints": {
+    "title": "Kleidung & Accessoires",
+    "description": [
+      "Entdecken Sie unsere exklusive Kollektion von künstlerischen Designs auf T-Shirts, Aufklebern, Sweatshirts und mehr! Jedes Stück präsentiert unsere Kreativität und einzigartigen Stil. Finden Sie Ihr liebstes tragbares Kunstwerk hier. Redbubble und Spreadshirt.",
+      "Entdecken Sie unser gesamtes Sortiment auf:",
+      "Entdecken Sie einige unserer vorgestellten Produkte!"
+    ]
+  },
+  "wallpapers": {
+    "title": "Desktop- & Handy-Hintergründe",
+    "description": [
+      "✨ Treten Sie ein in unser Reich der Verzauberung mit unseren magischen Welt-Hintergründen. 🏞️ Tauchen Sie ein in faszinierende Landschaften, 🐉 mystische Kreaturen und fantastische Reiche. Finden Sie den perfekten Hintergrund, um Ihren Bildschirmen einen Hauch von Magie zu verleihen. 🌌",
+      "Laden Sie unsere Hintergründe herunter auf:",
+      "Entdecken Sie einige unserer faszinierenden bezaubernden Hintergründe!"
+    ]
+  },
+  "music": {
+    "title": "Entspannungsmusik",
+    "description": [
+      "Tauchen Sie ein in eine Welt sanfter Rhythmen und Melodien – unsere ausgewählte Sammlung ist darauf ausgelegt, Sie in einen Zustand der Ruhe zu versetzen.",
+      "Entdecken Sie unsere beruhigenden Klänge auf:",
+      "Tauchen Sie ein in unsere sorgfältig zusammengestellte Playlist, ideal zum Entspannen nach einem langen Tag oder zum Finden von Konzentration inmitten des Chaos. Lassen Sie die Musik Ihr Leitfaden zur Entspannung und Erneuerung sein.",
+      "Tauchen Sie ein in unsere fesselnde Auswahl animierter Videos!"
+    ]
+  },
+  "contact": {
+    "title": "Welt der Begegnungen",
+    "description": [
+      "Hey! Fragen, Ideen oder einfach nur plaudern? Schreiben Sie uns:",
+      "Für eine schnellere Antwort oder mehr Spaß, treten Sie unserer Social Community bei!"
+    ]
+  }
+}

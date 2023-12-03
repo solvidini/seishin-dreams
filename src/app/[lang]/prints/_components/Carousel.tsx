@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { FC, useEffect, useState } from 'react';
 import { useSwipeable } from 'react-swipeable';

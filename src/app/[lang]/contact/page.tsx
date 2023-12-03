@@ -1,14 +1,13 @@
-'use client';
-
 import Image from 'next/image';
 import { FaEnvelope } from 'react-icons/fa';
 
-import { useLocale } from '@/_contexts/locale-context';
+import { Locale } from '@/i18n-config';
+import { fetchDictionary } from '@/get-dictionary';
 import { PageTitle } from '@/app/_components/PageTitle';
 import { ExternalLink } from '@/app/_components/ExternalLink';
 
-export default function Contact() {
-  const { dictionary: d } = useLocale();
+export default async function Contact({ params: { lang } }: { params: { lang: Locale } }) {
+  const d = await fetchDictionary(lang);
 
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>

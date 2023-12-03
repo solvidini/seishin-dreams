@@ -20,7 +20,7 @@ export const Header = () => {
   }, [matches]);
 
   return (
-    <header className='overflow-hidden fixed top-0 left-0 z-10 w-full h-[70px] flex items-center justify-between gap-lg px-md sm:px-xl backdrop-blur-xl bg-gradient-to-br from-crimson-dark/70 via-black/70 to-emerald-dark/70 bg-zinc-800/70 border-b-2 border-crimson-dark'>
+    <header className='overflow-hidden fixed top-0 left-0 z-[200] w-full h-[70px] flex items-center justify-between gap-lg px-md sm:px-xl backdrop-blur-xl bg-gradient-to-br from-crimson-dark/70 via-black/70 to-emerald-dark/70 bg-zinc-800/70 border-b-2 border-crimson-dark'>
       <Link className='w-[50px] sm:w-[170px] h-[50px] flex items-center justify-center' href='/'>
         {windowSize === 'big' ? (
           <SeishinDreamsSVG className='fade-in fill-gray-200 w-[170px] h-[50px]' />
@@ -28,7 +28,7 @@ export const Header = () => {
           <SdSVG className='fade-in fill-gray-200 w-[50px] h-[50px]' />
         ) : null}
       </Link>
-      <div className='hidden md:block'>
+      <div className='hidden md:block fade-in'>
         <Links />
       </div>
       <DrawerToggler isDrawerOpen={isDrawerOpen} onClick={openDrawer} />

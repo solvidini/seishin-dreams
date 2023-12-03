@@ -11,15 +11,20 @@ import { UIProvider } from '@/_contexts/ui-context';
 import { Footer } from './_components/Footer';
 import { Locale, i18n } from '../../i18n-config';
 import { LocaleProvider } from '@/_contexts/locale-context';
+import { fetchDictionary } from '@/get-dictionary';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const caveat = Caveat({ subsets: ['latin'], variable: '--font-caveat' });
 const playpen_sans = Playpen_Sans({ subsets: ['latin'], variable: '--font-playpen' });
 
-export const metadata: Metadata = {
-  title: 'Seishin Dreams',
-  description: 'TO DO',
-};
+export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }) {
+  const d = await fetchDictionary(lang);
+
+  return {
+    title: 'Seishin Dreams',
+    description: d.about.description[0],
+  };
+}
 
 export function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));

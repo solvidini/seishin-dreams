@@ -21,10 +21,26 @@
     ]
   },
   "books": {
-    "title": "Coloring Books & more!"
+    "title": "Coloring Books & more!",
+    "description": [
+      "Step into our world of coloring books, the first stroke in our artistic tale. While we fill pages with colors, anticipate exciting stories and diverse reads in the making! Stay tuned for more literary magic soon to unfold!",
+      "Explore our books on:",
+      "Discover Our Book Excerpts & Coloring Samples!"
+    ],
+    "author": "Author Page",
+    "coloring_book_1": "Dive into the Animal Kingdom with our captivating Animals Coloring Book for Kids! Featuring 40 diverse creatures across sea, farm, wild, and more. Educational, stress-relieving designs sparking creativity and learning. Perfect for curious minds, budding artists, and all ages. Explore, learn, and create today!",
+    "coming_soon": {
+      "title": "Coming Soon: An Amazing Adult Coloring Experience!",
+      "description": "Get ready for our captivating new coloring book designed for adults! Intricate designs and inspiring themes await. Stay tuned for updates on this amazing coloring journey!"
+    }
   },
   "prints": {
-    "title": "Clothes & Accesories"
+    "title": "Clothes & Accesories",
+    "description": [
+      "Discover our exclusive collection of artful designs on t-shirts, stickers, sweatshirts, and more! Each piece showcases our creativity and unique style. Find your favorite wearable art here. Redbubble and Spreadshirt.",
+      "Explore our full range on:",
+      "Discover some of our featured products!"
+    ]
   },
   "wallpapers": {
     "title": "Desktop & Mobile Wallpapers",

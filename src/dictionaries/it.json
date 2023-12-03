@@ -1,0 +1,69 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "books": "Libri",
+    "contact": "Contatto",
+    "music": "Musica",
+    "prints": "Stampe",
+    "wallpapers": "Sfondi"
+  },
+  "home": {
+    "welcome": "Benvenuti in",
+    "quote": "\"I sogni sono i semi del futuro. Curateli, credeteci e vedeteli sbocciare nella realtà.\""
+  },
+  "about": {
+    "title": "Chi siamo",
+    "description": [
+      "Benvenuti in Seishin Dreams, dove la creatività non conosce limiti! 🎨 ✨ Siamo un team appassionato dedicato a dare vita all'immaginazione. Dalle storie incantevoli e dai vivaci libri da colorare alla musica ipnotica e ai fantastici design di stampa, le nostre creazioni nascono da un luogo di ispirazione infinita.",
+      "Da Seishin Dreams crediamo nel potere della creatività per suscitare gioia e stimolare l'immaginazione. Ogni progetto che intraprendiamo è alimentato dal nostro impegno a creare esperienze coinvolgenti che catturano e ispirano.",
+      "Unisciti a noi in questo viaggio magico dove le storie prendono vita, i colori danzano e i sogni trovano le loro ali. Esplora il nostro mondo di creatività senza limiti e lascia che la tua immaginazione voli con Seishin Dreams. 🌟 🌌"
+    ]
+  },
+  "books": {
+    "title": "Libri da colorare e altro!",
+    "description": [
+      "Immergiti nel nostro mondo di libri da colorare, il primo passo nella nostra storia artistica. Mentre riempiamo le pagine di colori, aspettati storie emozionanti e letture diverse in fase di sviluppo! Resta sintonizzato per più magia letteraria che presto si svelerà!",
+      "Esplora i nostri libri su:",
+      "Scopri estratti dei nostri libri e campioni di colorazione!"
+    ],
+    "author": "Pagina dell'autore",
+    "coloring_book_1": "Immergiti nel regno animale con il nostro coinvolgente Libro da colorare Animali per Bambini! Presenta 40 creature diverse, dalle creature marine agli animali da fattoria, alle bestie selvatiche e altro ancora. Design rilassanti per imparare e ridurre lo stress, stimolando l'espressione creativa. Perfetto per menti curiose, aspiranti artisti e tutte le età. Esplora, impara e crea oggi!",
+    "coming_soon": {
+      "title": "Prossimamente: un'esperienza di colorazione per adulti straordinaria!",
+      "description": "Preparati per il nostro coinvolgente nuovo libro da colorare progettato per gli adulti! Disegni complessi e temi ispiratori ti aspettano. Resta aggiornato su questo incredibile viaggio di colorazione!"
+    }
+  },
+  "prints": {
+    "title": "Abbigliamento e accessori",
+    "description": [
+      "Scopri la nostra collezione esclusiva di design artistici su t-shirt, adesivi, felpe e altro ancora! Ogni pezzo mette in mostra la nostra creatività e uno stile unico. Trova il tuo capo d'arte preferito qui. Redbubble e Spreadshirt.",
+      "Esplora l'intera gamma su:",
+      "Scopri alcuni dei nostri prodotti in evidenza!"
+    ]
+  },
+  "wallpapers": {
+    "title": "Sfondi per desktop e mobile",
+    "description": [
+      "✨ Entra nel nostro regno incantato con i nostri sfondi magici. 🏞️ Immergiti in paesaggi affascinanti, 🐉 creature mistiche e regni fantastici. Trova lo sfondo perfetto per aggiungere un tocco di magia ai tuoi schermi. 🌌",
+      "Scarica i nostri sfondi su:",
+      "Esplora alcuni dei nostri incantevoli sfondi!"
+    ]
+  },
+  "music": {
+    "title": "Musica di relax",
+    "description": [
+      "Immergiti in un mondo di ritmi e melodie rilassanti: la nostra collezione selezionata è progettata per trasportarti in uno stato di tranquillità.",
+      "Esplora i nostri suoni rilassanti su:",
+      "Sperimenta la nostra playlist meticolosamente creata, ideale per rilassarsi dopo una lunga giornata o trovare concentrazione nel caos. Lascia che la musica sia la tua guida al relax e al rinnovamento.",
+      "Immergiti nella nostra affascinante selezione di video animati!"
+    ]
+  },
+  "contact": {
+    "title": "Mondo degli incontri",
+    "description": [
+      "Ciao! Domande, idee o semplicemente vuoi chiacchierare? Contattaci su:",
+      "Per una risposta più veloce o più divertimento, unisciti alla nostra comunità sociale!"
+    ]
+  }
+}

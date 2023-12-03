@@ -1,0 +1,69 @@
+{
+  "common": {
+    "home": "Domů",
+    "about": "O nás",
+    "books": "Knihy",
+    "contact": "Kontakt",
+    "music": "Hudba",
+    "prints": "Tisky",
+    "wallpapers": "Tapety"
+  },
+  "home": {
+    "welcome": "Vítejte v",
+    "quote": "\"Sny jsou semena budoucnosti. Pečujte o ně, věřte v ně a sledujte, jak rozkvétají do reality.\""
+  },
+  "about": {
+    "title": "O nás",
+    "description": [
+      "Vítejte v Seishin Dreams - místě, kde kreativita nezná hranice! 🎨 ✨ Jsme vášnivý tým věnovaný přinášení imaginace do života. Od okouzlujících příběhů a barevných omalovánek až po hypnotizující hudbu a úchvatné grafické designy se naše tvorba rodí z místa nekonečné inspirace.",
+      "V Seishin Dreams věříme v sílu kreativity, která dokáže vyvolat radost a zapálit představivost. Každý projekt, který podnikáme, je poháněn naší snahou vytvářet poutavé zážitky, které zajímají a inspirují.",
+      "Připojte se k nám na tuto kouzelnou cestu, kde se příběhy ožívají, barvy tančí a sny nacházejí svá křídla. Prozkoumejte náš svět nekonečné kreativity a dovolte své fantazii vzlétnout s Seishin Dreams. 🌟 🌌"
+    ]
+  },
+  "books": {
+    "title": "Omalovánky a více!",
+    "description": [
+      "Vstupte do našeho světa omalovánek, první krok v našem uměleckém příběhu. Zatímco plníme stránky barvami, očekávejte vzrušující příběhy a různorodé četby, které se rodí! Buďte naladěni na další literární kouzlo, které brzy odhalí!",
+      "Objevte naše knihy na:",
+      "Prozkoumejte ukázky z našich knih a omalovánek!"
+    ],
+    "author": "Stránka autora",
+    "coloring_book_1": "Ponořte se do živočišné říše s naší fascinující Omalovánkou zvířat pro děti! Nabízející 40 různorodých tvorů z moří, farmy, divočiny a dalších. Edukativní vzory pro zmírnění stresu, které podněcují kreativitu a učení. Ideální pro zvídavé myslí, začínající umělce a všechny věkové kategorie. Objevujte, učte se a tvořte dnes!",
+    "coming_soon": {
+      "title": "Již brzy: Úžasný zážitek s omalovánkami pro dospělé!",
+      "description": "Připravte se na naši fascinující novou omalovánku určenou pro dospělé! Komplikované vzory a inspirující témata čekají. Buďte v obraze s tímto úžasným omalovánkovým dobrodružstvím!"
+    }
+  },
+  "prints": {
+    "title": "Oblečení a doplňky",
+    "description": [
+      "Objevte naši exkluzivní kolekci uměleckých designů na tričkách, nálepky, mikinách a dalších! Každý kousek představuje naši kreativitu a jedinečný styl. Najděte si svůj oblíbený nositelný umělecký kousek zde. Redbubble a Spreadshirt.",
+      "Prozkoumejte celý náš sortiment na:",
+      "Objevte některé z našich vybraných produktů!"
+    ]
+  },
+  "wallpapers": {
+    "title": "Tapety pro počítače a mobily",
+    "description": [
+      "✨ Vstupte do našeho říše kouzel s našimi magickými světovými tapetami. 🏞️ Ponořte se do úchvatných krajin, 🐉 mystických bytostí a fantastických říší. Najděte perfektní pozadí, které dodá vašim obrazovkám špetku kouzla. 🌌",
+      "Stáhněte si naše tapety na:",
+      "Prozkoumejte některé z našich okouzlujících tapet!"
+    ]
+  },
+  "music": {
+    "title": "Relaxační hudba",
+    "description": [
+      "Vstupte do světa klidných rytmů a melodií - naše pečlivě vybraná kolekce je navržena tak, aby vás přenesla do stavu klidu.",
+      "Prozkoumejte naše uklidňující zvuky na:",
+      "Ponořte se do našeho pečlivě vytvořeného playlistu, ideálního k relaxaci po dlouhém dni nebo k nalezení koncentrace uprostřed chaosu. Nechte hudbu být vaším průvodcem k relaxaci a obnovení.",
+      "Ponořte se do naší úchvatné nabídky animovaných videí!"
+    ]
+  },
+  "contact": {
+    "title": "Svět setkání",
+    "description": [
+      "Ahoj! Máte dotazy, nápady nebo jen chcete pokecat? Napište nám:",
+      "Pro rychlejší reakci nebo víc zábavy se přidejte k naší sociální komunitě!"
+    ]
+  }
+}

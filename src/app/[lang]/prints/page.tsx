@@ -1,26 +1,21 @@
-'use client';
-
 import Image from 'next/image';
 
-import { useLocale } from '@/_contexts/locale-context';
 import { PageTitle } from '@/app/_components/PageTitle';
 import { ExternalLink } from '@/app/_components/ExternalLink';
 import { Carousel } from './_components/Carousel';
+import { Locale } from '@/i18n-config';
+import { fetchDictionary } from '@/get-dictionary';
 
-export default function Prints() {
-  const { dictionary: d } = useLocale();
+export default async function Prints({ params: { lang } }: { params: { lang: Locale } }) {
+  const d = await fetchDictionary(lang);
 
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>
       <PageTitle>{`👕 ${d.prints.title} 👚`}</PageTitle>
       <article className='max-w-[900px] flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto'>
-        <p>
-          Discover our exclusive collection of artful designs on t-shirts, stickers, sweatshirts, and more! Each piece
-          showcases our creativity and unique style. Find your favorite wearable art here. Redbubble and Spreadshirt. 🛒
-          👕 ✨
-        </p>
+        <p>{d.prints.description[0]} 🛒 👕 ✨</p>
         <div className='flex flex-col mb-4'>
-          <h3 className='font-semibold text-emerald-light mb-1'>Explore our full range on:</h3>
+          <h3 className='font-semibold text-emerald-light mb-1'>{d.prints.description[1]}</h3>
           <ExternalLink
             to='https://seishindreams.redbubble.com/'
             className='inline-flex items-center gap-2 w-min hover:scale-110'
@@ -41,9 +36,7 @@ export default function Prints() {
           </ExternalLink>
         </div>
         <section className='w-full h-full'>
-          <h3 className='font-semibold text-center text-emerald-light mb-4'>
-            Discover some of our featured products! 🌟🛍️
-          </h3>
+          <h3 className='font-semibold text-center text-emerald-light mb-4'>{d.prints.description[2]} 🌟🛍️</h3>
           <Carousel
             items={[
               {

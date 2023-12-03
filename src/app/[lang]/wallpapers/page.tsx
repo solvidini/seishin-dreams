@@ -1,12 +1,10 @@
-'use client';
-
 import Image from 'next/image';
 
-import { useLocale } from '@/_contexts/locale-context';
+import { Locale } from '@/i18n-config';
+import { fetchDictionary } from '@/get-dictionary';
 import { PageTitle } from '@/app/_components/PageTitle';
 import { ExternalLink } from '@/app/_components/ExternalLink';
-import { useState } from 'react';
-import { ImageModal } from './_components/ImageModal';
+import { WallpaperGalery } from './_components/WallpaperGalery';
 
 const images = [
   {
@@ -66,20 +64,8 @@ const images = [
   },
 ];
 
-export default function Wallpapers() {
-  const { dictionary: d } = useLocale();
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
-  const handleImageClick = (imageSrc: string) => {
-    setSelectedImage(imageSrc);
-    setModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedImage(null);
-    setModalOpen(false);
-  };
+export default async function Wallpapers({ params: { lang } }: { params: { lang: Locale } }) {
+  const d = await fetchDictionary(lang);
 
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>
@@ -99,20 +85,8 @@ export default function Wallpapers() {
       </article>
       <section className='w-full px-4 md:px-6 flex flex-col'>
         <h3 className='font-semibold mb-4 text-center text-emerald-light'>{d.wallpapers.description[2]} 🌟 🖼️ ✨</h3>
-        <div className='masonry-grid'>
-          {images.map((image, index) => (
-            <div key={index} className='break-inside-avoid mb-4'>
-              <figure onClick={() => handleImageClick(image.src)} className='relative cursor-pointer'>
-                <Image src={image.src} alt={image.alt} className='w-full rounded-md' width={400} height={225} />
-                <figcaption className='text-center absolute bottom-0 left-0 p-1 flex w-full bg-black/50 text-gray-200'>
-                  {image.caption}
-                </figcaption>
-              </figure>
-            </div>
-          ))}
-        </div>
+        <WallpaperGalery images={images} />
       </section>
-      {modalOpen && <ImageModal imageUrl={selectedImage} onClose={handleCloseModal} />}
     </main>
   );
 }

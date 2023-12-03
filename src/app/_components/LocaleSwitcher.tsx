@@ -23,7 +23,7 @@ export const LocaleSwitcher: FC<ILocaleSwitcherProps> = ({ dropdownPosition = 't
   };
 
   return (
-    <Dropdown position={dropdownPosition} value={getLocaleLanguage(locale)}>
+    <Dropdown position={dropdownPosition} value={getLocaleLanguage(locale)} className='z-[100]'>
       {locales.map((l) => {
         return (
           <li key={l}>

@@ -104,6 +104,7 @@ export const Book: FC<BookProps> = ({ title, pages, width, height, link, classNa
                 transform: currentPage === index + 1 ? 'rotateY(-180deg)' : '',
                 transitionDelay: currentPage === index + 1 ? '100ms' : '250ms',
               }}
+              priority
             />
           </div>
         ))}

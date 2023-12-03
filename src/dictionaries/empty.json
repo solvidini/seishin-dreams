@@ -1,0 +1,45 @@
+{
+  "common": {
+    "home": "",
+    "about": "",
+    "books": "",
+    "contact": "",
+    "music": "",
+    "prints": "",
+    "wallpapers": ""
+  },
+  "home": {
+    "welcome": "",
+    "quote": ""
+  },
+  "about": {
+    "title": "",
+    "description": ["", "", ""]
+  },
+  "books": {
+    "title": "",
+    "description": ["", "", ""],
+    "author": "",
+    "coloring_book_1": "",
+    "coming_soon": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "prints": {
+    "title": "",
+    "description": ["", "", ""]
+  },
+  "wallpapers": {
+    "title": "",
+    "description": ["", "", ""]
+  },
+  "music": {
+    "title": "",
+    "description": ["", "", "", ""]
+  },
+  "contact": {
+    "title": "",
+    "description": ["", ""]
+  }
+}

@@ -1,12 +1,11 @@
-'use client';
-
 import { BackgroundVideo } from './_components/BackgroundVideo';
 import { LocaleSwitcher } from '@/app/_components/LocaleSwitcher';
-import { useLocale } from '@/_contexts/locale-context';
+import { fetchDictionary } from '@/get-dictionary';
+import { Locale } from '@/i18n-config';
 import { SeishinDreamsSVG } from '../_svg/seishin-dreams';
 
-export default function Home() {
-  const { dictionary: d } = useLocale();
+export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
+  const d = await fetchDictionary(lang);
 
   return (
     <main className='relative min-h-screen w-full fade-in'>

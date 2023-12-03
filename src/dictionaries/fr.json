@@ -1,0 +1,69 @@
+{
+  "common": {
+    "home": "Accueil",
+    "about": "À propos",
+    "books": "Livres",
+    "contact": "Contact",
+    "music": "Musique",
+    "prints": "Impressions",
+    "wallpapers": "Fonds d'écran"
+  },
+  "home": {
+    "welcome": "Bienvenue à",
+    "quote": "\"Les rêves sont les graines du futur. Prenez-en soin, croyez en eux et regardez-les fleurir dans la réalité.\""
+  },
+  "about": {
+    "title": "À propos de nous",
+    "description": [
+      "Bienvenue chez Seishin Dreams - où la créativité n'a pas de limites ! 🎨 ✨ Nous sommes une équipe passionnée dédiée à donner vie à l'imagination. Des contes enchanteurs et des livres de coloriage vibrants à la musique envoûtante et aux superbes designs d'impression, nos créations naissent d'un lieu d'inspiration infinie.",
+      "Chez Seishin Dreams, nous croyons au pouvoir de la créativité pour susciter la joie et stimuler l'imagination. Chaque projet que nous entreprenons est alimenté par notre engagement à créer des expériences immersives qui captivent et inspirent.",
+      "Rejoignez-nous dans ce voyage magique où les histoires prennent vie, les couleurs dansent et les rêves trouvent leurs ailes. Explorez notre monde de créativité sans limite et laissez votre imagination s'envoler avec Seishin Dreams. 🌟 🌌"
+    ]
+  },
+  "books": {
+    "title": "Livres de coloriage & plus !",
+    "description": [
+      "Plongez dans notre monde de livres de coloriage, le premier pas dans notre histoire artistique. Pendant que nous remplissons les pages de couleurs, attendez-vous à des histoires passionnantes et à des lectures diverses en devenir ! Restez à l'écoute pour plus de magie littéraire qui se dévoilera bientôt !",
+      "Explorez nos livres sur :",
+      "Découvrez des extraits de nos livres et des échantillons de coloriage !"
+    ],
+    "author": "Page de l'auteur",
+    "coloring_book_1": "Plongez dans le règne animal avec notre captivant Livre de coloriage Animaux pour Enfants ! Présentant 40 créatures diverses, des créatures marines et des animaux de ferme aux bêtes sauvages et plus encore. Des designs apaisants pour apprendre et réduire le stress, stimulant l'expression créative. Parfait pour les esprits curieux, les artistes en herbe et tous les âges. Explorez, apprenez et créez dès aujourd'hui !",
+    "coming_soon": {
+      "title": "Bientôt disponible : une expérience de coloriage pour adultes incroyable !",
+      "description": "Préparez-vous à notre nouveau livre de coloriage captivant conçu pour les adultes ! Des motifs complexes et des thèmes inspirants vous attendent. Restez à l'affût de cette incroyable aventure de coloriage !"
+    }
+  },
+  "prints": {
+    "title": "Vêtements & Accessoires",
+    "description": [
+      "Découvrez notre collection exclusive de designs artistiques sur des t-shirts, des autocollants, des sweat-shirts et plus encore ! Chaque pièce met en valeur notre créativité et notre style unique. Trouvez votre œuvre d'art portable préférée ici. Redbubble et Spreadshirt.",
+      "Explorez notre gamme complète sur :",
+      "Découvrez certains de nos produits phares !"
+    ]
+  },
+  "wallpapers": {
+    "title": "Fonds d'écran pour ordinateur et mobile",
+    "description": [
+      "✨ Plongez dans notre royaume enchanteur avec nos fonds d'écran magiques. 🏞️ Imprégnez-vous de paysages captivants, 🐉 de créatures mystiques et de royaumes fantastiques. Trouvez le décor parfait pour ajouter une touche de magie à vos écrans. 🌌",
+      "Téléchargez nos fonds d'écran sur :",
+      "Explorez certains de nos fonds d'écran enchanteresses !"
+    ]
+  },
+  "music": {
+    "title": "Musique de relaxation",
+    "description": [
+      "Plongez dans un monde de rythmes et de mélodies apaisants - notre collection sélectionnée est conçue pour vous transporter dans un état de tranquillité.",
+      "Explorez nos sons apaisants sur :",
+      "Plongez dans notre playlist méticuleusement conçue, idéale pour se détendre après une longue journée ou pour trouver de la concentration au milieu du chaos. Laissez la musique être votre guide vers la relaxation et la régénération.",
+      "Plongez dans notre sélection captivante de vidéos animées !"
+    ]
+  },
+  "contact": {
+    "title": "Monde des rencontres",
+    "description": [
+      "Salut ! Des questions, des idées ou simplement envie de discuter ? Contactez-nous sur :",
+      "Pour une réponse plus rapide ou plus de plaisir, rejoignez notre communauté sociale !"
+    ]
+  }
+}

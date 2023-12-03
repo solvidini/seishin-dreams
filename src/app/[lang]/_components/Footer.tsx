@@ -30,7 +30,7 @@ export const Footer = () => {
 
       <button
         onClick={scrollToTop}
-        className='z-10 w-[36px] h-[36px] bg-crimson-dark rounded-full p-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center'
+        className='z-0 w-[36px] h-[36px] bg-crimson-dark rounded-full p-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center'
       >
         <FaChevronUp size={20} className='animate-bounce' />
       </button>
