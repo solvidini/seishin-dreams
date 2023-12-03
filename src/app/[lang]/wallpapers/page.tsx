@@ -98,7 +98,7 @@ export default function Wallpapers() {
         </div>
       </article>
       <section className='w-full px-4 md:px-6 flex flex-col'>
-        <h3 className='font-semibold mb-4 text-center text-emerald-light'>{d.wallpapers.description[2]} 🌟🖼️✨</h3>
+        <h3 className='font-semibold mb-4 text-center text-emerald-light'>{d.wallpapers.description[2]} 🌟 🖼️ ✨</h3>
         <div className='masonry-grid'>
           {images.map((image, index) => (
             <div key={index} className='break-inside-avoid mb-4'>

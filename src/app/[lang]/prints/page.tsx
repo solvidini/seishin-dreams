@@ -16,8 +16,8 @@ export default function Prints() {
       <article className='max-w-[900px] flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto'>
         <p>
           Discover our exclusive collection of artful designs on t-shirts, stickers, sweatshirts, and more! Each piece
-          showcases our creativity and unique style. Find your favorite wearable art here. Redbubble and Spreadshirt.
-          🛒👕✨
+          showcases our creativity and unique style. Find your favorite wearable art here. Redbubble and Spreadshirt. 🛒
+          👕 ✨
         </p>
         <div className='flex flex-col mb-4'>
           <h3 className='font-semibold text-emerald-light mb-1'>Explore our full range on:</h3>

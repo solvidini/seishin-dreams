@@ -12,6 +12,7 @@ interface LocaleContextProps {
   locale: Locale;
   locales: typeof i18n.locales;
   dictionary: Dictionary;
+  localeExtension: string;
   getLocaleLanguage(locale: Locale): string;
   getLocaleUrl(url: string): string;
 }
@@ -53,6 +54,16 @@ export const LocaleProvider: FC<{ children: ReactNode; locale: Locale }> = ({ ch
     }
   };
 
+  const getLocaleExtension = () => {
+    switch (locale) {
+      case 'pl':
+        return 'pl';
+      case 'en':
+      default:
+        return 'com';
+    }
+  };
+
   const contextValue: LocaleContextProps = {
     isLoading,
     locale,
@@ -60,6 +71,7 @@ export const LocaleProvider: FC<{ children: ReactNode; locale: Locale }> = ({ ch
     dictionary,
     getLocaleUrl,
     getLocaleLanguage,
+    localeExtension: getLocaleExtension(),
   };
 
   return <LocaleContext.Provider value={contextValue}>{children}</LocaleContext.Provider>;

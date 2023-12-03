@@ -1,18 +1,48 @@
 'use client';
 
+import Image from 'next/image';
+
 import { useLocale } from '@/_contexts/locale-context';
 import { PageTitle } from '@/app/_components/PageTitle';
+import { ExternalLink } from '@/app/_components/ExternalLink';
+
 import { Book } from './_components/Book';
+import { ComingSoon } from './_components/ComingSoon';
 
 export default function Books() {
-  const { dictionary: d, locale } = useLocale();
+  const { dictionary: d, localeExtension } = useLocale();
 
   return (
     <main className='min-h-screen flex flex-col items-center fade-in'>
       <PageTitle>{`📚 ${d.books.title} 📚`}</PageTitle>
       <article className='overflow-auto max-w-[900px] w-full flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto'>
-        <div className='w-full flex items-center justify-center'>
+        <p>
+          Step into our world of coloring books, the first stroke in our artistic tale. While we fill pages with colors,
+          anticipate exciting stories and diverse reads in the making! Stay tuned for more literary magic soon to
+          unfold! ✨ 🎨
+        </p>
+        <div className='flex flex-col'>
+          <h3 className='font-semibold text-emerald-light mb-1'>Explore our books on:</h3>
+          <ExternalLink
+            to='https://www.amazon.com/stores/author/B0CP8MXTWK/'
+            className='inline-flex items-center gap-2 w-min hover:scale-110'
+          >
+            <span className='whitespace-nowrap'>Author Page 📖</span>
+          </ExternalLink>
+        </div>
+      </article>
+      <section className='w-full max-w-[1100px] flex flex-col items-center justify-center p-4 md:p-6'>
+        <h3 className='font-semibold mb-4 text-center text-emerald-light'>
+          Discover Our Book Excerpts & Coloring Samples! 🖍️ 📚
+        </h3>
+        <div className='w-full flex items-center flex-col-reverse lg:flex-row justify-center gap-4'>
+          <p className='flex-1'>
+            Dive into the Animal Kingdom with our captivating Animals Coloring Book for Kids! Featuring 40 diverse
+            creatures across sea, farm, wild, and more. Educational, stress-relieving designs sparking creativity and
+            learning. Perfect for curious minds, budding artists, and all ages. Explore, learn, and create today!
+          </p>
           <Book
+            className='flex-1'
             title='Animals - Coloring Book'
             width={233}
             height={295}
@@ -44,10 +74,15 @@ export default function Books() {
               { src: '/books/Empty-Page.jpeg' },
               { src: '/books/coloring_book_1/Back-Cover.jpeg' },
             ]}
-            link={`https://www.amazon.${locale === 'en' ? 'com' : locale}/dp/B0CP64GV5B`}
+            link={`https://www.amazon.${localeExtension}/dp/B0CP64GV5B`}
           />
         </div>
-      </article>
+        <ComingSoon
+          title='Coming Soon: An Amazing Adult Coloring Experience! 🖍️ ✨'
+          description='Get ready for our captivating new coloring book designed for adults! Intricate designs and inspiring themes
+            await. Stay tuned for updates on this amazing coloring journey!'
+        />
+      </section>
     </main>
   );
 }

@@ -21,7 +21,7 @@ export default function Contact() {
               <FaEnvelope className='mr-1' /> seishin.dreams@gmail.com
             </ExternalLink>
           </div>
-          <p className='text-left xs:text-center'>{d.contact.description[1]} 🚀✨</p>
+          <p className='text-left xs:text-center'>{d.contact.description[1]} 🚀 ✨</p>
         </section>
         <section className='flex items-center justify-center space-x-4 text-blue-300'>
           <ExternalLink className='hover:scale-125' to='https://www.facebook.com/seishin.dreams/'>

@@ -1,9 +1,10 @@
 'use client';
 
-import React, { FC, useEffect, useState } from 'react';
 import Image from 'next/image';
+import React, { FC, useEffect, useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import classNames from 'classnames';
 
 import BREAKPOINTS from '@/_config/breakpoints.json';
 import { ExternalLink } from '@/app/_components/ExternalLink';
@@ -14,9 +15,10 @@ interface BookProps {
   width: number;
   height: number;
   link: string;
+  className?: string;
 }
 
-export const Book: FC<BookProps> = ({ title, pages, width, height, link }) => {
+export const Book: FC<BookProps> = ({ title, pages, width, height, link, className }) => {
   const [bookSize, setBookSize] = useState({ width, height });
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -58,7 +60,12 @@ export const Book: FC<BookProps> = ({ title, pages, width, height, link }) => {
   });
 
   return (
-    <div className='relative overflow-hidden max-w-full flex flex-col items-center justify-center gap-3'>
+    <div
+      className={classNames(
+        'relative overflow-hidden max-w-full flex flex-col items-center justify-center gap-3',
+        className
+      )}
+    >
       <div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-[114px] h-[114px] sm:w-[200px] sm:h-[200px] bg-[#009999]/80 shadow-[0_0_70px_40px_#009999]' />
       <h3 className='text-lg text-semibold text-gold'>{title}</h3>
       <div
@@ -102,7 +109,7 @@ export const Book: FC<BookProps> = ({ title, pages, width, height, link }) => {
         ))}
       </div>
       <div className='w-full flex items-center justify-between'>
-        <button onClick={prevSlide}>
+        <button onClick={prevSlide} className={classNames(currentPage === 0 && 'opacity-50 cursor-not-allowed')}>
           <FaChevronLeft size={40} className='text-crimson' />
         </button>
         <ExternalLink className='text-gold uppercase font-semibold' to={link}>
