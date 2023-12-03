@@ -47,23 +47,23 @@ export const LocaleProvider: FC<{ children: ReactNode; locale: Locale }> = ({ ch
 
   const getLocaleLanguage = (locale: Locale) => {
     switch (locale) {
-      case 'fr_FR':
+      case 'fr':
         return '🇫🇷 Français';
-      case 'it_IT':
+      case 'it':
         return '🇮🇹 Italiano';
-      case 'pl_PL':
+      case 'pl':
         return '🇵🇱 Polski';
-      case 'en_GB':
+      case 'gb':
         return '🇬🇧 English';
-      case 'es_ES':
+      case 'es':
         return '🇪🇸 Español';
-      case 'de_DE':
+      case 'de':
         return '🇩🇪 Deutsch';
-      case 'cs_CZ':
+      case 'cs':
         return '🇨🇿 Čeština';
-      case 'uk_UA':
+      case 'uk':
         return '🇺🇦 Українська';
-      case 'en_US':
+      case 'us':
       default:
         return '🇺🇸 English';
     }

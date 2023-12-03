@@ -2,21 +2,21 @@ import { Locale } from '@/i18n-config';
 
 export const getLocaleExtension = (locale: Locale) => {
   switch (locale) {
-    case 'fr_FR':
+    case 'fr':
       return 'fr';
-    case 'it_IT':
+    case 'it':
       return 'it';
-    case 'pl_PL':
-    case 'uk_UA':
+    case 'pl':
+    case 'uk':
       return 'pl';
-    case 'en_GB':
+    case 'gb':
       return 'co.uk';
-    case 'es_ES':
+    case 'es':
       return 'es';
-    case 'de_DE':
-    case 'cs_CZ':
+    case 'de':
+    case 'cs':
       return 'de';
-    case 'en_US':
+    case 'us':
     default:
       return 'com';
   }
