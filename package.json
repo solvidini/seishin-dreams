@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ut": "node update-translations.js"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.2",
