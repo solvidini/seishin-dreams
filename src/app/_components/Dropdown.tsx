@@ -35,7 +35,7 @@ export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, childr
     <div
       ref={dropdownRef}
       className={classNames(
-        'relative inline-block select-none',
+        'relative inline-block select-none z-[100]',
         position === 'top' ? 'origin-bottom' : 'origin-top',
         className
       )}

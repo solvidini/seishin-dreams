@@ -6,7 +6,8 @@
     "contact": "Kontakt",
     "music": "Hudba",
     "prints": "Tisky",
-    "wallpapers": "Tapety"
+    "wallpapers": "Tapety",
+    "buy_now": "Koupit nyní"
   },
   "home": {
     "welcome": "Vítejte v",
@@ -28,11 +29,12 @@
       "Prozkoumejte ukázky z našich knih a omalovánek!"
     ],
     "author": "Stránka autora",
-    "coloring_book_1": "Ponořte se do živočišné říše s naší fascinující Omalovánkou zvířat pro děti! Nabízející 40 různorodých tvorů z moří, farmy, divočiny a dalších. Edukativní vzory pro zmírnění stresu, které podněcují kreativitu a učení. Ideální pro zvídavé myslí, začínající umělce a všechny věkové kategorie. Objevujte, učte se a tvořte dnes!",
+    "coloring_book_animals": "Ponořte se do živočišné říše s naší fascinující Omalovánkou zvířat pro děti! Nabízející 40 různorodých tvorů z moří, farmy, divočiny a dalších. Edukativní vzory pro zmírnění stresu, které podněcují kreativitu a učení. Ideální pro zvídavé myslí, začínající umělce a všechny věkové kategorie. Objevujte, učte se a tvořte dnes!",
     "coming_soon": {
       "title": "Již brzy: Úžasný zážitek s omalovánkami pro dospělé!",
       "description": "Připravte se na naši fascinující novou omalovánku určenou pro dospělé! Komplikované vzory a inspirující témata čekají. Buďte v obraze s tímto úžasným omalovánkovým dobrodružstvím!"
-    }
+    },
+    "coloring_book_mindfulness": "Objevte klid v Enchanted Realms of Mindfulness Coloring Book! Odhalte 40 poutavých říší a prozkoumejte krásné krajiny, zatímco si osvojujete úžasné tipy pro mindfulness. Skvělý pro kreativní myslící jedince hledající klid. Ponořte se do kouzla ještě dnes!"
   },
   "prints": {
     "title": "Oblečení a doplňky",

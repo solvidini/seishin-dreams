@@ -6,7 +6,8 @@
     "contact": "Contatto",
     "music": "Musica",
     "prints": "Stampe",
-    "wallpapers": "Sfondi"
+    "wallpapers": "Sfondi",
+    "buy_now": "Acquista ora"
   },
   "home": {
     "welcome": "Benvenuti in",
@@ -28,11 +29,12 @@
       "Scopri estratti dei nostri libri e campioni di colorazione!"
     ],
     "author": "Pagina dell'autore",
-    "coloring_book_1": "Immergiti nel regno animale con il nostro coinvolgente Libro da colorare Animali per Bambini! Presenta 40 creature diverse, dalle creature marine agli animali da fattoria, alle bestie selvatiche e altro ancora. Design rilassanti per imparare e ridurre lo stress, stimolando l'espressione creativa. Perfetto per menti curiose, aspiranti artisti e tutte le età. Esplora, impara e crea oggi!",
+    "coloring_book_animals": "Immergiti nel regno animale con il nostro coinvolgente Libro da colorare Animali per Bambini! Presenta 40 creature diverse, dalle creature marine agli animali da fattoria, alle bestie selvatiche e altro ancora. Design rilassanti per imparare e ridurre lo stress, stimolando l'espressione creativa. Perfetto per menti curiose, aspiranti artisti e tutte le età. Esplora, impara e crea oggi!",
     "coming_soon": {
       "title": "Prossimamente: un'esperienza di colorazione per adulti straordinaria!",
       "description": "Preparati per il nostro coinvolgente nuovo libro da colorare progettato per gli adulti! Disegni complessi e temi ispiratori ti aspettano. Resta aggiornato su questo incredibile viaggio di colorazione!"
-    }
+    },
+    "coloring_book_mindfulness": "Scopri la serenità nei Enchanted Realms of Mindfulness Coloring Book! Svela 40 regni affascinanti ed esplora paesaggi stupendi assorbendo incredibili consigli di mindfulness. Perfetto per menti creative in cerca di tranquillità. Tuffati nell'incanto oggi!"
   },
   "prints": {
     "title": "Abbigliamento e accessori",

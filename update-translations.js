@@ -46,4 +46,16 @@ async function updateTranslations(pathToUpdate, translations) {
 //   empty: '',
 // };
 
-// updateTranslations('test.first.second', translations);
+const translations = {
+  en: 'Buy Now',
+  fr: 'Acheter maintenant',
+  it: 'Acquista ora',
+  pl: 'Kup teraz',
+  es: 'Comprar ahora',
+  de: 'Jetzt kaufen',
+  cs: 'Koupit nyní',
+  uk: 'Купити зараз',
+  empty: '',
+};
+
+updateTranslations('common.buy_now', translations);

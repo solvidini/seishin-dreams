@@ -6,7 +6,8 @@
     "contact": "Contact",
     "music": "Musique",
     "prints": "Impressions",
-    "wallpapers": "Fonds d'écran"
+    "wallpapers": "Fonds d'écran",
+    "buy_now": "Acheter maintenant"
   },
   "home": {
     "welcome": "Bienvenue à",
@@ -28,11 +29,12 @@
       "Découvrez des extraits de nos livres et des échantillons de coloriage !"
     ],
     "author": "Page de l'auteur",
-    "coloring_book_1": "Plongez dans le règne animal avec notre captivant Livre de coloriage Animaux pour Enfants ! Présentant 40 créatures diverses, des créatures marines et des animaux de ferme aux bêtes sauvages et plus encore. Des designs apaisants pour apprendre et réduire le stress, stimulant l'expression créative. Parfait pour les esprits curieux, les artistes en herbe et tous les âges. Explorez, apprenez et créez dès aujourd'hui !",
+    "coloring_book_animals": "Plongez dans le règne animal avec notre captivant Livre de coloriage Animaux pour Enfants ! Présentant 40 créatures diverses, des créatures marines et des animaux de ferme aux bêtes sauvages et plus encore. Des designs apaisants pour apprendre et réduire le stress, stimulant l'expression créative. Parfait pour les esprits curieux, les artistes en herbe et tous les âges. Explorez, apprenez et créez dès aujourd'hui !",
     "coming_soon": {
       "title": "Bientôt disponible : une expérience de coloriage pour adultes incroyable !",
       "description": "Préparez-vous à notre nouveau livre de coloriage captivant conçu pour les adultes ! Des motifs complexes et des thèmes inspirants vous attendent. Restez à l'affût de cette incroyable aventure de coloriage !"
-    }
+    },
+    "coloring_book_mindfulness": "Découvrez la sérénité dans le Enchanted Realms of Mindfulness Coloring Book! Dévoilez 40 royaumes captivants et explorez de magnifiques paysages tout en assimilant d'incroyables conseils de pleine conscience. Parfait pour les esprits créatifs en quête de tranquillité. Plongez dans l'enchantement dès aujourd'hui !"
   },
   "prints": {
     "title": "Vêtements & Accessoires",

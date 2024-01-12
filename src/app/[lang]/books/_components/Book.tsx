@@ -8,6 +8,7 @@ import classNames from 'classnames';
 
 import BREAKPOINTS from '@/_config/breakpoints.json';
 import { ExternalLink } from '@/app/_components/ExternalLink';
+import { useLocale } from '@/_contexts/locale-context';
 
 interface BookProps {
   title: string;
@@ -19,6 +20,7 @@ interface BookProps {
 }
 
 export const Book: FC<BookProps> = ({ title, pages, width, height, link, className }) => {
+  const { dictionary: d } = useLocale();
   const [bookSize, setBookSize] = useState({ width, height });
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -62,12 +64,12 @@ export const Book: FC<BookProps> = ({ title, pages, width, height, link, classNa
   return (
     <div
       className={classNames(
-        'relative overflow-hidden max-w-full flex flex-col items-center justify-center gap-3',
+        'relative max-w-full flex flex-col items-center justify-center gap-4 py-2',
         className
       )}
     >
-      <div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-[114px] h-[114px] sm:w-[200px] sm:h-[200px] bg-[#009999]/80 shadow-[0_0_70px_40px_#009999]' />
-      <h3 className='text-lg text-semibold text-gold'>{title}</h3>
+      <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-[100px] h-[100px] sm:w-[180px] sm:h-[180px] bg-[#009999]/80 shadow-[0_0_70px_40px_#009999]`} />
+      <h3 className='text-lg text-semibold text-gold z-0'>{title}</h3>
       <div
         className='flex items-center justify-center transition-transform duration-500'
         style={{
@@ -109,12 +111,12 @@ export const Book: FC<BookProps> = ({ title, pages, width, height, link, classNa
           </div>
         ))}
       </div>
-      <div className='w-full flex items-center justify-between'>
+      <div className='w-full flex items-center justify-between z-0'>
         <button onClick={prevSlide} className={classNames(currentPage === 0 && 'opacity-50 cursor-not-allowed')}>
           <FaChevronLeft size={40} className='text-crimson' />
         </button>
-        <ExternalLink className='text-gold uppercase font-semibold' to={link}>
-          Buy Now
+        <ExternalLink className='text-gold uppercase font-semibold hover:underline' to={link}>
+          {d.common.buy_now}
         </ExternalLink>
         <button onClick={nextSlide}>
           <FaChevronRight size={40} className='text-crimson' />

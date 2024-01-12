@@ -4,9 +4,10 @@ import Image from 'next/image';
 import { FC, useEffect, useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import classNames from 'classnames';
 
 import { ExternalLink } from '@/app/_components/ExternalLink';
-import classNames from 'classnames';
+import { useLocale } from '@/_contexts/locale-context';
 
 interface IItemsData {
   src: string;
@@ -20,6 +21,7 @@ interface ICarouselProps {
 }
 
 export const Carousel: FC<ICarouselProps> = ({ items, height = 400 }) => {
+  const { dictionary: d } = useLocale();
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -66,8 +68,8 @@ export const Carousel: FC<ICarouselProps> = ({ items, height = 400 }) => {
               />
               <div className='absolute p-2 bg-black/50 rounded-md z-10 left-1/2 bottom-[10%] -translate-x-1/2 drop-shadow-md text-center mt-2'>
                 <h3 className='text-lg whitespace-nowrap mb-2'>{data.title}</h3>
-                <ExternalLink className='text-gold uppercase font-semibold' to={data.url}>
-                  Buy Now
+                <ExternalLink className='text-gold uppercase font-semibold hover:underline' to={data.url}>
+                  {d.common.buy_now}
                 </ExternalLink>
               </div>
               <div

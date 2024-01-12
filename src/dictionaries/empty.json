@@ -6,7 +6,8 @@
     "contact": "",
     "music": "",
     "prints": "",
-    "wallpapers": ""
+    "wallpapers": "",
+    "buy_now": ""
   },
   "home": {
     "welcome": "",
@@ -14,32 +15,57 @@
   },
   "about": {
     "title": "",
-    "description": ["", "", ""]
+    "description": [
+      "",
+      "",
+      ""
+    ]
   },
   "books": {
     "title": "",
-    "description": ["", "", ""],
+    "description": [
+      "",
+      "",
+      ""
+    ],
     "author": "",
-    "coloring_book_1": "",
+    "coloring_book_animals": "",
     "coming_soon": {
       "title": "",
       "description": ""
-    }
+    },
+    "coloring_book_mindfulness": ""
   },
   "prints": {
     "title": "",
-    "description": ["", "", ""]
+    "description": [
+      "",
+      "",
+      ""
+    ]
   },
   "wallpapers": {
     "title": "",
-    "description": ["", "", ""]
+    "description": [
+      "",
+      "",
+      ""
+    ]
   },
   "music": {
     "title": "",
-    "description": ["", "", "", ""]
+    "description": [
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "contact": {
     "title": "",
-    "description": ["", ""]
+    "description": [
+      "",
+      ""
+    ]
   }
 }

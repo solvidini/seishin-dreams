@@ -6,7 +6,8 @@
     "contact": "Kontakt",
     "music": "Musik",
     "prints": "Drucke",
-    "wallpapers": "Hintergründe"
+    "wallpapers": "Hintergründe",
+    "buy_now": "Jetzt kaufen"
   },
   "home": {
     "welcome": "Willkommen bei",
@@ -28,11 +29,12 @@
       "Entdecken Sie Auszüge aus unseren Büchern und Malproben!"
     ],
     "author": "Autorenseite",
-    "coloring_book_1": "Tauchen Sie ein in das Tierreich mit unserem faszinierenden Tiere-Malbuch für Kinder! Mit 40 verschiedenen Kreaturen aus dem Meer, von Bauernhöfen, der Wildnis und mehr. Bildungsfördernde, stressabbauende Designs, die die kreative Vorstellungskraft und das Lernen anregen. Perfekt für neugierige Köpfe, angehende Künstler und alle Altersgruppen. Entdecken, lernen und kreieren Sie heute!",
+    "coloring_book_animals": "Tauchen Sie ein in das Tierreich mit unserem faszinierenden Tiere-Malbuch für Kinder! Mit 40 verschiedenen Kreaturen aus dem Meer, von Bauernhöfen, der Wildnis und mehr. Bildungsfördernde, stressabbauende Designs, die die kreative Vorstellungskraft und das Lernen anregen. Perfekt für neugierige Köpfe, angehende Künstler und alle Altersgruppen. Entdecken, lernen und kreieren Sie heute!",
     "coming_soon": {
       "title": "Demnächst: Ein Erlebnis für Erwachsene mit faszinierendem Malen!",
       "description": "Machen Sie sich bereit für unser fesselndes neues Malbuch, das für Erwachsene entwickelt wurde! Komplexe Designs und inspirierende Themen warten auf Sie. Bleiben Sie auf dem Laufenden mit dieser erstaunlichen Malreise!"
-    }
+    },
+    "coloring_book_mindfulness": "Entdecke die Gelassenheit in den Enchanted Realms of Mindfulness Coloring Book! Enthülle 40 fesselnde Reiche und erkunde wunderschöne Landschaften, während du erstaunliche Achtsamkeits-Tipps aufnimmst. Perfekt für kreative Köpfe auf der Suche nach Gelassenheit. Tauche heute ein in die Verzauberung!"
   },
   "prints": {
     "title": "Kleidung & Accessoires",

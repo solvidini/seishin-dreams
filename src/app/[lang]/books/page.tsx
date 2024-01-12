@@ -2,9 +2,10 @@ import { Locale } from '@/i18n-config';
 import { fetchDictionary } from '@/get-dictionary';
 import { PageTitle } from '@/app/_components/PageTitle';
 import { ExternalLink } from '@/app/_components/ExternalLink';
+import { getLocaleExtension } from '@/_utils';
 import { Book } from './_components/Book';
 import { ComingSoon } from './_components/ComingSoon';
-import { getLocaleExtension } from '@/_utils';
+import { coloringBookAnimalsData, coloringBookMindfulnessData } from './_data';
 
 export default async function Books({ params: { lang } }: { params: { lang: Locale } }) {
   const d = await fetchDictionary(lang);
@@ -24,47 +25,31 @@ export default async function Books({ params: { lang } }: { params: { lang: Loca
           </ExternalLink>
         </div>
       </article>
-      <section className='w-full max-w-[1100px] flex flex-col items-center justify-center px-4 md:px-6'>
-        <h3 className='font-semibold mb-4 text-center text-emerald-light'>{d.books.description[2]} 🖍️ 📚</h3>
+      <section className='w-full max-w-[1100px] flex flex-col items-center justify-center px-4 md:px-6 gap-4'>
+        <h3 className='font-semibold text-center text-emerald-light'>{d.books.description[2]} 🖍️ 📚</h3>
         <div className='w-full flex items-center flex-col-reverse lg:flex-row justify-center gap-4 text-gray-300'>
-          <p className='flex-1'>{d.books.coloring_book_1}</p>
+          <p className='flex-1'>{d.books.coloring_book_mindfulness}</p>
+          <Book
+            className='flex-1'
+            title='Enchanted Realms of Mindfulness'
+            width={245}
+            height={245}
+            pages={coloringBookMindfulnessData}
+            link={`https://www.amazon.${getLocaleExtension(lang)}/dp/B0CRZ4S9LX`}
+          />
+        </div>
+        <div className='w-full flex items-center flex-col-reverse lg:flex-row justify-center gap-4 text-gray-300'>
+          <p className='flex-1'>{d.books.coloring_book_animals}</p>
           <Book
             className='flex-1'
             title='Animals - Coloring Book'
             width={233}
             height={295}
-            pages={[
-              { src: '/books/coloring_book_1/Cover.jpeg' },
-              { src: '/books/Empty-Page.jpeg' },
-              { src: '/books/coloring_book_1/Title-Page.jpeg' },
-              { src: '/books/coloring_book_1/Text-2.jpeg' },
-              { src: '/books/coloring_book_1/Coloring-Page-2.jpeg' },
-              { src: '/books/coloring_book_1/Text-3.jpeg' },
-              { src: '/books/coloring_book_1/Coloring-Page-3.jpeg' },
-              { src: '/books/coloring_book_1/Text-4.jpeg' },
-              { src: '/books/coloring_book_1/Coloring-Page-4.jpeg' },
-              { src: '/books/coloring_book_1/Text-5.jpeg' },
-              { src: '/books/coloring_book_1/Coloring-Page-5.jpeg' },
-              { src: '/books/coloring_book_1/Text-6.jpeg' },
-              { src: '/books/coloring_book_1/Coloring-Page-6.jpeg' },
-              { src: '/books/coloring_book_1/Text-7.jpeg' },
-              { src: '/books/coloring_book_1/Coloring-Page-7.jpeg' },
-              { src: '/books/coloring_book_1/Text-8.jpeg' },
-              { src: '/books/coloring_book_1/Coloring-Page-8.jpeg' },
-              { src: '/books/coloring_book_1/Text-9.jpeg' },
-              { src: '/books/coloring_book_1/Coloring-Page-9.jpeg' },
-              { src: '/books/coloring_book_1/Text-10.jpeg' },
-              { src: '/books/coloring_book_1/Coloring-Page-10.jpeg' },
-              { src: '/books/coloring_book_1/Text-11.jpeg' },
-              { src: '/books/coloring_book_1/Coloring-Page-11.jpeg' },
-              { src: '/books/coloring_book_1/Ending-Page.jpeg' },
-              { src: '/books/Empty-Page.jpeg' },
-              { src: '/books/coloring_book_1/Back-Cover.jpeg' },
-            ]}
+            pages={coloringBookAnimalsData}
             link={`https://www.amazon.${getLocaleExtension(lang)}/dp/B0CP64GV5B`}
           />
         </div>
-        <ComingSoon title={`${d.books.coming_soon.title} 🖍️ ✨`} description={d.books.coming_soon.description} />
+        {/* <ComingSoon title={`${d.books.coming_soon.title} 🖍️ ✨`} description={d.books.coming_soon.description} /> */}
       </section>
     </main>
   );

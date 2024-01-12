@@ -6,7 +6,8 @@
     "contact": "Kontakt",
     "music": "Muzyka",
     "prints": "Druki",
-    "wallpapers": "Tapety"
+    "wallpapers": "Tapety",
+    "buy_now": "Kup teraz"
   },
   "home": {
     "welcome": "Witaj w",
@@ -28,11 +29,12 @@
       "Odkryj fragmenty naszych książek do kolorowania!"
     ],
     "author": "Strona Autora",
-    "coloring_book_1": "Zanurz się w królestwie zwierząt dzięki naszej fascynującej Książce do Kolorowania Zwierząt dla Dzieci! Zawierającej 40 różnorodnych stworzeń z mórz, farm, dzikiej przyrody i nie tylko. Edukacyjne wzory łagodzące stres, które pobudzają kreatywność i naukę. Doskonałe dla ciekawych umysłów, początkujących artystów i wszystkich wiekach. Odkrywaj, ucz się i twórz już dziś!",
+    "coloring_book_animals": "Zanurz się w królestwie zwierząt dzięki naszej fascynującej Książce do Kolorowania Zwierząt dla Dzieci! Zawierającej 40 różnorodnych stworzeń z mórz, farm, dzikiej przyrody i nie tylko. Edukacyjne wzory łagodzące stres, które pobudzają kreatywność i naukę. Doskonałe dla ciekawych umysłów, początkujących artystów i wszystkich wiekach. Odkrywaj, ucz się i twórz już dziś!",
     "coming_soon": {
       "title": "Już wkrótce: Niesamowite doświadczenie z Kolorowaniem dla Dorosłych!",
       "description": "Przygotuj się na naszą fascynującą nową książkę do kolorowania stworzoną dla dorosłych! Czekać będą skomplikowane wzory i inspirujące motywy. Bądźcie na bieżąco z tym niesamowitym kolorowym doświadczeniem!"
-    }
+    },
+    "coloring_book_mindfulness": "Odkryj spokój w kolorowance Enchanted Realms of Mindfulness! Odsłoń 40 fascynujących krain i eksploruj piękne pejzaże, jednocześnie przyswajając niesamowite wskazówki dotyczące mindfulness. Doskonałe dla kreatywnych umysłów poszukujących mindfulness. Zanurz się w zaczarowany świat już dziś!"
   },
   "prints": {
     "title": "Odzież i Akcesoria",

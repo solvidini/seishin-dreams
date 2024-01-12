@@ -6,7 +6,8 @@
     "contact": "Contact",
     "music": "Music",
     "prints": "Prints",
-    "wallpapers": "Wallpapers"
+    "wallpapers": "Wallpapers",
+    "buy_now": "Buy Now"
   },
   "home": {
     "welcome": "Welcome to",
@@ -28,11 +29,12 @@
       "Discover Our Book Excerpts & Coloring Samples!"
     ],
     "author": "Author Page",
-    "coloring_book_1": "Dive into the Animal Kingdom with our captivating Animals Coloring Book for Kids! Featuring 40 diverse creatures across sea, farm, wild, and more. Educational, stress-relieving designs sparking creativity and learning. Perfect for curious minds, budding artists, and all ages. Explore, learn, and create today!",
+    "coloring_book_animals": "Dive into the Animal Kingdom with our captivating Animals Coloring Book for Kids! Featuring 40 diverse creatures across sea, farm, wild, and more. Educational, stress-relieving designs sparking creativity and learning. Perfect for curious minds, budding artists, and all ages. Explore, learn, and create today!",
     "coming_soon": {
       "title": "Coming Soon: An Amazing Adult Coloring Experience!",
       "description": "Get ready for our captivating new coloring book designed for adults! Intricate designs and inspiring themes await. Stay tuned for updates on this amazing coloring journey!"
-    }
+    },
+    "coloring_book_mindfulness": "Discover serenity in the Enchanted Realms of Mindfulness Coloring Book! Unveil 40 captivating realms and explore beautiful landscapes while absorbing amazing mindfulness tips. Perfect for creative minds seeking tranquility. Dive into enchantment today!"
   },
   "prints": {
     "title": "Clothes & Accesories",
