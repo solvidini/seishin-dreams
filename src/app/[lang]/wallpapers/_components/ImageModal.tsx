@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { FC } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
+import { Loader } from '../../_components/Loader';
 
 interface IImageModalProps {
   imageUrl: string | null;
@@ -15,13 +16,14 @@ export const ImageModal: FC<IImageModalProps> = ({ imageUrl, onClose }) => (
       <button className='z-[100] absolute top-4 right-4'>
         <AiOutlineClose size={40} />
       </button>
+      <Loader className='scale-75' />
       {imageUrl && (
         <Image
           src={imageUrl}
           alt='Fullscreen Image'
           width={800}
           height={450}
-          className='fade-in absolute inset-0 w-full h-full object-contain rounded-md'
+          className='fade-in z-10 absolute inset-0 w-full h-full object-contain rounded-md'
           priority
           loading='eager'
         />
