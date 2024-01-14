@@ -95,13 +95,7 @@ body {
 
 /* Masonry Grid */
 .masonry-grid {
-  column-count: 1;
-}
-
-@screen sm {
-  .masonry-grid {
-    column-count: 2;
-  }
+  column-count: 2;
 }
 
 @screen md {

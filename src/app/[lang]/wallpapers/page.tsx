@@ -5,64 +5,7 @@ import { fetchDictionary } from '@/get-dictionary';
 import { PageTitle } from '@/app/_components/PageTitle';
 import { ExternalLink } from '@/app/_components/ExternalLink';
 import { WallpaperGalery } from './_components/WallpaperGalery';
-
-const images = [
-  {
-    src: '/wallpapers/Christmas-Realm-with-fireplace-169.jpeg',
-    alt: 'Christmas Realm with fireplace 16:9',
-    caption: 'Christmas Realm with fireplace 16:9',
-  },
-  {
-    src: '/wallpapers/Atlantis-Realm-169.jpeg',
-    alt: 'Christmas Realm 16:9',
-    caption: 'Christmas Realm 16:9',
-  },
-  {
-    src: '/wallpapers/Christmas-Realm-916.jpeg',
-    alt: 'Christmas Realm 9:16',
-    caption: 'Christmas Realm 9:16',
-  },
-  {
-    src: '/wallpapers/Atlantis-Realm-916.jpeg',
-    alt: 'Atlantis Realm 9:16',
-    caption: 'Atlantis Realm 9:16',
-  },
-  {
-    src: '/wallpapers/Atlantis-Realm-169.jpeg',
-    alt: 'Atlantis Realm 16:9',
-    caption: 'Atlantis Realm 16:9',
-  },
-  {
-    src: '/wallpapers/Oasis-Realm-916.jpeg',
-    alt: 'Oasis Realm 9:16',
-    caption: 'Oasis Realm 9:16',
-  },
-  {
-    src: '/wallpapers/Oasis-Realm-169.jpeg',
-    alt: 'Oasis Realm 16:9',
-    caption: 'Oasis Realm 16:9',
-  },
-  {
-    src: '/wallpapers/Zen-Realm-916.jpeg',
-    alt: 'Zen Realm 9:16',
-    caption: 'Zen Realm 9:16',
-  },
-  {
-    src: '/wallpapers/Zen-Realm-169.jpeg',
-    alt: 'Zen Realm 16:9',
-    caption: 'Zen Realm 16:9',
-  },
-  {
-    src: '/wallpapers/Fungi-Realm-916.jpeg',
-    alt: 'Fungi Realm 9:16',
-    caption: 'Fungi Realm 9:16',
-  },
-  {
-    src: '/wallpapers/Fungi-Realm-169.jpeg',
-    alt: 'Fungi Realm 16:9',
-    caption: 'Fungi Realm 16:9',
-  },
-];
+import { wallpapers } from './_data';
 
 export default async function Wallpapers({ params: { lang } }: { params: { lang: Locale } }) {
   const d = await fetchDictionary(lang);
@@ -85,7 +28,7 @@ export default async function Wallpapers({ params: { lang } }: { params: { lang:
       </article>
       <section className='w-full px-4 md:px-6 flex flex-col'>
         <h3 className='font-semibold mb-4 text-center text-emerald-light'>{d.wallpapers.description[2]} 🌟 🖼️ ✨</h3>
-        <WallpaperGalery images={images} />
+        <WallpaperGalery images={wallpapers} />
       </section>
     </main>
   );

@@ -41,12 +41,20 @@ export default async function Music({ params: { lang } }: { params: { lang: Loca
             <YouTubeVideo videoId='JzKXzkJ2DNY' />
           </div>
           <div className='w-full sm:w-auto'>
-            <h6 className='text-gold mb-1'>Zen Realm</h6>
-            <YouTubeVideo videoId='fnSidbB4G2o' />
+            <h6 className='text-gold mb-1'>Dream Realm</h6>
+            <YouTubeVideo videoId='-EruuUfuEAg' />
+          </div>
+          <div className='w-full sm:w-auto'>
+            <h6 className='text-gold mb-1'>Christmas Realm</h6>
+            <YouTubeVideo videoId='3Yi75dmrINU' />
           </div>
           <div className='w-full sm:w-auto'>
             <h6 className='text-gold mb-1'>Atlantis Realm</h6>
             <YouTubeVideo videoId='qQVNfHdFxEk' />
+          </div>
+          <div className='w-full sm:w-auto'>
+            <h6 className='text-gold mb-1'>Zen Realm</h6>
+            <YouTubeVideo videoId='fnSidbB4G2o' />
           </div>
         </div>
       </section>

@@ -35,7 +35,7 @@ export const WallpaperGalery: FC<IWallpaperGaleryProps> = ({ images }) => {
         <div key={index} className='break-inside-avoid mb-4'>
           <figure onClick={() => handleImageClick(image.src)} className='relative cursor-pointer'>
             <Image src={image.src} alt={image.alt} className='w-full rounded-md' width={400} height={225} />
-            <figcaption className='text-center absolute bottom-0 left-0 p-1 flex w-full bg-black/50 text-gray-200'>
+            <figcaption className='text-center absolute bottom-0 left-0 px-1 py-0.5 text-sm sm:text-md flex w-full bg-black/50 text-gray-200'>
               {image.caption}
             </figcaption>
           </figure>

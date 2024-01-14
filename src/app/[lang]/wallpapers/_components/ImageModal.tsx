@@ -23,6 +23,7 @@ export const ImageModal: FC<IImageModalProps> = ({ imageUrl, onClose }) => (
           height={450}
           className='fade-in absolute inset-0 w-full h-full object-contain rounded-md'
           priority
+          loading='eager'
         />
       )}
     </div>
