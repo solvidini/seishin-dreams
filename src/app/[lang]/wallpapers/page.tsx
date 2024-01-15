@@ -26,7 +26,7 @@ export default async function Wallpapers({ params: { lang } }: { params: { lang:
           </ExternalLink>
         </div>
       </article>
-      <section className='w-full px-4 md:px-6 flex flex-col'>
+      <section className='w-full max-w-[1100px] px-4 md:px-6 flex flex-col'>
         <h3 className='font-semibold mb-4 text-center text-emerald-light'>{d.wallpapers.description[2]} 🌟 🖼️ ✨</h3>
         <WallpaperGalery images={wallpapers} />
       </section>

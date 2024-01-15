@@ -8,7 +8,7 @@ export const BackgroundVideo = () => {
         playsInline
         className='fade-in w-full h-full object-cover absolute inset-0 object-[-666px] xs:object-center'
       >
-        <source src='/christmas.mp4' type='video/mp4' />
+        <source src='/realm-video.mp4' type='video/mp4' />
       </video>
     </div>
   );

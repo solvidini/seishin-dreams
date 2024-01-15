@@ -41,6 +41,10 @@ export default async function Music({ params: { lang } }: { params: { lang: Loca
             <YouTubeVideo videoId='JzKXzkJ2DNY' />
           </div>
           <div className='w-full sm:w-auto'>
+            <h6 className='text-gold mb-1'>Enchanted Forest Realm</h6>
+            <YouTubeVideo videoId='VXjwe2oLL5g' />
+          </div>
+          <div className='w-full sm:w-auto'>
             <h6 className='text-gold mb-1'>Dream Realm</h6>
             <YouTubeVideo videoId='-EruuUfuEAg' />
           </div>
