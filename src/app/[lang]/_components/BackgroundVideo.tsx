@@ -1,3 +1,4 @@
+/* To position the background video differently on the mobile devices add: object-[-500px] xs:object-center */
 export const BackgroundVideo = () => {
   return (
     <div className='relative z-0 w-full h-screen opacity-70'>
@@ -6,7 +7,7 @@ export const BackgroundVideo = () => {
         muted
         loop
         playsInline
-        className='fade-in w-full h-full object-cover absolute inset-0 object-[-666px] xs:object-center'
+        className='fade-in w-full h-full object-cover absolute inset-0 object-center'
       >
         <source src='/realm-video.mp4' type='video/mp4' />
       </video>
