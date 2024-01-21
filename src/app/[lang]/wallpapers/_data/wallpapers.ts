@@ -1,5 +1,15 @@
 export const wallpapers = [
 	{
+		src: '/wallpapers/Frostbound-Realm-916.jpeg',
+		alt: 'Frostbound Realm 9:16',
+		caption: 'Frostbound Realm 9:16',
+	},
+	{
+		src: '/wallpapers/Frostbound-Realm-169.jpeg',
+		alt: 'Frostbound Realm 16:9',
+		caption: 'Frostbound Realm 16:9',
+	},
+	{
 		src: '/wallpapers/Paradise-Realm-169.jpeg',
 		alt: 'Paradise Realm 16:9',
 		caption: 'Paradise Realm 16:9',
@@ -30,14 +40,14 @@ export const wallpapers = [
 		caption: 'Jungle Realm 9:16',
 	},
 	{
-		src: '/wallpapers/Dream-Realm-169.jpeg',
-		alt: 'Dream Realm 16:9',
-		caption: 'Dream Realm 16:9',
-	},
-	{
 		src: '/wallpapers/Dream-Realm-916.jpeg',
 		alt: 'Dream Realm 9:16',
 		caption: 'Dream Realm 9:16',
+	},
+	{
+		src: '/wallpapers/Dream-Realm-169.jpeg',
+		alt: 'Dream Realm 16:9',
+		caption: 'Dream Realm 16:9',
 	},
 	{
 		src: '/wallpapers/Christmas-Realm-with-fireplace-169.jpeg',

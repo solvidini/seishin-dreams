@@ -63,19 +63,16 @@ export const Carousel: FC<ICarouselProps> = ({ items, height = 400 }) => {
                 alt={data.title}
                 width={400}
                 height={height}
-                className='w-auto h-full m-auto transition-opacity duration-500 opacity-100'
+                className='w-auto h-full m-auto transition-opacity duration-500 image-fade-away'
                 priority
               />
+
               <div className='absolute p-2 bg-black/50 rounded-md z-10 left-1/2 bottom-[10%] -translate-x-1/2 drop-shadow-md text-center mt-2'>
                 <h3 className='text-lg whitespace-nowrap mb-2'>{data.title}</h3>
                 <ExternalLink className='text-tertiary uppercase font-semibold hover:underline' to={data.url}>
                   {d.common.buy_now}
                 </ExternalLink>
               </div>
-              <div
-                className='absolute top-0 left-0 w-full h-full pointer-events-none'
-                style={{ boxShadow: 'inset 0 0 20px 20px black' }}
-              />
             </div>
           ))}
         </div>
