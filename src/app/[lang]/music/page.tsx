@@ -45,7 +45,7 @@ export default async function Music({ params: { lang } }: { params: { lang: Loca
             <YouTubeVideo videoId='VXjwe2oLL5g' />
           </div>
           <div className='w-full sm:w-auto'>
-            <h6 className='text-tertiary mb-1'>Dream Realm</h6>?
+            <h6 className='text-tertiary mb-1'>Dream Realm</h6>
             <YouTubeVideo videoId='-EruuUfuEAg' />
           </div>
           <div className='w-full sm:w-auto'>
