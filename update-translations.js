@@ -47,15 +47,15 @@ async function updateTranslations(pathToUpdate, translations) {
 // };
 
 const translations = {
-  en: 'Buy Now',
-  fr: 'Acheter maintenant',
-  it: 'Acquista ora',
-  pl: 'Kup teraz',
-  es: 'Comprar ahora',
-  de: 'Jetzt kaufen',
-  cs: 'Koupit nyní',
-  uk: 'Купити зараз',
+  en: 'Download',
+  fr: 'Télécharger',
+  it: 'Scarica',
+  pl: 'Pobierz',
+  es: 'Descargar',
+  de: 'Herunterladen',
+  cs: 'Stáhnout',
+  uk: 'Завантажити',
   empty: '',
 };
 
-updateTranslations('common.buy_now', translations);
+updateTranslations('common.download', translations);

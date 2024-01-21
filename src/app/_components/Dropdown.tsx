@@ -43,7 +43,7 @@ export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, childr
       <button
         type='button'
         onClick={toggleDropdown}
-        className='inline-flex items-center justify-center gap-2 min-w-[140px] w-full rounded-md border border-gray-300/70 bg-transparent px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-900/70'
+        className='inline-flex items-center justify-center gap-2 min-w-[140px] w-full rounded-md border border-gray-300/70 bg-transparent px-4 py-2 text-sm font-medium shadow-sm hover:bg-gray-900/70'
       >
         {value}
         <FaChevronRight
@@ -58,7 +58,7 @@ export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, childr
       {isOpen && (
         <div
           className={classNames(
-            'absolute left-1/2 transform -translate-x-1/2 min-w-[140px] backdrop-blur-xl rounded-md shadow-lg bg-gradient-to-br from-crimson-dark/70 via-black/70 to-emerald-dark/70 bg-zinc-800/70 border border-gray-300/70',
+            'absolute left-1/2 transform -translate-x-1/2 min-w-[140px] backdrop-blur-xl rounded-md shadow-lg bg-gradient-to-br from-primary-dark/70 via-black/70 to-secondary-dark/70 bg-zinc-800/70 border border-gray-300/70',
             position === 'top' ? 'bottom-full mb-1' : 'top-full mt-1'
           )}
         >

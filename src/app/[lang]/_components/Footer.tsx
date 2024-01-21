@@ -16,7 +16,7 @@ export const Footer = () => {
   return (
     <footer
       className={classNames(
-        'relative bg-dark text-white flex flex-col border-t-4 border-crimson-dark',
+        'relative bg-dark flex flex-col border-t-4 border-primary-dark',
         !isHomePage(pathname) && 'mt-8'
       )}
     >
@@ -25,12 +25,12 @@ export const Footer = () => {
         alt='Footer Background'
         width={300}
         height={300}
-        className='absolute top-0 left-0 w-full h-full opacity-20 object-cover'
+        className='absolute top-0 left-0 w-full h-full opacity-20 object-cover object-top'
       />
 
       <button
         onClick={scrollToTop}
-        className='z-0 w-[36px] h-[36px] bg-crimson-dark rounded-full p-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center'
+        className='z-0 w-[36px] h-[36px] bg-primary-dark rounded-full p-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center'
       >
         <FaChevronUp size={20} className='animate-bounce' />
       </button>
@@ -69,7 +69,7 @@ export const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className='z-0 bg-crimson-dark/50 text-center w-full p-4 text-xs border-t-2 border-crimson-dark'>
+      <div className='z-0 bg-primary-dark/50 text-center w-full p-4 text-xs border-t-2 border-primary-dark'>
         <p>
           <span className='text-gray-300'>&#169; {getCurrentYear()} Seishin Dreams</span>
           {'. '}

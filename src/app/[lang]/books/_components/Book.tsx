@@ -69,7 +69,7 @@ export const Book: FC<BookProps> = ({ title, pages, width, height, link, classNa
       )}
     >
       <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-[100px] h-[100px] sm:w-[180px] sm:h-[180px] bg-[#009999]/80 shadow-[0_0_70px_40px_#009999]`} />
-      <h3 className='text-lg text-semibold text-gold z-0'>{title}</h3>
+      <h3 className='text-lg text-semibold text-tertiary z-0'>{title}</h3>
       <div
         className='flex items-center justify-center transition-transform duration-500'
         style={{
@@ -113,13 +113,13 @@ export const Book: FC<BookProps> = ({ title, pages, width, height, link, classNa
       </div>
       <div className='w-full flex items-center justify-between z-0'>
         <button onClick={prevSlide} className={classNames(currentPage === 0 && 'opacity-50 cursor-not-allowed')}>
-          <FaChevronLeft size={40} className='text-crimson' />
+          <FaChevronLeft size={40} className='text-primary' />
         </button>
-        <ExternalLink className='text-gold uppercase font-semibold hover:underline' to={link}>
+        <ExternalLink className='text-tertiary uppercase font-semibold hover:underline' to={link}>
           {d.common.buy_now}
         </ExternalLink>
         <button onClick={nextSlide}>
-          <FaChevronRight size={40} className='text-crimson' />
+          <FaChevronRight size={40} className='text-primary' />
         </button>
       </div>
     </div>

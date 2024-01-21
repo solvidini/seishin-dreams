@@ -34,8 +34,8 @@ export default function RootLayout({ children, params: { lang } }: { children: R
   return (
     <html lang={lang} className={classNames(inter.variable, caveat.variable, playpen_sans.variable)}>
       <body className={playpen_sans.className}>
-        <div className='w-full h-[70px] flex items-center justify-center'>
-          <FaChevronUp size={50} className='text-crimson-dark' />
+        <div className='w-full h-[70px] flex items-center justify-center text-white'>
+          <FaChevronUp size={50} className='text-primary-dark' />
         </div>
         <LocaleProvider locale={lang}>
           <UIProvider>

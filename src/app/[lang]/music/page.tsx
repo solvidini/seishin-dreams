@@ -15,7 +15,7 @@ export default async function Music({ params: { lang } }: { params: { lang: Loca
       <article className='max-w-[900px] flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto'>
         <p>{d.music.description[0]} 🥁</p>
         <div className='flex flex-col'>
-          <h3 className='font-semibold text-emerald-light mb-1'>{d.music.description[1]}</h3>
+          <h3 className='font-semibold text-secondary-light mb-1'>{d.music.description[1]}</h3>
           <ExternalLink
             to='https://www.youtube.com/@seishin.dreams'
             className='inline-flex items-center gap-2 w-min hover:scale-110'
@@ -34,30 +34,30 @@ export default async function Music({ params: { lang } }: { params: { lang: Loca
         <p>{d.music.description[2]}</p>
       </article>
       <section className='w-full px-4 md:px-6 max-w-[900px] flex flex-col'>
-        <h3 className='font-semibold mb-4 text-center text-emerald-light'>{d.music.description[3]} 🎵 🎥 ✨</h3>
+        <h3 className='font-semibold mb-4 text-center text-secondary-light'>{d.music.description[3]} 🎵 🎥 ✨</h3>
         <div className='w-full flex flex-col items-center justify-center gap-3'>
           <div className='w-full sm:w-auto'>
-            <h6 className='text-gold mb-1'>Our Main Theme</h6>
+            <h6 className='text-tertiary mb-1'>Our Main Theme</h6>
             <YouTubeVideo videoId='JzKXzkJ2DNY' />
           </div>
           <div className='w-full sm:w-auto'>
-            <h6 className='text-gold mb-1'>Enchanted Forest Realm</h6>
+            <h6 className='text-tertiary mb-1'>Enchanted Forest Realm</h6>
             <YouTubeVideo videoId='VXjwe2oLL5g' />
           </div>
           <div className='w-full sm:w-auto'>
-            <h6 className='text-gold mb-1'>Dream Realm</h6>
+            <h6 className='text-tertiary mb-1'>Dream Realm</h6>?
             <YouTubeVideo videoId='-EruuUfuEAg' />
           </div>
           <div className='w-full sm:w-auto'>
-            <h6 className='text-gold mb-1'>Christmas Realm</h6>
+            <h6 className='text-tertiary mb-1'>Christmas Realm</h6>
             <YouTubeVideo videoId='3Yi75dmrINU' />
           </div>
           <div className='w-full sm:w-auto'>
-            <h6 className='text-gold mb-1'>Atlantis Realm</h6>
+            <h6 className='text-tertiary mb-1'>Atlantis Realm</h6>
             <YouTubeVideo videoId='qQVNfHdFxEk' />
           </div>
           <div className='w-full sm:w-auto'>
-            <h6 className='text-gold mb-1'>Zen Realm</h6>
+            <h6 className='text-tertiary mb-1'>Zen Realm</h6>
             <YouTubeVideo videoId='fnSidbB4G2o' />
           </div>
         </div>

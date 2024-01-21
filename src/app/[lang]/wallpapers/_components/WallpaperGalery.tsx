@@ -15,25 +15,27 @@ interface IWallpaperGaleryProps {
   images: IImage[];
 }
 
-export const WallpaperGalery: FC<IWallpaperGaleryProps> = ({ images }) => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+interface ISelectedImage {
+  source: string;
+  title: string;
+}
 
-  const handleImageClick = (imageSrc: string) => {
-    setSelectedImage(imageSrc);
-    setModalOpen(true);
+export const WallpaperGalery: FC<IWallpaperGaleryProps> = ({ images }) => {
+  const [selectedImage, setSelectedImage] = useState<ISelectedImage | null>(null);
+
+  const handleImageClick = (source: string, title: string) => {
+    setSelectedImage({ source, title });
   };
 
   const handleCloseModal = () => {
     setSelectedImage(null);
-    setModalOpen(false);
   };
 
   return (
     <div className='masonry-grid'>
       {images.map((image, index) => (
         <div key={index} className='break-inside-avoid mb-4'>
-          <figure onClick={() => handleImageClick(image.src)} className='relative cursor-pointer'>
+          <figure onClick={() => handleImageClick(image.src, image.caption)} className='relative cursor-pointer'>
             <Image src={image.src} alt={image.alt} className='w-full rounded-md' width={400} height={225} />
             <figcaption className='text-center absolute bottom-0 left-0 px-1 py-0.5 text-sm sm:text-md flex w-full bg-black/50 text-gray-200'>
               {image.caption}
@@ -41,7 +43,7 @@ export const WallpaperGalery: FC<IWallpaperGaleryProps> = ({ images }) => {
           </figure>
         </div>
       ))}
-      {modalOpen && <ImageModal imageUrl={selectedImage} onClose={handleCloseModal} />}
+      {selectedImage && <ImageModal imageSource={selectedImage.source} imageTitle={selectedImage.title} onClose={handleCloseModal} />}
     </div>
   );
 };

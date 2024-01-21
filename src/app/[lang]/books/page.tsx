@@ -16,7 +16,7 @@ export default async function Books({ params: { lang } }: { params: { lang: Loca
       <article className='overflow-auto max-w-[900px] w-full flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto'>
         <p>{d.books.description[0]} ✨ 🎨</p>
         <div className='flex flex-col'>
-          <h3 className='font-semibold text-emerald-light mb-1'>{d.books.description[1]}</h3>
+          <h3 className='font-semibold text-secondary-light mb-1'>{d.books.description[1]}</h3>
           <ExternalLink
             to='https://www.amazon.com/stores/author/B0CP8MXTWK/'
             className='inline-flex items-center gap-2 w-min hover:scale-110'
@@ -26,7 +26,7 @@ export default async function Books({ params: { lang } }: { params: { lang: Loca
         </div>
       </article>
       <section className='w-full max-w-[1100px] flex flex-col items-center justify-center px-4 md:px-6 gap-4'>
-        <h3 className='font-semibold text-center text-emerald-light'>{d.books.description[2]} 🖍️ 📚</h3>
+        <h3 className='font-semibold text-center text-secondary-light'>{d.books.description[2]} 🖍️ 📚</h3>
         <div className='w-full flex items-center flex-col-reverse lg:flex-row justify-center gap-4 text-gray-300'>
           <p className='flex-1'>{d.books.coloring_book_mindfulness}</p>
           <Book

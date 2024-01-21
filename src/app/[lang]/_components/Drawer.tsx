@@ -14,13 +14,13 @@ export const Drawer = () => {
       {isDrawerOpen && <div className='fixed inset-0' onClick={closeDrawer}></div>}
       <div
         className={classNames(
-          'fixed bottom-0 inset-x-0 w-full h-[30vh] p-4 flex flex-col items-center justify-center gap-md px-xl backdrop-blur-xl bg-gradient-to-br from-crimson-dark/70 via-black/70 to-emerald-dark/70 bg-zinc-800/70 transition-transform duration-300 transform ease-in-out border-t-4 border-crimson-dark',
+          'fixed bottom-0 inset-x-0 w-full h-[30vh] p-4 flex flex-col items-center justify-center gap-md px-xl backdrop-blur-xl bg-gradient-to-br from-primary-dark/70 via-black/70 to-secondary-dark/70 bg-zinc-800/70 transition-transform duration-300 transform ease-in-out border-t-4 border-primary-dark',
           isDrawerOpen ? 'translate-y-0' : 'translate-y-full'
         )}
       >
         <Image
           className={classNames(
-            'absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20',
+            'absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.15]',
             isDrawerOpen ? '' : 'hidden'
           )}
           src='/betta-fish.png'

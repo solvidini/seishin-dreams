@@ -25,17 +25,18 @@
   "success": {
     "DEFAULT": "#1BE309"
   },
-  "gold": {
+  "tertiary": {
     "DEFAULT": "#FFD700",
     "dark": "#211D03"
   },
-  "emerald": {
+  "secondary": {
     "DEFAULT": "#009999",
     "dark": "#041F1F",
     "light": "#00CCCC"
   },
-  "crimson": {
+  "primary": {
     "DEFAULT": "#DC143C",
-    "dark": "#6b0d20"
-  }
+    "dark": "#6B0D20"
+  },
+  "white": "#F1F1F1"
 }

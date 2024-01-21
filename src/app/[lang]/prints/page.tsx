@@ -15,7 +15,7 @@ export default async function Prints({ params: { lang } }: { params: { lang: Loc
       <article className='max-w-[900px] flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto'>
         <p>{d.prints.description[0]} 🛒 👕 ✨</p>
         <div className='flex flex-col mb-4'>
-          <h3 className='font-semibold text-emerald-light mb-1'>{d.prints.description[1]}</h3>
+          <h3 className='font-semibold text-secondary-light mb-1'>{d.prints.description[1]}</h3>
           <ExternalLink
             to='https://seishindreams.redbubble.com/'
             className='inline-flex items-center gap-2 w-min hover:scale-110'
@@ -36,7 +36,7 @@ export default async function Prints({ params: { lang } }: { params: { lang: Loc
           </ExternalLink>
         </div>
         <section className='w-full h-full'>
-          <h3 className='font-semibold text-center text-emerald-light mb-4'>{d.prints.description[2]} 🌟🛍️</h3>
+          <h3 className='font-semibold text-center text-secondary-light mb-4'>{d.prints.description[2]} 🌟🛍️</h3>
           <Carousel
             items={[
               {

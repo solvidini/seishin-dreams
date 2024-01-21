@@ -68,7 +68,7 @@ export const Carousel: FC<ICarouselProps> = ({ items, height = 400 }) => {
               />
               <div className='absolute p-2 bg-black/50 rounded-md z-10 left-1/2 bottom-[10%] -translate-x-1/2 drop-shadow-md text-center mt-2'>
                 <h3 className='text-lg whitespace-nowrap mb-2'>{data.title}</h3>
-                <ExternalLink className='text-gold uppercase font-semibold hover:underline' to={data.url}>
+                <ExternalLink className='text-tertiary uppercase font-semibold hover:underline' to={data.url}>
                   {d.common.buy_now}
                 </ExternalLink>
               </div>
@@ -83,12 +83,12 @@ export const Carousel: FC<ICarouselProps> = ({ items, height = 400 }) => {
 
       <div className='absolute top-1/2 left-4 transform -translate-y-1/2'>
         <button onClick={prevSlide} className='focus:outline-none'>
-          <FaChevronLeft size={40} className='text-crimson' />
+          <FaChevronLeft size={40} className='text-primary' />
         </button>
       </div>
       <div className='absolute top-1/2 right-4 transform -translate-y-1/2'>
         <button onClick={nextSlide} className='focus:outline-none'>
-          <FaChevronRight size={40} className='text-crimson' />
+          <FaChevronRight size={40} className='text-primary' />
         </button>
       </div>
 
@@ -98,8 +98,8 @@ export const Carousel: FC<ICarouselProps> = ({ items, height = 400 }) => {
             key={index}
             onClick={() => goToIndex(index)}
             className={classNames(
-              'w-4 h-4 rounded-full border-2 border-emerald focus:outline-none',
-              activeIndex === index && 'bg-emerald'
+              'w-4 h-4 rounded-full border-2 border-secondary focus:outline-none',
+              activeIndex === index && 'bg-secondary'
             )}
           />
         ))}
