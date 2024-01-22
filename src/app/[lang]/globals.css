@@ -33,6 +33,7 @@ body {
 @keyframes rainbowGlow {
   0% {
     filter: drop-shadow(0 0 20px #ffd700);
+    transform: scale(1);
   }
   16.67% {
     filter: drop-shadow(0 0 15px #ffd700);
@@ -42,6 +43,7 @@ body {
   }
   50% {
     filter: drop-shadow(0 0 15px #dc143c);
+    transform: scale(1.04);
   }
   66.67% {
     filter: drop-shadow(0 0 20px #009999);
@@ -51,6 +53,7 @@ body {
   }
   100% {
     filter: drop-shadow(0 0 20px #ffd700);
+    transform: scale(1);
   }
 }
 
@@ -61,18 +64,21 @@ body {
 @keyframes brandGlow {
   0% {
     filter: drop-shadow(0 0 20px #009999);
+    transform: scale(1);
   }
   25% {
     filter: drop-shadow(0 0 15px #009999);
   }
   50% {
     filter: drop-shadow(0 0 20px #dc143c);
+    transform: scale(1.04);
   }
   75% {
     filter: drop-shadow(0 0 15px #dc143c);
   }
   100% {
     filter: drop-shadow(0 0 20px #009999);
+    transform: scale(1);
   }
 }
 

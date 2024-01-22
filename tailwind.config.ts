@@ -42,6 +42,20 @@ const config: Config = {
         lg: '18px',
         xl: '24px',
       },
+      keyframes: {
+        bounceRight: {
+          '0%, 100%': { transform: 'translateX(-5%)' },
+          '50%': { transform: 'translateY(0)' },
+        },
+        bounceLeft: {
+          '0%, 100%': { transform: 'translateX(5%)' },
+          '50%': { transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        bounceRight: 'bounceRight 1s ease-in-out infinite',
+        bounceLeft: 'bounceLeft 1s ease-in-out infinite',
+      },
       colors: {
         ...colors,
       },

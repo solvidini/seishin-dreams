@@ -112,13 +112,13 @@ export const Book: FC<BookProps> = ({ title, pages, width, height, link, classNa
         ))}
       </div>
       <div className='w-full flex items-center justify-between z-0'>
-        <button onClick={prevSlide} className={classNames(currentPage === 0 && 'opacity-50 cursor-not-allowed')}>
+        <button onClick={prevSlide} className={classNames('animate-bounceLeft', currentPage === 0 && 'opacity-30 cursor-not-allowed')}>
           <FaChevronLeft size={40} className='text-primary' />
         </button>
         <ExternalLink className='text-tertiary uppercase font-semibold hover:underline' to={link}>
           {d.common.buy_now}
         </ExternalLink>
-        <button onClick={nextSlide}>
+        <button onClick={nextSlide} className='animate-bounceRight'>
           <FaChevronRight size={40} className='text-primary' />
         </button>
       </div>
