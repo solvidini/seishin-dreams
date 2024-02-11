@@ -1,5 +1,15 @@
 export const wallpapers = [
 	{
+		src: '/wallpapers/Atlantis-Realm-916.jpeg',
+		alt: 'Atlantis Realm 9:16',
+		caption: 'Atlantis Realm 9:16',
+	},
+	{
+		src: '/wallpapers/Atlantis-Realm-169.jpeg',
+		alt: 'Atlantis Realm 16:9',
+		caption: 'Atlantis Realm 16:9',
+	},
+	{
 		src: '/wallpapers/Frostbound-Realm-916.jpeg',
 		alt: 'Frostbound Realm 9:16',
 		caption: 'Frostbound Realm 9:16',
@@ -21,13 +31,13 @@ export const wallpapers = [
 	},
 	{
 		src: '/wallpapers/Enchanted-Forest-Realm-169.jpeg',
-		alt: 'Enchanted Forest Realm 16:9',
-		caption: 'Enchanted Forest Realm 16:9',
+		alt: 'Enchanted Forest 16:9',
+		caption: 'Enchanted Forest 16:9',
 	},
 	{
 		src: '/wallpapers/Enchanted-Forest-Realm-916.jpeg',
-		alt: 'Enchanted Forest Realm 9:16',
-		caption: 'Enchanted Forest Realm 9:16',
+		alt: 'Enchanted Forest 9:16',
+		caption: 'Enchanted Forest 9:16',
 	},
 	{
 		src: '/wallpapers/Jungle-Realm-169.jpeg',
@@ -63,16 +73,6 @@ export const wallpapers = [
 		src: '/wallpapers/Christmas-Realm-916.jpeg',
 		alt: 'Christmas Realm 9:16',
 		caption: 'Christmas Realm 9:16',
-	},
-	{
-		src: '/wallpapers/Atlantis-Realm-916.jpeg',
-		alt: 'Atlantis Realm 9:16',
-		caption: 'Atlantis Realm 9:16',
-	},
-	{
-		src: '/wallpapers/Atlantis-Realm-169.jpeg',
-		alt: 'Atlantis Realm 16:9',
-		caption: 'Atlantis Realm 16:9',
 	},
 	{
 		src: '/wallpapers/Oasis-Realm-916.jpeg',
