@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import { FC, useState, useEffect, useRef, ReactElement } from 'react';
 import { FaChevronRight } from 'react-icons/fa';
+import { Button } from './Button';
 
 interface DropdownProps {
   position?: 'top' | 'bottom';
@@ -40,10 +41,8 @@ export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, childr
         className
       )}
     >
-      <button
-        type='button'
+      <Button
         onClick={toggleDropdown}
-        className='inline-flex items-center justify-center gap-2 min-w-[140px] w-full rounded-md border border-gray-300/70 bg-transparent px-4 py-2 text-sm font-medium shadow-sm hover:bg-gray-900/70'
       >
         {value}
         <FaChevronRight
@@ -53,12 +52,12 @@ export const Dropdown: FC<DropdownProps> = ({ position = 'bottom', value, childr
           )}
           size={10}
         />
-      </button>
+      </Button>
 
       {isOpen && (
         <div
           className={classNames(
-            'absolute left-1/2 transform -translate-x-1/2 min-w-[140px] backdrop-blur-xl rounded-md shadow-lg bg-gradient-to-br from-primary-dark/70 via-black/70 to-secondary-dark/70 bg-zinc-800/70 border border-gray-300/70',
+            'absolute left-1/2 transform -translate-x-1/2 min-w-[140px] bg-primary cp-dropdown before:absolute before:bg-black before:-z-10 before:w-[96%] before:h-[98%] before:translate-x-[2%] before:translate-y-[1%] before:cp-dropdown before:overflow-hidden',
             position === 'top' ? 'bottom-full mb-1' : 'top-full mt-1'
           )}
         >

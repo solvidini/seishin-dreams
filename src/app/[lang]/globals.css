@@ -1,122 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(./_styles/animations.css);
+@import url(./_styles/components.css);
 
-:root {
-  --foreground-rgb: 241, 241, 241;
-  --background-start-rgb: 10, 10, 10;
-  --background-end-rgb: 0, 0, 0;
-  color-scheme: dark;
-}
+@layer base {
+	:root {
+		color-scheme: dark;
+	}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-}
+	body {
+		@apply text-white;
+		@apply bg-black;
+	}
 
-@keyframes textGlow {
-  0% {
-    text-shadow: 0 0 2px #fff, 0 0 8px #e6e6e6;
-  }
-  50% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #e6e6e6;
-  }
-  100% {
-    text-shadow: 0 0 2px #fff, 0 0 8px #e6e6e6;
-  }
-}
-
-.animate-text-glow {
-  animation: textGlow 1.5s ease-in-out infinite;
-}
-
-@keyframes rainbowGlow {
-  0% {
-    filter: drop-shadow(0 0 20px #ffd700);
-    transform: scale(1);
-  }
-  16.67% {
-    filter: drop-shadow(0 0 15px #ffd700);
-  }
-  33.33% {
-    filter: drop-shadow(0 0 20px #dc143c);
-  }
-  50% {
-    filter: drop-shadow(0 0 15px #dc143c);
-    transform: scale(1.04);
-  }
-  66.67% {
-    filter: drop-shadow(0 0 20px #009999);
-  }
-  83.33% {
-    filter: drop-shadow(0 0 15px #009999);
-  }
-  100% {
-    filter: drop-shadow(0 0 20px #ffd700);
-    transform: scale(1);
-  }
-}
-
-.animate-svg-rainbow-glow {
-  animation: rainbowGlow 5s ease-in-out infinite;
-}
-
-@keyframes brandGlow {
-  0% {
-    filter: drop-shadow(0 0 20px #009999);
-    transform: scale(1);
-  }
-  25% {
-    filter: drop-shadow(0 0 15px #009999);
-  }
-  50% {
-    filter: drop-shadow(0 0 20px #dc143c);
-    transform: scale(1.04);
-  }
-  75% {
-    filter: drop-shadow(0 0 15px #dc143c);
-  }
-  100% {
-    filter: drop-shadow(0 0 20px #009999);
-    transform: scale(1);
-  }
-}
-
-.animate-svg-brand-glow {
-  animation: brandGlow 5s ease-in-out infinite;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn 1s ease-in-out;
-}
-
-/* Masonry Grid */
-.masonry-grid {
-  column-count: 2;
-}
-
-@screen md {
-  .masonry-grid {
-    column-count: 3;
-  }
-}
-
-@screen lg {
-  .masonry-grid {
-    column-count: 4;
-  }
-}
-
-.image-fade-away {
-  mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
-  -webkit-mask-image: linear-gradient(transparent 0%, black 10%, black 90%, transparent 100%);
+	/* Masonry Grid */
+	.masonry-grid {
+		column-count: 2;
+	}
+	@screen md {
+		.masonry-grid {
+			column-count: 3;
+		}
+	}
+	@screen lg {
+		.masonry-grid {
+			column-count: 4;
+		}
+	}
 }

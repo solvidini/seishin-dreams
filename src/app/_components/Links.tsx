@@ -14,12 +14,12 @@ interface ILinksProps {
 export const Links: FC<ILinksProps> = ({ isDrawer = false }) => {
   const { dictionary: d } = useLocale();
   const { closeDrawer } = useUI();
-  const linkClasses = isDrawer ? 'text-lg' : 'text-sm';
+  const linkClasses = isDrawer ? 'text-sm' : 'text-xs';
 
   return (
     <nav className='z-10'>
       <ul
-        className={classNames('flex items-center justify-center gap-md flex-wrap', isDrawer ? 'w-[300px]' : 'w-auto')}
+        className={classNames('flex uppercase items-center justify-center gap-md flex-wrap', isDrawer ? 'w-[300px]' : 'w-auto')}
       >
         <li>
           <LocaleLink onClick={closeDrawer} className={linkClasses} to='/'>

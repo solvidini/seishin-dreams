@@ -1,15 +1,13 @@
-'use client';
+"use client"
 
-export const BrushStrokeSVG = ({ fill = '#fff', className }: { fill?: string; className?: string }) => (
-  <svg
-    xmlns='http://www.w3.org/2000/svg'
-    version='1.1'
-    viewBox='0.00 0.00 500.00 70.00'
-    fill={fill}
-    className={className}
-  >
-    <path
-      d='
+export const BrushStrokeSVG = ({ className }: { className?: string }) => (
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		version="1.1"
+		viewBox="0.00 0.00 500.00 70.00"
+		className={className}>
+		<path
+			d="
   M 446.40 59.22
   Q 446.42 59.42 446.30 59.60
   Q 446.13 59.84 445.84 59.93
@@ -273,10 +271,10 @@ export const BrushStrokeSVG = ({ fill = '#fff', className }: { fill?: string; cl
   Q 450.80 59.88 450.28 59.85
   Q 448.28 59.76 447.02 58.84
   Q 446.27 58.29 446.40 59.22
-  Z'
-    />
-    <path
-      d='
+  Z"
+		/>
+		<path
+			d="
   M 463.23 58.23
   Q 463.11 58.49 462.87 58.62
   Q 462.49 58.82 462.22 58.48
@@ -286,19 +284,19 @@ export const BrushStrokeSVG = ({ fill = '#fff', className }: { fill?: string; cl
   Q 465.49 57.65 464.77 57.86
   Q 464.34 57.98 463.86 57.90
   A 0.60 0.59 17.2 0 0 463.23 58.23
-  Z'
-    />
-    <path
-      d='
+  Z"
+		/>
+		<path
+			d="
   M 455.92 58.70
   Q 456.58 58.62 457.20 58.90
   Q 457.78 59.16 457.18 59.36
   Q 456.39 59.64 455.79 59.10
   Q 455.40 58.75 455.92 58.70
-  Z'
-    />
-    <path
-      d='
+  Z"
+		/>
+		<path
+			d="
   M 464.11 58.98
   Q 464.33 58.87 464.57 58.81
   Q 465.04 58.69 465.12 59.17
@@ -308,10 +306,10 @@ export const BrushStrokeSVG = ({ fill = '#fff', className }: { fill?: string; cl
   A 0.47 0.47 0.0 0 1 463.64 59.12
   Q 463.77 59.11 463.89 59.07
   Q 464.01 59.04 464.11 58.98
-  Z'
-    />
-    <path
-      d='
+  Z"
+		/>
+		<path
+			d="
   M 460.22 62.04
   L 460.67 61.54
   Q 461.09 61.08 461.60 61.42
@@ -323,10 +321,10 @@ export const BrushStrokeSVG = ({ fill = '#fff', className }: { fill?: string; cl
   Q 459.17 62.79 459.69 62.42
   L 460.17 62.08
   A 0.28 0.10 -19.3 0 0 460.22 62.04
-  Z'
-    />
-    <path
-      d='
+  Z"
+		/>
+		<path
+			d="
   M 458.87 62.62
   C 458.16 62.78 457.39 62.83 456.62 62.68
   Q 456.43 62.65 456.46 62.46
@@ -336,10 +334,10 @@ export const BrushStrokeSVG = ({ fill = '#fff', className }: { fill?: string; cl
   Q 458.84 62.76 458.84 62.69
   Q 458.84 62.63 458.90 62.62
   Q 458.98 62.59 458.87 62.62
-  Z'
-    />
-    <path
-      d='
+  Z"
+		/>
+		<path
+			d="
   M 27.31 63.92
   A 0.24 0.24 0.0 0 1 27.42 63.60
   L 27.55 63.54
@@ -349,10 +347,10 @@ export const BrushStrokeSVG = ({ fill = '#fff', className }: { fill?: string; cl
   L 28.29 65.36
   A 0.24 0.24 0.0 0 1 27.97 65.25
   L 27.31 63.92
-  Z'
-    />
-    <path
-      d='
+  Z"
+		/>
+		<path
+			d="
   M 20.71 65.18
   C 22.01 64.59 23.61 63.91 24.95 63.83
   Q 25.42 63.81 25.40 64.28
@@ -360,7 +358,7 @@ export const BrushStrokeSVG = ({ fill = '#fff', className }: { fill?: string; cl
   A 0.90 0.90 0.0 0 1 24.49 65.50
   L 20.79 65.53
   Q 19.92 65.54 20.71 65.18
-  Z'
-    />
-  </svg>
-);
+  Z"
+		/>
+	</svg>
+)

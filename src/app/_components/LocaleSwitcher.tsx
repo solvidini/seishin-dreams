@@ -29,7 +29,7 @@ export const LocaleSwitcher: FC<ILocaleSwitcherProps> = ({ dropdownPosition = 't
           <li key={l} className='whitespace-nowrap'>
             <Link
               className={classNames(
-                'px-4 py-2 h-full w-full flex items-center transition duration-300 ease-in-out hover:bg-gray-900/70',
+                'px-4 py-2 h-full w-full flex items-center transition duration-300 ease-in-out hover:bg-primary',
                 l === locale ? 'pointers-none cursor-not-allowed opacity-50 pointer-events-none' : ''
               )}
               href={redirectedPathName(l)}

@@ -7,7 +7,7 @@ export const BackgroundVideo = () => {
         muted
         loop
         playsInline
-        className='fade-in w-full h-full object-cover absolute inset-0 object-center'
+        className='fade-in w-full -mt-[2%] h-[106%] object-cover absolute inset-0 object-center'
       >
         <source src='/realm-video.mp4' type='video/mp4' />
       </video>

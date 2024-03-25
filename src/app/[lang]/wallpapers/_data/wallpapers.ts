@@ -1,5 +1,15 @@
 export const wallpapers = [
 	{
+		src: '/wallpapers/Crimson-Sanctuary-916.jpeg',
+		alt: 'Crimson Sanctuary 9:16',
+		caption: 'Crimson Sanctuary 9:16',
+	},
+	{
+		src: '/wallpapers/Crimson-Sanctuary-169.jpeg',
+		alt: 'Crimson Sanctuary 16:9',
+		caption: 'Crimson Sanctuary 16:9',
+	},
+	{
 		src: '/wallpapers/Atlantis-Realm-916.jpeg',
 		alt: 'Atlantis Realm 9:16',
 		caption: 'Atlantis Realm 9:16',
