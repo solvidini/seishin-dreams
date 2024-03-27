@@ -51,7 +51,9 @@ export default function RootLayout({
 				caveat.variable,
 				playpen_sans.variable,
 			)}>
-			<body className={playpen_sans.className}>
+			<body
+				className={playpen_sans.className}
+				suppressHydrationWarning={true}>
 				<div className="relative max-w-[1600px] mx-auto">
 					<div className="w-full h-[70px] flex items-center justify-center text-white">
 						<FaChevronUp

@@ -86,7 +86,9 @@ export default async function Music({
 				</h3>
 				<div className="w-full flex flex-col items-center justify-center gap-3">
 					{videos.map(({ title, id }) => (
-						<div className="w-full sm:w-auto">
+						<div
+							className="w-full sm:w-auto"
+							key={id}>
 							<h6 className="text-tertiary mb-1">{title}</h6>
 							<YouTubeVideo videoId={id} />
 						</div>
