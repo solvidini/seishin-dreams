@@ -1,7 +1,7 @@
 {
 	"name": "seishin-dreams",
 	"author": "Sol samuel@front-up.pro",
-	"version": "1.6.0",
+	"version": "1.6.2",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",

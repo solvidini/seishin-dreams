@@ -6,6 +6,37 @@ import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
 import { YouTubeVideo } from "./_components/YouTubeVideo"
 
+const videos = [
+	{
+		title: "Our Main Theme",
+		id: "JzKXzkJ2DNY",
+	},
+	{
+		title: "Crimson Sanctuary",
+		id: "d1QvJUWX2KQ",
+	},
+	{
+		title: "Enchanted Forest",
+		id: "VXjwe2oLL5g",
+	},
+	{
+		title: "Dream Realm",
+		id: "-EruuUfuEAg",
+	},
+	{
+		title: "Christmas Realm",
+		id: "3Yi75dmrINU",
+	},
+	{
+		title: "Atlantis Realm",
+		id: "clIaWubesw0",
+	},
+	{
+		title: "Zen Realm",
+		id: "fnSidbB4G2o",
+	},
+]
+
 export default async function Music({
 	params: { lang },
 }: {
@@ -54,34 +85,12 @@ export default async function Music({
 					{d.music.description[3]} 🎵 🎥 ✨
 				</h3>
 				<div className="w-full flex flex-col items-center justify-center gap-3">
-					<div className="w-full sm:w-auto">
-						<h6 className="text-tertiary mb-1">Our Main Theme</h6>
-						<YouTubeVideo videoId="JzKXzkJ2DNY" />
-					</div>
-					<div className="w-full sm:w-auto">
-						<h6 className="text-tertiary mb-1">Crimson Sanctuary</h6>
-						<YouTubeVideo videoId="d1QvJUWX2KQ" />
-					</div>
-					<div className="w-full sm:w-auto">
-						<h6 className="text-tertiary mb-1">Enchanted Forest</h6>
-						<YouTubeVideo videoId="VXjwe2oLL5g" />
-					</div>
-					<div className="w-full sm:w-auto">
-						<h6 className="text-tertiary mb-1">Dream Realm</h6>
-						<YouTubeVideo videoId="-EruuUfuEAg" />
-					</div>
-					<div className="w-full sm:w-auto">
-						<h6 className="text-tertiary mb-1">Christmas Realm</h6>
-						<YouTubeVideo videoId="3Yi75dmrINU" />
-					</div>
-					<div className="w-full sm:w-auto">
-						<h6 className="text-tertiary mb-1">Atlantis Realm</h6>
-						<YouTubeVideo videoId="clIaWubesw0" />
-					</div>
-					<div className="w-full sm:w-auto">
-						<h6 className="text-tertiary mb-1">Zen Realm</h6>
-						<YouTubeVideo videoId="fnSidbB4G2o" />
-					</div>
+					{videos.map(({ title, id }) => (
+						<div className="w-full sm:w-auto">
+							<h6 className="text-tertiary mb-1">{title}</h6>
+							<YouTubeVideo videoId={id} />
+						</div>
+					))}
 				</div>
 			</section>
 		</main>
