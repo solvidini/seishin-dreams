@@ -127,10 +127,10 @@
 		transform: scale(1.026);
 	}
 	28% {
-		transform: scale(1.028);
+		transform: scale(1.04);
 	}
 	30% {
-		transform: scale(1.042);
+		transform: scale(1.03);
 	}
 	32% {
 		transform: scale(1.032);
@@ -190,10 +190,10 @@
 		transform: scale(1.032);
 	}
 	70% {
-		transform: scale(1.042);
+		transform: scale(1.03);
 	}
 	72% {
-		transform: scale(1.028);
+		transform: scale(1.04);
 	}
 	74% {
 		transform: scale(1.026);
