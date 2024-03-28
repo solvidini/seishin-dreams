@@ -16,7 +16,7 @@ export default async function Books({
 	return (
 		<main className="min-h-screen flex flex-col items-center fade-in mb-12">
 			<PageTitle>{`📚 ${d.books.title} 📚`}</PageTitle>
-			<article className="overflow-auto max-w-[900px] w-full flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
+			<article className="overflow-auto max-w-con-min w-full flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
 				<p>{d.books.description[0]} ✨ 🎨</p>
 				<div className="flex flex-col">
 					<h3 className="font-semibold text-secondary-light mb-1">
@@ -29,7 +29,7 @@ export default async function Books({
 					</ExternalLink>
 				</div>
 			</article>
-			<section className="w-full max-w-[1000px] flex flex-col items-center justify-center px-4 md:px-6 gap-4">
+			<section className="w-full max-w-con flex flex-col items-center justify-center px-4 md:px-6 gap-4">
 				<h3 className="font-semibold text-center text-secondary-light">
 					{d.books.description[2]} 🖍️ 📚
 				</h3>

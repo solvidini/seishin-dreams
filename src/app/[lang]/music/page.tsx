@@ -47,7 +47,7 @@ export default async function Music({
 	return (
 		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in mb-12 sm:mb-14 lg:mb-16">
 			<PageTitle>{`🎶 ${d.music.title} 🎶`}</PageTitle>
-			<article className="max-w-[900px] flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
+			<article className="max-w-con-min flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
 				<p>{d.music.description[0]} 🥁</p>
 				<div className="flex flex-col">
 					<h3 className="font-semibold text-secondary-light mb-1">
@@ -80,7 +80,7 @@ export default async function Music({
 				</div>
 				<p>{d.music.description[2]}</p>
 			</article>
-			<section className="w-full px-4 md:px-6 max-w-[900px] flex flex-col">
+			<section className="w-full px-4 md:px-6 max-w-con-min flex flex-col">
 				<h3 className="font-semibold mb-4 text-center text-secondary-light">
 					{d.music.description[3]} 🎵 🎥 ✨
 				</h3>

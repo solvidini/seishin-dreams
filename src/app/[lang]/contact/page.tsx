@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { FaEnvelope } from 'react-icons/fa';
 
-import { Locale } from '@/i18n-config';
-import { fetchDictionary } from '@/get-dictionary';
-import { PageTitle } from '@/app/_components/PageTitle';
 import { ExternalLink } from '@/app/_components/ExternalLink';
+import { PageTitle } from '@/app/_components/PageTitle';
+import { fetchDictionary } from '@/get-dictionary';
+import { Locale } from '@/i18n-config';
 
 export default async function Contact({ params: { lang } }: { params: { lang: Locale } }) {
   const d = await fetchDictionary(lang);
@@ -12,7 +12,7 @@ export default async function Contact({ params: { lang } }: { params: { lang: Lo
   return (
     <main className='overflow-auto min-h-screen flex flex-col items-center fade-in'>
       <PageTitle>{`💌 ${d.contact.title} 💌`}</PageTitle>
-      <article className='max-w-[900px] flex flex-col items-center gap-6 md:gap-8 p-4 pt-2 pb-6 md:p-6 xs:pt-4 mx-auto'>
+      <article className='max-w-con-min flex flex-col items-center gap-6 md:gap-8 p-4 pt-2 pb-6 md:p-6 xs:pt-4 mx-auto'>
         <section className='flex flex-col gap-4'>
           <div className='flex flex-wrap justify-center'>
             <p className='text-left mr-2'>{d.contact.description[0]}</p>

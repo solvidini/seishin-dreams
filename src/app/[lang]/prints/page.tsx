@@ -16,7 +16,7 @@ export default async function Prints({
 	return (
 		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in mb-8">
 			<PageTitle>{`👕 ${d.prints.title} 👚`}</PageTitle>
-			<article className="max-w-[900px] flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
+			<article className="max-w-con-min flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
 				<p>{d.prints.description[0]} 🛒 👕 ✨</p>
 				<div className="flex flex-col mb-4">
 					<h3 className="font-semibold text-secondary-light mb-1">

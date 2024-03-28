@@ -17,7 +17,7 @@ export default async function Wallpapers({
 	return (
 		<main className="min-h-screen flex flex-col items-center fade-in mb-10 sm:mb-12 md:mb-16">
 			<PageTitle>{`🎨 ${d.wallpapers.title} 🎨`}</PageTitle>
-			<article className="max-w-[900px] flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
+			<article className="max-w-con-min flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
 				<p>{d.wallpapers.description[0]}</p>
 				<div className="flex flex-col">
 					<h3 className="font-semibold text-secondary-light mb-1">
@@ -37,7 +37,7 @@ export default async function Wallpapers({
 					</ExternalLink>
 				</div>
 			</article>
-			<section className="w-full max-w-[1100px] px-4 md:px-6 flex flex-col">
+			<section className="w-full max-w-con px-4 md:px-6 flex flex-col">
 				<h3 className="font-semibold mb-4 text-center text-secondary-light">
 					{d.wallpapers.description[2]} 🌟 🖼️ ✨
 				</h3>

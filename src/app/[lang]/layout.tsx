@@ -54,7 +54,7 @@ export default function RootLayout({
 			<body
 				className={playpen_sans.className}
 				suppressHydrationWarning={true}>
-				<div className="relative max-w-[1600px] mx-auto">
+				<div className="relative max-w-con-max mx-auto outline outline-2 outline-offset-2 outline-secondary-dark">
 					<div className="w-full h-[70px] flex items-center justify-center text-white">
 						<FaChevronUp
 							size={50}

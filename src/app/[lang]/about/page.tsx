@@ -14,7 +14,7 @@ export default async function About({
 	return (
 		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in mb-10">
 			<PageTitle>{`🌟 ${d.about.title} 🌟`}</PageTitle>
-			<article className="max-w-[900px] flex flex-col items-center gap-6 md:gap-8 px-4 md:p-6 text-left mx-auto">
+			<article className="max-w-con-min flex flex-col items-center gap-6 md:gap-8 px-4 md:p-6 text-left mx-auto">
 				<Image
 					className="transition-all ease-in-out duration-300 hover:scale-105 hover:brightness-105"
 					src="/betta-fish.png"

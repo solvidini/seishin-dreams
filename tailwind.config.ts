@@ -42,6 +42,11 @@ const config: Config = {
         lg: '18px',
         xl: '24px',
       },
+      maxWidth: {
+        'con-min': '900px',
+        'con': '1100px',
+        'con-max': '1600px',
+      },
       keyframes: {
         bounceRight: {
           '0%, 100%': { transform: 'translateX(-5%)' },
