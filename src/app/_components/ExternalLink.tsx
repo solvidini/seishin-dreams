@@ -1,19 +1,22 @@
-import classNames from 'classnames';
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface IExternalLinkProps {
-  children: ReactNode;
-  to: string;
-  className?: string;
+	children: ReactNode
+	to: string
+	className?: string
 }
 
-export const ExternalLink: FC<IExternalLinkProps> = ({ children, to, className }) => (
-  <a
-    className={classNames('transition-all duration-300 ease-in-out', className)}
-    href={to}
-    target='_blank'
-    rel='noopener noreferrer'
-  >
-    {children}
-  </a>
-);
+export const ExternalLink: FC<IExternalLinkProps> = ({
+	children,
+	to,
+	className,
+}) => (
+	<a
+		className={twMerge("transition-all duration-300 ease-in-out", className)}
+		href={to}
+		target="_blank"
+		rel="noopener noreferrer">
+		{children}
+	</a>
+)

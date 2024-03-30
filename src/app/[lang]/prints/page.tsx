@@ -52,7 +52,7 @@ export default async function Prints({
 					</ExternalLink>
 				</div>
 				<section className="w-full h-full">
-					<h3 className="font-semibold text-center text-secondary-light mb-4">
+					<h3 className="font-semibold text-center text-secondary-light mb-6">
 						{d.prints.description[2]} 🌟🛍️
 					</h3>
 					<Carousel

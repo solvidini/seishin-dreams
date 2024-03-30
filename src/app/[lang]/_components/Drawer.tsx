@@ -1,9 +1,9 @@
 "use client"
 
-import classNames from "classnames"
 import Image from "next/image"
 
 import { useUI } from "@/_contexts/ui-context"
+import { twMerge } from "tailwind-merge"
 import { Links } from "../../_components/Links"
 
 export const Drawer = () => {
@@ -17,12 +17,12 @@ export const Drawer = () => {
 					onClick={closeDrawer}></div>
 			)}
 			<div
-				className={classNames(
+				className={twMerge(
 					"fixed -bottom-2 inset-x-0 w-full h-[30vh] p-4 flex flex-col items-center justify-center gap-md px-xl transition-transform duration-300 transform ease-in-out bg-primary cp-drawer before:absolute before:bg-black before:left-0 before:bottom-0 before:-z-10 before:w-full before:h-[98%] before:cp-drawer",
 					isDrawerOpen ? "translate-y-0" : "translate-y-full",
 				)}>
 				<Image
-					className={classNames(
+					className={twMerge(
 						"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.2]",
 						isDrawerOpen ? "" : "hidden",
 					)}

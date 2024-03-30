@@ -38,7 +38,7 @@ export default async function Wallpapers({
 				</div>
 			</article>
 			<section className="w-full max-w-con px-4 md:px-6 flex flex-col">
-				<h3 className="font-semibold mb-4 text-center text-secondary-light">
+				<h3 className="font-semibold mb-6 text-center text-secondary-light">
 					{d.wallpapers.description[2]} 🌟 🖼️ ✨
 				</h3>
 				<WallpaperGalery images={wallpapers} />

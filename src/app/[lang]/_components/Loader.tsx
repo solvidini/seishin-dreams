@@ -1,5 +1,5 @@
-import classNames from "classnames"
 import { FC } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface ILoaderProps {
 	className?: string
@@ -8,7 +8,7 @@ interface ILoaderProps {
 export const Loader: FC<ILoaderProps> = ({ className }) => (
 	<div
 		role="status"
-		className={classNames("relative", className)}>
+		className={twMerge("relative", className)}>
 		<svg
 			aria-hidden="true"
 			className="w-[80px] h-[80px] text-secondary-dark animate-spin fill-secondary-light"

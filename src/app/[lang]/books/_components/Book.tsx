@@ -1,6 +1,5 @@
 "use client"
 
-import classNames from "classnames"
 import Image from "next/image"
 import { FC, useEffect, useState } from "react"
 import { useSwipeable } from "react-swipeable"
@@ -9,13 +8,14 @@ import BREAKPOINTS from "@/_config/breakpoints.json"
 import { useLocale } from "@/_contexts/locale-context"
 import { ArrowButton } from "@/app/_components/ArrowButton"
 import { ExternalLink } from "@/app/_components/ExternalLink"
+import { twMerge } from "tailwind-merge"
 
 interface BookProps {
-	title: string
 	pages: { src: string }[]
 	width: number
 	height: number
 	link: string
+	title?: string
 	className?: string
 }
 
@@ -74,11 +74,13 @@ export const Book: FC<BookProps> = ({
 
 	return (
 		<div
-			className={classNames(
+			className={twMerge(
 				"relative max-w-full flex flex-col items-center justify-center gap-4 py-2",
 				className,
 			)}>
-			<h3 className="text-lg text-semibold text-tertiary z-0">{title}</h3>
+			{title && (
+				<h3 className="text-lg text-semibold text-tertiary z-0">{title}</h3>
+			)}
 			<div
 				className="flex items-center justify-center transition-transform duration-500"
 				style={{
@@ -131,7 +133,7 @@ export const Book: FC<BookProps> = ({
 				<ArrowButton
 					onClick={prevSlide}
 					position="left"
-					className={classNames(
+					className={twMerge(
 						"animate-bounceLeft",
 						currentPage === 0 && "opacity-30 cursor-not-allowed",
 					)}

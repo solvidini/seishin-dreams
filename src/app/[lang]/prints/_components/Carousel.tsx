@@ -1,6 +1,5 @@
 "use client"
 
-import classNames from "classnames"
 import Image from "next/image"
 import { FC, useEffect, useState } from "react"
 import { useSwipeable } from "react-swipeable"
@@ -8,6 +7,7 @@ import { useSwipeable } from "react-swipeable"
 import { useLocale } from "@/_contexts/locale-context"
 import { ArrowButton } from "@/app/_components/ArrowButton"
 import { ExternalLink } from "@/app/_components/ExternalLink"
+import { twMerge } from "tailwind-merge"
 
 interface IItemsData {
 	src: string
@@ -111,7 +111,7 @@ export const Carousel: FC<ICarouselProps> = ({ items, height = 400 }) => {
 					<button
 						key={index}
 						onClick={() => goToIndex(index)}
-						className={classNames(
+						className={twMerge(
 							"w-4 h-4 rounded-full border-2 border-secondary-light focus:outline-none",
 							activeIndex === index && "bg-secondary-light",
 						)}

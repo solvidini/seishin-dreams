@@ -5,37 +5,7 @@ import { PageTitle } from "@/app/_components/PageTitle"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
 import { YouTubeVideo } from "./_components/YouTubeVideo"
-
-const videos = [
-	{
-		title: "Our Main Theme",
-		id: "JzKXzkJ2DNY",
-	},
-	{
-		title: "Crimson Sanctuary",
-		id: "d1QvJUWX2KQ",
-	},
-	{
-		title: "Enchanted Forest",
-		id: "VXjwe2oLL5g",
-	},
-	{
-		title: "Dream Realm",
-		id: "-EruuUfuEAg",
-	},
-	{
-		title: "Christmas Realm",
-		id: "3Yi75dmrINU",
-	},
-	{
-		title: "Atlantis Realm",
-		id: "clIaWubesw0",
-	},
-	{
-		title: "Zen Realm",
-		id: "fnSidbB4G2o",
-	},
-]
+import { videos } from "./_data"
 
 export default async function Music({
 	params: { lang },
@@ -81,15 +51,17 @@ export default async function Music({
 				<p>{d.music.description[2]}</p>
 			</article>
 			<section className="w-full px-4 md:px-6 max-w-con-min flex flex-col">
-				<h3 className="font-semibold mb-4 text-center text-secondary-light">
+				<h3 className="font-semibold mb-6 text-center text-secondary-light">
 					{d.music.description[3]} 🎵 🎥 ✨
 				</h3>
-				<div className="w-full flex flex-col items-center justify-center gap-3">
+				<div className="w-full flex flex-col items-center justify-center gap-4">
 					{videos.map(({ title, id }) => (
 						<div
-							className="w-full sm:w-auto"
+							className="pt-2 sm:p-4 gap-2 sm:gap-4 bg-dark rounded-xl w-full sm:w-auto flex flex-col"
 							key={id}>
-							<h6 className="text-tertiary mb-1">{title}</h6>
+							<h6 className="text-lg font-semibold uppercase font-caveat text-center sm:text-left sm:ml-4">
+								{title}
+							</h6>
 							<YouTubeVideo videoId={id} />
 						</div>
 					))}

@@ -4,7 +4,7 @@ import { PageTitle } from "@/app/_components/PageTitle"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
 import { Book } from "./_components/Book"
-import { coloringBookAnimalsData, coloringBookMindfulnessData } from "./_data"
+import { books } from "./_data"
 
 export default async function Books({
 	params: { lang },
@@ -14,7 +14,7 @@ export default async function Books({
 	const d = await fetchDictionary(lang)
 
 	return (
-		<main className="min-h-screen flex flex-col items-center fade-in mb-12">
+		<main className="min-h-screen flex flex-col items-center fade-in mb-16">
 			<PageTitle>{`📚 ${d.books.title} 📚`}</PageTitle>
 			<article className="overflow-auto max-w-con-min w-full flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
 				<p>{d.books.description[0]} ✨ 🎨</p>
@@ -29,38 +29,37 @@ export default async function Books({
 					</ExternalLink>
 				</div>
 			</article>
-			<section className="w-full max-w-con flex flex-col items-center justify-center px-4 md:px-6 gap-4">
+			<section className="w-full max-w-con flex flex-col items-center justify-center px-4 md:px-6 gap-6">
 				<h3 className="font-semibold text-center text-secondary-light">
 					{d.books.description[2]} 🖍️ 📚
 				</h3>
-				<div className="w-full flex items-center flex-col-reverse lg:flex-row justify-center gap-6 text-gray-300">
-					<p className="flex-1 text-justify">
-						{d.books.coloring_book_mindfulness}
-					</p>
-					<Book
-						className="flex-1"
-						title="Enchanted Realms of Mindfulness"
-						width={245}
-						height={245}
-						pages={coloringBookMindfulnessData}
-						link={`https://www.amazon.${getLocaleExtension(
-							lang,
-						)}/dp/B0CRZ4S9LX`}
-					/>
-				</div>
-				<div className="w-full flex items-center flex-col-reverse lg:flex-row justify-center gap-6 text-gray-300">
-					<p className="flex-1 text-justify">{d.books.coloring_book_animals}</p>
-					<Book
-						className="flex-1"
-						title="Animals - Coloring Book"
-						width={233}
-						height={295}
-						pages={coloringBookAnimalsData}
-						link={`https://www.amazon.${getLocaleExtension(
-							lang,
-						)}/dp/B0CP64GV5B`}
-					/>
-				</div>
+				{books.map(({ id, title, height, width, translationKey, pages }) => {
+					const dictionaryKey = translationKey as keyof typeof d.books
+
+					return (
+						<div
+							key={id}
+							className="w-full flex flex-col items-center justify-center text-gray-300 rounded-xl p-6 bg-dark">
+							<h6 className="text-lg lg:text-xl mb-4 font-semibold uppercase font-caveat">
+								{title}
+							</h6>
+							<div className="w-full flex items-center flex-col-reverse lg:flex-row justify-center gap-6">
+								<p className="relative flex-1 text-center px-6 py-4 bg-secondary-dark cp-dropdown lg:-mt-[48px] before:absolute before:bg-black before:-z-10 before:w-[98%] before:h-[98%] before:top-0 before:left-0 before:translate-x-[1%] before:translate-y-[1%] before:cp-dropdown">
+									{d.books[dictionaryKey] as string}
+								</p>
+								<Book
+									className="flex-1"
+									width={width}
+									height={height}
+									pages={pages}
+									link={`https://www.amazon.${getLocaleExtension(
+										lang,
+									)}/dp/${id}`}
+								/>
+							</div>
+						</div>
+					)
+				})}
 				{/* <ComingSoon title={`${d.books.coming_soon.title} 🖍️ ✨`} description={d.books.coming_soon.description} /> */}
 			</section>
 		</main>

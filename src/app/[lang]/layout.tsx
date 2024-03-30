@@ -1,4 +1,3 @@
-import classNames from "classnames"
 import { Caveat, Inter, Playpen_Sans } from "next/font/google"
 import { ReactNode } from "react"
 import { FaChevronUp } from "react-icons/fa"
@@ -6,6 +5,7 @@ import { FaChevronUp } from "react-icons/fa"
 import { LocaleProvider } from "@/_contexts/locale-context"
 import { UIProvider } from "@/_contexts/ui-context"
 import { fetchDictionary } from "@/get-dictionary"
+import { twMerge } from "tailwind-merge"
 import { Locale, i18n } from "../../i18n-config"
 import { Drawer } from "./_components/Drawer"
 import { Footer } from "./_components/Footer"
@@ -46,7 +46,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang={lang}
-			className={classNames(
+			className={twMerge(
 				inter.variable,
 				caveat.variable,
 				playpen_sans.variable,

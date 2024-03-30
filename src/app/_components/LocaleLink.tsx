@@ -1,8 +1,8 @@
 import { useLocale } from "@/_contexts/locale-context"
-import classNames from "classnames"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { FC, ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface ILocaleLinkProps {
 	children: ReactNode
@@ -23,7 +23,7 @@ export const LocaleLink: FC<ILocaleLinkProps> = ({
 	return (
 		<Link
 			onClick={onClick}
-			className={classNames(
+			className={twMerge(
 				className,
 				pathname === getLocaleUrl(to)
 					? "text-white animate-text-glow"

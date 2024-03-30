@@ -1,62 +1,85 @@
-'use client';
+"use client"
 
-import { FC } from 'react';
-import classNames from 'classnames';
+import { FC } from "react"
 
-import { useUI } from '@/_contexts/ui-context';
-import { LocaleLink } from '@/app/_components/LocaleLink';
-import { useLocale } from '@/_contexts/locale-context';
+import { useLocale } from "@/_contexts/locale-context"
+import { useUI } from "@/_contexts/ui-context"
+import { LocaleLink } from "@/app/_components/LocaleLink"
+import { twMerge } from "tailwind-merge"
 
 interface ILinksProps {
-  isDrawer?: boolean;
+	isDrawer?: boolean
 }
 
 export const Links: FC<ILinksProps> = ({ isDrawer = false }) => {
-  const { dictionary: d } = useLocale();
-  const { closeDrawer } = useUI();
-  const linkClasses = isDrawer ? 'text-sm' : 'text-xs';
+	const { dictionary: d } = useLocale()
+	const { closeDrawer } = useUI()
+	const linkClasses = isDrawer ? "text-sm" : "text-xs"
 
-  return (
-    <nav className='z-10'>
-      <ul
-        className={classNames('flex uppercase items-center justify-center gap-md flex-wrap', isDrawer ? 'w-[300px]' : 'w-auto')}
-      >
-        <li>
-          <LocaleLink onClick={closeDrawer} className={linkClasses} to='/'>
-            {d.common.home}
-          </LocaleLink>
-        </li>
-        <li>
-          <LocaleLink onClick={closeDrawer} className={linkClasses} to='/about'>
-            {d.common.about}
-          </LocaleLink>
-        </li>
-        <li>
-          <LocaleLink onClick={closeDrawer} className={linkClasses} to='/books'>
-            {d.common.books}
-          </LocaleLink>
-        </li>
-        <li>
-          <LocaleLink onClick={closeDrawer} className={linkClasses} to='/prints'>
-            {d.common.prints}
-          </LocaleLink>
-        </li>
-        <li>
-          <LocaleLink onClick={closeDrawer} className={linkClasses} to='/wallpapers'>
-            {d.common.wallpapers}
-          </LocaleLink>
-        </li>
-        <li>
-          <LocaleLink onClick={closeDrawer} className={linkClasses} to='/music'>
-            {d.common.music}
-          </LocaleLink>
-        </li>
-        <li>
-          <LocaleLink onClick={closeDrawer} className={linkClasses} to='/contact'>
-            {d.common.contact}
-          </LocaleLink>
-        </li>
-      </ul>
-    </nav>
-  );
-};
+	return (
+		<nav className="z-10">
+			<ul
+				className={twMerge(
+					"flex uppercase items-center justify-center gap-md flex-wrap",
+					isDrawer ? "w-[300px]" : "w-auto",
+				)}>
+				<li>
+					<LocaleLink
+						onClick={closeDrawer}
+						className={linkClasses}
+						to="/">
+						{d.common.home}
+					</LocaleLink>
+				</li>
+				<li>
+					<LocaleLink
+						onClick={closeDrawer}
+						className={linkClasses}
+						to="/about">
+						{d.common.about}
+					</LocaleLink>
+				</li>
+				<li>
+					<LocaleLink
+						onClick={closeDrawer}
+						className={linkClasses}
+						to="/books">
+						{d.common.books}
+					</LocaleLink>
+				</li>
+				<li>
+					<LocaleLink
+						onClick={closeDrawer}
+						className={linkClasses}
+						to="/prints">
+						{d.common.prints}
+					</LocaleLink>
+				</li>
+				<li>
+					<LocaleLink
+						onClick={closeDrawer}
+						className={linkClasses}
+						to="/wallpapers">
+						{d.common.wallpapers}
+					</LocaleLink>
+				</li>
+				<li>
+					<LocaleLink
+						onClick={closeDrawer}
+						className={linkClasses}
+						to="/music">
+						{d.common.music}
+					</LocaleLink>
+				</li>
+				<li>
+					<LocaleLink
+						onClick={closeDrawer}
+						className={linkClasses}
+						to="/contact">
+						{d.common.contact}
+					</LocaleLink>
+				</li>
+			</ul>
+		</nav>
+	)
+}
