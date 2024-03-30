@@ -39,9 +39,11 @@ export default async function Books({
 					return (
 						<div
 							key={id}
-							className="w-full flex flex-col items-center justify-center text-gray-300 rounded-xl p-6 bg-dark">
-							<h6 className="text-lg lg:text-xl mb-4 font-semibold uppercase font-caveat">
+							className="w-full flex flex-col items-center justify-center text-gray-300 rounded-xl p-4 sm:p-6 gap-2 sm:gap-4 bg-dark">
+							<h6 className="text-lg lg:text-[21px] font-semibold uppercase font-caveat">
+								<span className="text-sm sm:text-md mr-1 sm:mr-2">✨</span>
 								{title}
+								<span className="text-sm sm:text-md ml-2 sm:ml-3">✨</span>
 							</h6>
 							<div className="w-full flex items-center flex-col-reverse lg:flex-row justify-center gap-6">
 								<p className="relative flex-1 text-center px-6 py-4 bg-secondary-dark cp-dropdown lg:-mt-[48px] before:absolute before:bg-black before:-z-10 before:w-[98%] before:h-[98%] before:top-0 before:left-0 before:translate-x-[1%] before:translate-y-[1%] before:cp-dropdown">
