@@ -4,6 +4,7 @@ import Image from "next/image"
 import { FaChevronUp } from "react-icons/fa"
 
 import { socialMedia } from "@/_config"
+import { useLocale } from "@/_contexts/locale-context"
 import { getCurrentYear, scrollToTop } from "@/_utils"
 import { ExternalLink } from "@/app/_components/ExternalLink"
 import { LocaleSwitcher } from "@/app/_components/LocaleSwitcher"
@@ -11,6 +12,8 @@ import { Navigation } from "@/app/_components/Navigation"
 import { WaveSVG } from "@/app/_svg/wave"
 
 export const Footer = () => {
+	const { dictionary: d } = useLocale()
+
 	return (
 		<footer className="relative flex flex-col bg-black">
 			<WaveSVG className="absolute fill-secondary top-[-6%] xs:top-[-12%] md:top-[-23%] xl:top-[-33%]" />
@@ -86,6 +89,11 @@ export const Footer = () => {
 						</ExternalLink>
 					</span>
 				</p>
+			</div>
+
+			{/* Cookies */}
+			<div className="px-4 pb-4 w-full text-xs text-gray-400 text-center">
+				{d.common.cookies}
 			</div>
 		</footer>
 	)
