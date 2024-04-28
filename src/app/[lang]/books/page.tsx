@@ -3,6 +3,7 @@ import { ExternalLink } from "@/app/_components/ExternalLink"
 import { PageTitle } from "@/app/_components/PageTitle"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
+import { socialMedia } from "../../../_config"
 import { Book } from "./_components/Book"
 import { books } from "./_data"
 
@@ -23,9 +24,9 @@ export default async function Books({
 						{d.books.description[1]}
 					</h3>
 					<ExternalLink
-						to="https://www.amazon.com/stores/author/B0CP8MXTWK/"
+						to={socialMedia.author.link}
 						className="inline-flex items-center gap-2 w-min hover:scale-110">
-						<span className="whitespace-nowrap">{d.books.author} 📖</span>
+						<span className="whitespace-nowrap">{d.books["author"]} {socialMedia.author.img}</span>
 					</ExternalLink>
 				</div>
 			</article>

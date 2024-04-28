@@ -8,7 +8,7 @@ import { useMediaQuery } from "@react-hook/media-query"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import BREAKPOINTS from "../../../_config/breakpoints.json"
-import { Links } from "../../_components/Links"
+import { Navigation } from "../../_components/Navigation"
 import { DrawerToggler } from "./DrawerToggler"
 
 export const Header = () => {
@@ -37,7 +37,7 @@ export const Header = () => {
 					) : null}
 				</Link>
 				<div className="hidden md:block fade-in">
-					<Links />
+					<Navigation />
 				</div>
 				<DrawerToggler
 					isDrawerOpen={isDrawerOpen}

@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import { socialMedia } from "@/_config"
 import { ExternalLink } from "@/app/_components/ExternalLink"
 import { PageTitle } from "@/app/_components/PageTitle"
 import { fetchDictionary } from "@/get-dictionary"
@@ -24,12 +25,13 @@ export default async function Wallpapers({
 						{d.wallpapers.description[1]}
 					</h3>
 					<ExternalLink
-						to="https://pinterest.com/seishindreams/wallpapers/"
-						className="inline-flex items-center gap-2 w-min hover:scale-110">
-						<span>Pinterest</span>
+						to={socialMedia.pinterest.link}
+						className="inline-flex items-center gap-2 w-min hover:scale-110"
+					>
+						<span>{socialMedia.pinterest.title}</span>
 						<Image
-							src="/pinterest.svg"
-							alt="Pinterest Wallpapers"
+							src={socialMedia.pinterest.img}
+							alt={socialMedia.pinterest.title}
 							width={30}
 							height={30}
 							priority

@@ -1,12 +1,12 @@
 'use client';
 
-import { FC, ReactNode, createContext, useContext, useEffect, useState } from 'react';
+import { getLocaleExtension } from '@/_utils';
 import { fetchDictionary } from '@/get-dictionary';
 import { Locale, i18n } from '@/i18n-config';
+import { FC, ReactNode, createContext, useContext, useEffect, useState } from 'react';
 import defaultDictionary from '../dictionaries/empty.json';
-import { getLocaleExtension } from '@/_utils';
 
-type Dictionary = typeof defaultDictionary;
+export type Dictionary = typeof defaultDictionary;
 
 interface LocaleContextProps {
   isLoading: boolean;

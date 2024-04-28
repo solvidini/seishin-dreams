@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import { socialMedia } from "@/_config"
 import { ExternalLink } from "@/app/_components/ExternalLink"
 import { PageTitle } from "@/app/_components/PageTitle"
 import { fetchDictionary } from "@/get-dictionary"
@@ -23,30 +24,22 @@ export default async function Music({
 					<h3 className="font-semibold text-secondary-light mb-1">
 						{d.music.description[1]}
 					</h3>
-					<ExternalLink
-						to="https://www.youtube.com/@seishin.dreams"
-						className="inline-flex items-center gap-2 w-min hover:scale-110">
-						<span>YouTube</span>
-						<Image
-							src="/youtube.svg"
-							alt="YouTube"
-							width={30}
-							height={30}
-							priority
-						/>
-					</ExternalLink>
-					<ExternalLink
-						to="https://soundcloud.com/solvidi/sets/seishin-dreams"
-						className="inline-flex items-center gap-2 w-min hover:scale-110">
-						<span>SoundCloud</span>
-						<Image
-							src="/soundcloud.svg"
-							alt="SoundCloud"
-							width={30}
-							height={30}
-							priority
-						/>
-					</ExternalLink>
+					{[socialMedia.youtube, socialMedia.soundcloud].map((sm) => (
+						<ExternalLink
+							key={sm.title}
+							to={sm.link}
+							className="inline-flex items-center gap-2 w-min hover:scale-110"
+						>
+							<span>{sm.title}</span>
+							<Image
+								src={sm.img}
+								alt={sm.title}
+								width={30}
+								height={30}
+								priority
+							/>
+						</ExternalLink>
+					))}
 				</div>
 				<p>{d.music.description[2]}</p>
 			</article>
@@ -58,7 +51,8 @@ export default async function Music({
 					{videos.map(({ title, id }) => (
 						<div
 							className="pt-2 sm:p-4 gap-2 sm:gap-4 bg-dark rounded-xl w-full sm:w-auto flex flex-col"
-							key={id}>
+							key={id}
+						>
 							<h6 className="text-lg font-semibold uppercase font-caveat text-center sm:text-left sm:ml-4">
 								{title}
 							</h6>

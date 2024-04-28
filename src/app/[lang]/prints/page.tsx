@@ -1,10 +1,12 @@
 import Image from "next/image"
 
+import { socialMedia } from "@/_config"
 import { ExternalLink } from "@/app/_components/ExternalLink"
 import { PageTitle } from "@/app/_components/PageTitle"
 import { fetchDictionary } from "@/get-dictionary"
 import { Locale } from "@/i18n-config"
 import { Carousel } from "./_components/Carousel"
+import { prints } from "./_data"
 
 export default async function Prints({
 	params: { lang },
@@ -22,73 +24,30 @@ export default async function Prints({
 					<h3 className="font-semibold text-secondary-light mb-1">
 						{d.prints.description[1]}
 					</h3>
-					<ExternalLink
-						to="https://seishindreams.redbubble.com/"
-						className="inline-flex items-center gap-2 w-min hover:scale-110">
-						<span>Redbubble</span>
-						<div className="flex items-center justify-center w-[28px] h-[28px] bg-white rounded-full">
-							<Image
-								src="/redbubble.svg"
-								alt="Redbubble"
-								width={30}
-								height={30}
-								priority
-							/>
-						</div>
-					</ExternalLink>
-					<ExternalLink
-						to="https://www.spreadshirt.pl/shop/user/seishin+dreams/"
-						className="inline-flex items-center gap-2 w-min hover:scale-110">
-						<span>Spreadshirt</span>
-						<div className="flex items-center justify-center w-[28px] h-[28px] bg-white rounded-full">
-							<Image
-								src="/spreadshirt.svg"
-								alt="Spreadshirt"
-								width={25}
-								height={25}
-								priority
-							/>
-						</div>
-					</ExternalLink>
+					{[socialMedia.redbubble, socialMedia.spreadshirt].map((sm) => (
+						<ExternalLink
+							key={sm.title}
+							to={sm.link}
+							className="inline-flex items-center gap-2 w-min hover:scale-110"
+						>
+							<span>{sm.title}</span>
+							<div className="flex items-center justify-center w-[28px] h-[28px] bg-white rounded-full">
+								<Image
+									src={sm.img}
+									alt={sm.title}
+									width={30}
+									height={30}
+									priority
+								/>
+							</div>
+						</ExternalLink>
+					))}
 				</div>
 				<section className="w-full h-full">
 					<h3 className="font-semibold text-center text-secondary-light mb-6">
 						{d.prints.description[2]} 🌟🛍️
 					</h3>
-					<Carousel
-						items={[
-							{
-								src: "/products/website_product.png",
-								title: "Virgo Design",
-								url: "https://www.redbubble.com/shop/ap/154829740",
-							},
-							{
-								src: "/products/website_product-2.png",
-								title: "Lotus Flower Design",
-								url: "https://www.redbubble.com/shop/ap/154667892",
-							},
-							{
-								src: "/products/website_product-3.png",
-								title: "Samurai Design",
-								url: "https://www.redbubble.com/shop/ap/155350217",
-							},
-							{
-								src: "/products/website_product-4.png",
-								title: "Bee Design",
-								url: "https://www.redbubble.com/shop/ap/155225143",
-							},
-							{
-								src: "/products/website_product-5.png",
-								title: "Capricorn Design",
-								url: "https://www.redbubble.com/shop/ap/154878672",
-							},
-							{
-								src: "/products/website_product-6.png",
-								title: "Ninja Design",
-								url: "https://www.redbubble.com/shop/ap/155350575",
-							},
-						]}
-					/>
+					<Carousel items={prints} />
 				</section>
 			</article>
 			<section></section>

@@ -3,10 +3,11 @@
 import Image from "next/image"
 import { FaChevronUp } from "react-icons/fa"
 
+import { socialMedia } from "@/_config"
 import { getCurrentYear, scrollToTop } from "@/_utils"
 import { ExternalLink } from "@/app/_components/ExternalLink"
-import { Links } from "@/app/_components/Links"
 import { LocaleSwitcher } from "@/app/_components/LocaleSwitcher"
+import { Navigation } from "@/app/_components/Navigation"
 import { WaveSVG } from "@/app/_svg/wave"
 
 export const Footer = () => {
@@ -21,77 +22,44 @@ export const Footer = () => {
 
 			<button
 				onClick={scrollToTop}
-				className="z-0 w-[36px] h-[36px] bg-primary rounded-full p-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+				className="z-0 w-[36px] h-[36px] bg-primary rounded-full p-2 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+			>
 				<FaChevronUp
 					size={20}
 					className="animate-bounce"
 				/>
 			</button>
 
-			{/* Social Media Links */}
+			{/* Social Media Navigation */}
 			<div className="z-0 w-full p-4 mx-auto flex flex-col md:flex-row items-center relative gap-4 my-2">
 				<div className="flex-1 flex items-center justify-center space-x-4 text-blue-300">
-					<ExternalLink
-						className="hover:scale-125"
-						to="https://www.facebook.com/seishin.dreams/">
-						<Image
-							src="/facebook.svg"
-							alt="Facebook"
-							width={30}
-							height={30}
-							priority
-						/>
-					</ExternalLink>
-					<ExternalLink
-						className="hover:scale-125"
-						to="https://instagram.com/seishin.dreams/">
-						<Image
-							src="/instagram.svg"
-							alt="Instagram"
-							width={30}
-							height={30}
-							priority
-						/>
-					</ExternalLink>
-					<ExternalLink
-						className="hover:scale-125"
-						to="https://tiktok.com/@seishin.dreams/">
-						<Image
-							src="/tiktok.svg"
-							alt="TikTok"
-							width={30}
-							height={30}
-							priority
-						/>
-					</ExternalLink>
-					<ExternalLink
-						className="hover:scale-125"
-						to="https://pinterest.com/seishindreams/">
-						<Image
-							src="/pinterest.svg"
-							alt="Pinterest"
-							width={30}
-							height={30}
-							priority
-						/>
-					</ExternalLink>
-					<ExternalLink
-						className="hover:scale-125"
-						to="https://www.youtube.com/@seishin.dreams">
-						<Image
-							src="/youtube.svg"
-							alt="YouTube"
-							width={30}
-							height={30}
-							priority
-						/>
-					</ExternalLink>
+					{[
+						socialMedia.facebook,
+						socialMedia.instagram,
+						socialMedia.tiktok,
+						socialMedia.pinterest,
+						socialMedia.youtube,
+					].map((sm) => (
+						<ExternalLink
+							key={sm.title}
+							className="hover:scale-125"
+							to={sm.link}
+						>
+							<Image
+								src={sm.img}
+								alt={sm.title}
+								width={30}
+								height={30}
+								priority
+							/>
+						</ExternalLink>
+					))}
 				</div>
 
 				{/* Navigation */}
 				<nav className="flex-1 flex items-center justify-center">
 					<div className="w-[240px] xl:w-auto">
-						<Links />
+						<Navigation />
 					</div>
 				</nav>
 
@@ -112,7 +80,8 @@ export const Footer = () => {
 						Icons by{" "}
 						<ExternalLink
 							className="underline"
-							to="https://icons8.com/">
+							to="https://icons8.com/"
+						>
 							icons8
 						</ExternalLink>
 					</span>

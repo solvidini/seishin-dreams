@@ -4,7 +4,7 @@ import Image from "next/image"
 
 import { useUI } from "@/_contexts/ui-context"
 import { twMerge } from "tailwind-merge"
-import { Links } from "../../_components/Links"
+import { Navigation } from "../../_components/Navigation"
 
 export const Drawer = () => {
 	const { isDrawerOpen, closeDrawer } = useUI()
@@ -32,7 +32,7 @@ export const Drawer = () => {
 					height={200}
 					priority
 				/>
-				<Links isDrawer />
+				<Navigation isDrawer />
 			</div>
 		</div>
 	)

@@ -1,3 +1,3 @@
 import { wallpapers } from "./wallpapers"
 
-export { wallpapers } 
+export { wallpapers }

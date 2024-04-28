@@ -9,6 +9,7 @@ interface ILocaleLinkProps {
 	to: string
 	onClick?(): void
 	className?: string
+	isDrawer?: boolean
 }
 
 export const LocaleLink: FC<ILocaleLinkProps> = ({
@@ -16,6 +17,7 @@ export const LocaleLink: FC<ILocaleLinkProps> = ({
 	to,
 	onClick,
 	className,
+	isDrawer,
 }) => {
 	const pathname = usePathname()
 	const { getLocaleUrl } = useLocale()
@@ -23,11 +25,12 @@ export const LocaleLink: FC<ILocaleLinkProps> = ({
 	return (
 		<Link
 			onClick={onClick}
-			className={twMerge(
+			className={twMerge("text-xs",
 				className,
 				pathname === getLocaleUrl(to)
 					? "text-white animate-text-glow"
 					: "text-gray-200",
+				isDrawer && "text-sm"
 			)}
 			href={getLocaleUrl(to)}>
 			{children}
