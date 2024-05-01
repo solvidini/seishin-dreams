@@ -15,23 +15,26 @@ export default async function Books({
 	const d = await fetchDictionary(lang)
 
 	return (
-		<main className="min-h-screen flex flex-col items-center fade-in mb-16">
+		<main className="min-h-screen flex flex-col items-center fade-in mb-20">
 			<PageTitle>{`📚 ${d.books.title} 📚`}</PageTitle>
 			<article className="overflow-auto max-w-con-min w-full flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
 				<p>{d.books.description[0]} ✨ 🎨</p>
 				<div className="flex flex-col">
-					<h3 className="font-semibold text-secondary-light mb-1">
+					<h3 className="font-semibold text-secondary mb-1">
 						{d.books.description[1]}
 					</h3>
 					<ExternalLink
 						to={socialMedia.author.link}
-						className="inline-flex items-center gap-2 w-min hover:scale-110">
-						<span className="whitespace-nowrap">{d.books["author"]} {socialMedia.author.img}</span>
+						className="inline-flex items-center gap-2 w-min hover:scale-110"
+					>
+						<span className="whitespace-nowrap">
+							{d.books["author"]} {socialMedia.author.img}
+						</span>
 					</ExternalLink>
 				</div>
 			</article>
 			<section className="w-full max-w-con flex flex-col items-center justify-center px-4 md:px-6 gap-6">
-				<h3 className="font-semibold text-center text-secondary-light">
+				<h3 className="font-semibold text-center text-secondary">
 					{d.books.description[2]} 🖍️ 📚
 				</h3>
 				{books.map(({ id, title, height, width, translationKey, pages }) => {
@@ -40,7 +43,8 @@ export default async function Books({
 					return (
 						<div
 							key={id}
-							className="w-full flex flex-col items-center justify-center text-gray-300 rounded-xl p-4 sm:p-6 gap-2 sm:gap-4 bg-dark">
+							className="w-full flex flex-col items-center justify-center text-gray-300 rounded-xl p-4 sm:p-6 gap-2 sm:gap-4 bg-dark"
+						>
 							<h6 className="text-lg lg:text-[21px] font-semibold uppercase font-caveat">
 								<span className="text-sm sm:text-md mr-1 sm:mr-2">✨</span>
 								{title}

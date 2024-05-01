@@ -16,12 +16,12 @@ export default async function Prints({
 	const d = await fetchDictionary(lang)
 
 	return (
-		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in mb-8">
+		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in mb-14">
 			<PageTitle>{`👕 ${d.prints.title} 👚`}</PageTitle>
 			<article className="max-w-con-min flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
 				<p>{d.prints.description[0]} 🛒 👕 ✨</p>
 				<div className="flex flex-col mb-4">
-					<h3 className="font-semibold text-secondary-light mb-1">
+					<h3 className="font-semibold text-secondary mb-1">
 						{d.prints.description[1]}
 					</h3>
 					{[socialMedia.redbubble, socialMedia.spreadshirt].map((sm) => (
@@ -44,7 +44,7 @@ export default async function Prints({
 					))}
 				</div>
 				<section className="w-full h-full">
-					<h3 className="font-semibold text-center text-secondary-light mb-6">
+					<h3 className="font-semibold text-center text-secondary mb-6">
 						{d.prints.description[2]} 🌟🛍️
 					</h3>
 					<Carousel items={prints} />

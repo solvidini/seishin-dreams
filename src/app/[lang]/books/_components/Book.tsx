@@ -77,9 +77,10 @@ export const Book: FC<BookProps> = ({
 			className={twMerge(
 				"relative max-w-full flex flex-col items-center justify-center gap-4 py-2",
 				className,
-			)}>
+			)}
+		>
 			{title && (
-				<h3 className="text-lg text-semibold text-tertiary z-0">{title}</h3>
+				<h3 className="text-lg text-semibold text-secondary z-0">{title}</h3>
 			)}
 			<div
 				className="flex items-center justify-center transition-transform duration-500"
@@ -95,7 +96,8 @@ export const Book: FC<BookProps> = ({
 							? "translateX(25%)"
 							: "",
 				}}
-				{...swipeHandlers}>
+				{...swipeHandlers}
+			>
 				<div className="z-[1000] absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full bg-black/10" />
 				{pages.map((page, index) => (
 					<div
@@ -113,7 +115,8 @@ export const Book: FC<BookProps> = ({
 									: index === currentPage - 1 || index === currentPage + 1
 									? "10"
 									: "0",
-						}}>
+						}}
+					>
 						<Image
 							src={page.src}
 							alt={`Page ${index}`}
@@ -139,8 +142,9 @@ export const Book: FC<BookProps> = ({
 					)}
 				/>
 				<ExternalLink
-					className="text-tertiary uppercase font-semibold hover:underline"
-					to={link}>
+					className="text-secondary uppercase font-semibold hover:underline"
+					to={link}
+				>
 					{d.common.buy_now}
 				</ExternalLink>
 				<ArrowButton

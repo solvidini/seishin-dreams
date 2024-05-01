@@ -58,17 +58,21 @@ export const Carousel: FC<ICarouselProps> = ({ items, height = 400 }) => {
 	return (
 		<div
 			className="relative w-full flex flex-col items-center justify-center gap-2"
-			style={{ height }}>
+			style={{ height }}
+		>
 			<div
 				className="overflow-hidden rounded-lg relative"
-				{...handlers}>
+				{...handlers}
+			>
 				<div
 					className="w-full h-full flex transition-transform duration-500 ease-in-out"
-					style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+					style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+				>
 					{items.map((data) => (
 						<div
 							key={data.title.replace(" ", "-")}
-							className="relative w-full h-full flex-shrink-0">
+							className="relative w-full h-full flex-shrink-0"
+						>
 							<Image
 								src={data.src}
 								alt={data.title}
@@ -81,8 +85,9 @@ export const Carousel: FC<ICarouselProps> = ({ items, height = 400 }) => {
 							<div className="absolute p-2 bg-black/50 rounded-md z-10 left-1/2 bottom-[10%] -translate-x-1/2 drop-shadow-md text-center mt-2">
 								<h3 className="text-lg whitespace-nowrap mb-2">{data.title}</h3>
 								<ExternalLink
-									className="text-tertiary uppercase font-semibold hover:underline"
-									to={data.url}>
+									className="text-secondary uppercase font-semibold hover:underline"
+									to={data.url}
+								>
 									{d.common.buy_now}
 								</ExternalLink>
 							</div>
@@ -112,8 +117,8 @@ export const Carousel: FC<ICarouselProps> = ({ items, height = 400 }) => {
 						key={index}
 						onClick={() => goToIndex(index)}
 						className={twMerge(
-							"w-4 h-4 rounded-full border-2 border-secondary-light focus:outline-none",
-							activeIndex === index && "bg-secondary-light",
+							"w-4 h-4 rounded-full border-2 border-secondary focus:outline-none",
+							activeIndex === index && "bg-secondary",
 						)}
 					/>
 				))}

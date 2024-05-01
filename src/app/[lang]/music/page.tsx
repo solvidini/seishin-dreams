@@ -16,12 +16,12 @@ export default async function Music({
 	const d = await fetchDictionary(lang)
 
 	return (
-		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in mb-12 sm:mb-14 lg:mb-16">
+		<main className="overflow-auto min-h-screen flex flex-col items-center fade-in mb-12 sm:mb-14 lg:mb-20">
 			<PageTitle>{`🎶 ${d.music.title} 🎶`}</PageTitle>
 			<article className="max-w-con-min flex flex-col gap-4 p-4 pt-2 pb-6 md:p-6 xs:pt-4 text-left mx-auto">
 				<p>{d.music.description[0]} 🥁</p>
 				<div className="flex flex-col">
-					<h3 className="font-semibold text-secondary-light mb-1">
+					<h3 className="font-semibold text-secondary mb-1">
 						{d.music.description[1]}
 					</h3>
 					{[socialMedia.youtube, socialMedia.soundcloud].map((sm) => (
@@ -44,7 +44,7 @@ export default async function Music({
 				<p>{d.music.description[2]}</p>
 			</article>
 			<section className="w-full px-4 md:px-6 max-w-con-min flex flex-col">
-				<h3 className="font-semibold mb-6 text-center text-secondary-light">
+				<h3 className="font-semibold mb-6 text-center text-secondary">
 					{d.music.description[3]} 🎵 🎥 ✨
 				</h3>
 				<div className="w-full flex flex-col items-center justify-center gap-4">
