@@ -11,7 +11,7 @@ import BREAKPOINTS from "../../../_config/breakpoints.json"
 import { Navigation } from "../../_components/Navigation"
 import { DrawerToggler } from "./DrawerToggler"
 
-export const Header = () => {
+export const Toolbar = () => {
 	const [windowSize, setWindowSize] = useState<"loading" | "small" | "big">(
 		"loading",
 	)
@@ -28,15 +28,16 @@ export const Header = () => {
 			<DotsSVG className="-z-10 absolute fill-secondary w-[200px] right-0 -translate-y-[80%] translate-x-[25%] rotate-45" />
 			<div className="max-w-con-max h-full mx-auto px-md sm:px-xl flex items-center justify-between gap-lg">
 				<Link
-					className="relative w-[50px] sm:w-[170px] h-[50px] flex items-center justify-center"
-					href="/">
+					className="relative w-[50px] sm:w-[170px] h-[50px] flex items-center justify-center bg-black rounded-full"
+					href="/"
+				>
 					{windowSize === "big" ? (
 						<SeishinDreamsSVG className="fade-in fill-gray-200 w-[170px] h-[50px]" />
 					) : windowSize === "small" ? (
 						<SdSVG className="fade-in fill-gray-200 w-[46px] h-[46px]" />
 					) : null}
 				</Link>
-				<div className="hidden md:block fade-in">
+				<div className="hidden md:block fade-in bg-black rounded-full">
 					<Navigation />
 				</div>
 				<DrawerToggler

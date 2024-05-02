@@ -9,7 +9,7 @@ import { twMerge } from "tailwind-merge"
 import { Locale, i18n } from "../../i18n-config"
 import { Drawer } from "./_components/Drawer"
 import { Footer } from "./_components/Footer"
-import { Header } from "./_components/Header"
+import { Toolbar } from "./_components/Toolbar"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -50,10 +50,12 @@ export default function RootLayout({
 				inter.variable,
 				caveat.variable,
 				playpen_sans.variable,
-			)}>
+			)}
+		>
 			<body
 				className={playpen_sans.className}
-				suppressHydrationWarning={true}>
+				suppressHydrationWarning={true}
+			>
 				<div className="relative max-w-con-max mx-auto outline outline-2 outline-offset-2 outline-secondary-dark">
 					<div className="w-full h-[70px] flex items-center justify-center text-white">
 						<FaChevronUp
@@ -63,7 +65,7 @@ export default function RootLayout({
 					</div>
 					<LocaleProvider locale={lang}>
 						<UIProvider>
-							<Header />
+							<Toolbar />
 							{children}
 							<Footer />
 							<Drawer />
