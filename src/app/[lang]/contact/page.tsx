@@ -23,9 +23,9 @@ export default async function Contact({
 						<p className="text-left mr-2">{d.contact.description[0]}</p>
 						<ExternalLink
 							className="text-secondary inline-flex items-center"
-							to="mailto:contact@seishindreams.com"
+							to="mailto:seishin.dreams@gmail.com"
 						>
-							<FaEnvelope className="mr-1" /> contact@seishindreams.com
+							<FaEnvelope className="mr-1" /> seishin.dreams@gmail.com
 						</ExternalLink>
 					</div>
 					<p className="text-left xs:text-center">
