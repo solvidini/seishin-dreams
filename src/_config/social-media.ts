@@ -4,7 +4,6 @@ export type ISocialMediaType =
 	| "tiktok"
 	| "pinterest"
 	| "youtube"
-	| "spreadshirt"
 	| "redbubble"
 	| "soundcloud"
 	| "author"
@@ -40,11 +39,6 @@ export const socialMedia: Record<ISocialMediaType, ISocialMedia> = {
 		title: "YouTube",
 		img: "/youtube.svg",
 		link: "https://www.youtube.com/@seishin.dreams",
-	},
-	spreadshirt: {
-		title: "Spreadshirt",
-		img: "/spreadshirt.svg",
-		link: "https://www.spreadshirt.pl/shop/user/seishin+dreams",
 	},
 	redbubble: {
 		title: "Redbubble",

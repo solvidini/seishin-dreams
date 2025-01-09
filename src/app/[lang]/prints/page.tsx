@@ -24,7 +24,7 @@ export default async function Prints({
 					<h3 className="font-semibold text-secondary mb-1">
 						{d.prints.description[1]}
 					</h3>
-					{[socialMedia.redbubble, socialMedia.spreadshirt].map((sm) => (
+					{[socialMedia.redbubble].map((sm) => (
 						<ExternalLink
 							key={sm.title}
 							to={sm.link}
